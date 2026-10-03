@@ -44,6 +44,7 @@ class Participant(Base):
     __tablename__ = "participants"
     id: Mapped[int] = mapped_column(primary_key=True)
     telegram_id: Mapped[int] = mapped_column(BigInteger, unique=True, index=True)
+    owner_telegram_id: Mapped[int | None] = mapped_column(BigInteger, nullable=True, index=True)
     username: Mapped[str | None] = mapped_column(String(255), nullable=True)
     full_name: Mapped[str] = mapped_column(String(255))
     phone: Mapped[str] = mapped_column(String(40))
@@ -57,6 +58,7 @@ class Participant(Base):
     password_hash: Mapped[str] = mapped_column(String(128))
     participant_code: Mapped[str] = mapped_column(String(20), unique=True, index=True)
     blocked: Mapped[bool] = mapped_column(Boolean, default=False)
+    active_profile: Mapped[bool] = mapped_column(Boolean, default=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
     subject: Mapped[Subject] = relationship()
     level: Mapped[Level] = relationship()
@@ -236,10 +238,18 @@ def ensure_schema(sync_conn):
     """Add new auto-grading columns without deleting existing Railway/SQLite data."""
     schema = inspect(sync_conn)
     config_columns = {column["name"] for column in schema.get_columns("olympiad_config")}
+    participant_columns = {column["name"] for column in schema.get_columns("participants")}
     question_columns = {column["name"] for column in schema.get_columns("questions")}
     answer_columns = {column["name"] for column in schema.get_columns("answers")}
     if "test_stopped" not in config_columns:
         sync_conn.execute(text("ALTER TABLE olympiad_config ADD COLUMN test_stopped BOOLEAN DEFAULT FALSE"))
+    if "owner_telegram_id" not in participant_columns:
+        sync_conn.execute(text("ALTER TABLE participants ADD COLUMN owner_telegram_id BIGINT"))
+        sync_conn.execute(text("UPDATE participants SET owner_telegram_id = telegram_id WHERE owner_telegram_id IS NULL"))
+    if "active_profile" not in participant_columns:
+        sync_conn.execute(text("ALTER TABLE participants ADD COLUMN active_profile BOOLEAN DEFAULT TRUE"))
+        sync_conn.execute(text("UPDATE participants SET active_profile = TRUE WHERE active_profile IS NULL"))
+    sync_conn.execute(text("CREATE INDEX IF NOT EXISTS ix_participants_owner_telegram_id ON participants (owner_telegram_id)"))
     if "correct_option" not in question_columns:
         sync_conn.execute(text("ALTER TABLE questions ADD COLUMN correct_option INTEGER"))
     if "seed_key" not in question_columns:

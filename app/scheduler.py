@@ -16,6 +16,10 @@ def utc_value(value):
     return value.replace(tzinfo=timezone.utc) if value.tzinfo is None else value.astimezone(timezone.utc)
 
 
+def contact_telegram_id(participant):
+    return participant.owner_telegram_id or participant.telegram_id
+
+
 async def reminder_loop(bot, sessions, settings, dispatcher):
     while True:
         try:
@@ -32,6 +36,7 @@ async def reminder_loop(bot, sessions, settings, dispatcher):
                         .where(Attempt.status == "working")
                     )).all()
                     for attempt, participant, subject in rows:
+                        chat_id = contact_telegram_id(participant)
                         mental = subject.name.casefold() == MENTAL_SUBJECT
                         deadline = utc_value(attempt.started_at) + timedelta(minutes=MENTAL_DURATION_MINUTES) if mental else start + timedelta(minutes=cfg.duration_minutes)
                         if now < deadline:
@@ -60,7 +65,7 @@ async def reminder_loop(bot, sessions, settings, dispatcher):
                         await session.commit()
 
                         try:
-                            state = dispatcher.fsm.get_context(bot=bot, chat_id=participant.telegram_id, user_id=participant.telegram_id)
+                            state = dispatcher.fsm.get_context(bot=bot, chat_id=chat_id, user_id=chat_id)
                             await state.clear()
                         except Exception:
                             pass
@@ -74,7 +79,7 @@ async def reminder_loop(bot, sessions, settings, dispatcher):
                             title = "Mental arifmetika" if mental else "Test"
                             try:
                                 await bot.send_message(
-                                    participant.telegram_id,
+                                    chat_id,
                                     "⏰ Vaqt tugadi. Javoblaringiz avtomatik tekshirildi. Natija admin e’lon qilgandan keyin ko‘rinadi.",
                                     reply_markup=cabinet(),
                                 )
@@ -87,7 +92,7 @@ async def reminder_loop(bot, sessions, settings, dispatcher):
                             )
                         else:
                             try:
-                                await bot.send_message(participant.telegram_id, "⏰ Vaqt tugadi. Javoblaringiz adminga yuborildi.", reply_markup=cabinet())
+                                await bot.send_message(chat_id, "⏰ Vaqt tugadi. Javoblaringiz adminga yuborildi.", reply_markup=cabinet())
                             except Exception:
                                 pass
                             notice = f"📨 Olimpiada yakunlandi\n👤 {participant.full_name}\n🆔 {participant.participant_code}\nJavoblarni admin panelda tekshiring."
@@ -103,7 +108,7 @@ async def reminder_loop(bot, sessions, settings, dispatcher):
                             exists = await session.scalar(select(Reminder).where(Reminder.participant_id == p.id, Reminder.kind == kind))
                             if exists: continue
                             try:
-                                await bot.send_message(p.telegram_id, f"⏰ Eslatma! Olimpiada {fmt_dt(cfg.start_at, settings.timezone)} da boshlanadi.")
+                                await bot.send_message(contact_telegram_id(p), f"⏰ Eslatma! Olimpiada {fmt_dt(cfg.start_at, settings.timezone)} da boshlanadi.")
                                 session.add(Reminder(participant_id=p.id, kind=kind)); await session.commit()
                             except Exception: await session.rollback()
         except Exception as exc:

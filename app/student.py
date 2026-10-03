@@ -7,7 +7,7 @@ from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart, StateFilter
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup, KeyboardButton, Message, ReplyKeyboardMarkup
-from sqlalchemy import select
+from sqlalchemy import or_, select
 
 from .db import Answer, Attempt, Level, OlympiadConfig, Participant, Question, SocialVerification, Subject
 from .keyboards import cabinet, confirm_kb, home, inline_items, subscription_kb
@@ -27,8 +27,53 @@ def utc_value(value):
     return value.replace(tzinfo=timezone.utc) if value.tzinfo is None else value.astimezone(timezone.utc)
 
 
+def owner_filter(telegram_id):
+    return or_(
+        Participant.owner_telegram_id == telegram_id,
+        (Participant.owner_telegram_id.is_(None)) & (Participant.telegram_id == telegram_id),
+    )
+
+
+def real_chat_id(participant):
+    return participant.owner_telegram_id or participant.telegram_id
+
+
+async def participant_profiles(session, telegram_id):
+    return (await session.execute(
+        select(Participant).where(owner_filter(telegram_id)).order_by(Participant.id)
+    )).scalars().all()
+
+
 async def get_participant(session, telegram_id):
-    return await session.scalar(select(Participant).where(Participant.telegram_id == telegram_id))
+    active = await session.scalar(
+        select(Participant)
+        .where(owner_filter(telegram_id), Participant.active_profile.is_(True))
+        .order_by(Participant.id.desc())
+    )
+    if active:
+        return active
+    return await session.scalar(
+        select(Participant).where(owner_filter(telegram_id)).order_by(Participant.id.desc())
+    )
+
+
+async def next_profile_telegram_id(session, user_id):
+    profiles = await participant_profiles(session, user_id)
+    if not profiles:
+        return user_id
+    used_ids = {profile.telegram_id for profile in profiles}
+    slot = len(profiles) + 1
+    while True:
+        candidate = -(int(user_id) * 1_000_000 + slot)
+        if candidate not in used_ids and not await session.scalar(select(Participant.id).where(Participant.telegram_id == candidate)):
+            return candidate
+        slot += 1
+
+
+async def activate_profile(session, user_id, participant):
+    profiles = await participant_profiles(session, user_id)
+    for profile in profiles:
+        profile.active_profile = profile.id == participant.id
 
 
 def is_mental_subject(subject):
@@ -158,14 +203,10 @@ async def check_social(call: CallbackQuery, sessions, settings):
     await call.message.answer("Kerakli bo‘limni tanlang:", reply_markup=home(bool(p)))
 
 
-@router.message(F.text == "🏆 Olimpiadaga qatnashish")
+@router.message(F.text.in_({"🏆 Olimpiadaga qatnashish", "➕ Yangi qatnashchi qo‘shish"}))
 async def registration_start(message: Message, state: FSMContext, sessions):
     async with sessions() as session:
-        p = await get_participant(session, message.from_user.id)
         cfg = await session.get(OlympiadConfig, 1)
-    if p:
-        await message.answer("Siz avval ro‘yxatdan o‘tgansiz.", reply_markup=cabinet())
-        return
     if not cfg.registration_open:
         await message.answer("Hozir ro‘yxatdan o‘tish yopilgan.")
         return
@@ -269,12 +310,15 @@ async def reg_cancel(call: CallbackQuery, state: FSMContext):
 async def reg_confirm(call: CallbackQuery, state: FSMContext, sessions, settings):
     data = await state.get_data(); login, password, code = credentials()
     async with sessions() as session:
-        if await get_participant(session, call.from_user.id):
-            await call.answer("Siz ro‘yxatdan o‘tgansiz", show_alert=True); return
-        p = Participant(telegram_id=call.from_user.id, username=call.from_user.username, full_name=data["full_name"], phone=data["phone"],
+        profile_telegram_id = await next_profile_telegram_id(session, call.from_user.id)
+        p = Participant(telegram_id=profile_telegram_id, owner_telegram_id=call.from_user.id, username=call.from_user.username, full_name=data["full_name"], phone=data["phone"],
             region=data["region"], district=data["district"], birth_date=date.fromisoformat(data["birth_date"]), age=data["age"],
-            subject_id=data["subject_id"], level_id=data["level_id"], login=login, password_hash=hash_password(password), participant_code=code)
-        session.add(p); await session.commit()
+            subject_id=data["subject_id"], level_id=data["level_id"], login=login, password_hash=hash_password(password), participant_code=code,
+            active_profile=True)
+        session.add(p)
+        await session.flush()
+        await activate_profile(session, call.from_user.id, p)
+        await session.commit()
     await state.clear(); await call.message.edit_text("✅ Ro‘yxatdan muvaffaqiyatli o‘tdingiz!")
     await call.message.answer(f"Sizning ma’lumotlaringiz:\n🆔 Qatnashchi ID: <b>{code}</b>\nLogin: <code>{login}</code>\nParol: <code>{password}</code>\n\nBu ma’lumotlarni saqlab qo‘ying.", parse_mode=ParseMode.HTML, reply_markup=cabinet()); await call.answer()
     admin_text = (f"🆕 Yangi qatnashchi\n\n👤 {data['full_name']}\n🆔 {code}\n📍 {data['region']}, {data['district']}\n"
@@ -299,6 +343,47 @@ async def profile(message: Message, sessions):
         if not p: await message.answer("Ma’lumot topilmadi."); return
         subject = await session.get(Subject, p.subject_id); level = await session.get(Level, p.level_id)
     await message.answer(f"👤 {p.full_name}\n🆔 {p.participant_code}\n📍 {p.region}, {p.district}\n🎂 {p.birth_date.strftime('%d.%m.%Y')} ({p.age} yosh)\n📱 {p.phone}\n📚 {subject.name} — {level.name}")
+
+
+@router.message(F.text == "👥 Qatnashchilarim")
+async def my_profiles(message: Message, sessions):
+    async with sessions() as session:
+        profiles = await participant_profiles(session, message.from_user.id)
+        subjects = {item.id: item for item in (await session.execute(select(Subject))).scalars().all()}
+        levels = {item.id: item for item in (await session.execute(select(Level))).scalars().all()}
+    if not profiles:
+        await message.answer("Hali qatnashchi qo‘shilmagan.", reply_markup=home())
+        return
+    lines = ["👥 <b>Qatnashchilarim</b>\n"]
+    buttons = []
+    for idx, participant in enumerate(profiles, 1):
+        subject = subjects.get(participant.subject_id)
+        level = levels.get(participant.level_id)
+        mark = "✅ " if participant.active_profile else ""
+        lines.append(
+            f"{idx}. {mark}{escape(participant.full_name)} — "
+            f"{escape(subject.name if subject else 'Fan topilmadi')} / {escape(level.name if level else 'Daraja topilmadi')}"
+        )
+        buttons.append((participant.id, f"{mark}{participant.full_name[:25]}"))
+    await message.answer(
+        "\n".join(lines) + "\n\nTest yechadigan profilni tanlang:",
+        parse_mode=ParseMode.HTML,
+        reply_markup=inline_items(buttons, "profile", 1),
+    )
+
+
+@router.callback_query(F.data.startswith("profile:"))
+async def select_profile(call: CallbackQuery, sessions):
+    participant_id = int(call.data.split(":")[1])
+    async with sessions() as session:
+        participant = await session.get(Participant, participant_id)
+        if not participant or real_chat_id(participant) != call.from_user.id:
+            await call.answer("Bu profil topilmadi", show_alert=True)
+            return
+        await activate_profile(session, call.from_user.id, participant)
+        await session.commit()
+    await call.answer("Profil tanlandi", show_alert=True)
+    await call.message.answer(f"✅ Endi test {participant.full_name} nomidan yechiladi.", reply_markup=cabinet())
 
 
 @router.message(F.text == "📅 Boshlanish vaqti")

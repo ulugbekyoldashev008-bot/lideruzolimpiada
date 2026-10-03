@@ -49,6 +49,26 @@ def attempt_minutes(attempt):
     return max(0, int((submitted - started).total_seconds() // 60))
 
 
+def contact_telegram_id(participant):
+    return participant.owner_telegram_id or participant.telegram_id
+
+
+def parse_schedule_datetime(value: str, timezone_name: str):
+    raw = (value or "").strip().replace("/", ".").replace(",", " ")
+    formats = (
+        "%d.%m.%Y %H:%M",
+        "%d.%m.%y %H:%M",
+        "%Y-%m-%d %H:%M",
+        "%Y.%m.%d %H:%M",
+    )
+    for fmt in formats:
+        try:
+            return datetime.strptime(raw, fmt).replace(tzinfo=ZoneInfo(timezone_name))
+        except ValueError:
+            continue
+    raise ValueError
+
+
 async def reset_exam_progress(session):
     await session.execute(delete(Answer))
     await session.execute(delete(Attempt))
@@ -231,16 +251,22 @@ async def question_score(message: Message, state: FSMContext, sessions, settings
 @router.message(F.text == "🗓 Vaqt belgilash")
 async def schedule_start(message: Message, state: FSMContext, settings):
     if await deny(message, settings): return
-    await state.set_state(Schedule.start_at); await message.answer("Boshlanish vaqtini Toshkent vaqti bilan yozing:\n<b>kun.oy.yil soat:daqiqa</b>\nMasalan: 05.10.2026 10:00", parse_mode=ParseMode.HTML)
+    await state.set_state(Schedule.start_at); await message.answer(
+        "Boshlanish vaqtini Toshkent vaqti bilan yozing:\n"
+        "<b>kun.oy.yil soat:daqiqa</b>\n"
+        "Masalan: <code>05.10.2026 10:00</code>\n"
+        "Yoki: <code>2026-10-05 10:00</code>",
+        parse_mode=ParseMode.HTML,
+    )
 
 
 @router.message(Schedule.start_at)
 async def schedule_date(message: Message, state: FSMContext, settings):
     if await deny(message, settings): return
     try:
-        local = datetime.strptime((message.text or "").strip(), "%d.%m.%Y %H:%M").replace(tzinfo=ZoneInfo(settings.timezone))
+        local = parse_schedule_datetime(message.text or "", settings.timezone)
         if local <= datetime.now(ZoneInfo(settings.timezone)): raise ValueError
-    except ValueError: await message.answer("Kelajakdagi vaqtni shu formatda yozing: 05.10.2026 10:00"); return
+    except ValueError: await message.answer("Kelajakdagi vaqtni shunday yozing: 05.10.2026 10:00"); return
     await state.update_data(start_at=local.astimezone(timezone.utc).isoformat()); await state.set_state(Schedule.duration); await message.answer("Olimpiada necha daqiqa davom etadi? Masalan: 60")
 
 
@@ -253,6 +279,10 @@ async def schedule_duration(message: Message, state: FSMContext, sessions, setti
     data = await state.get_data()
     async with sessions() as session:
         cfg = await session.get(OlympiadConfig, 1)
+        if not cfg:
+            cfg = OlympiadConfig(id=1)
+            session.add(cfg)
+            await session.flush()
         await reset_exam_progress(session)
         await clear_reminders(session)
         cfg.start_at = datetime.fromisoformat(data["start_at"])
@@ -260,8 +290,9 @@ async def schedule_duration(message: Message, state: FSMContext, sessions, setti
         cfg.test_stopped = False
         cfg.results_published = False
         await log(session, message.from_user.id, f"Olimpiada vaqti: {data['start_at']}, {minutes} daqiqa")
+        success_text = f"✅ Vaqt belgilandi: {fmt_dt(cfg.start_at, settings.timezone)}, {minutes} daqiqa."
         await session.commit()
-    await state.clear(); await message.answer(f"✅ Vaqt belgilandi: {fmt_dt(cfg.start_at, settings.timezone)}, {minutes} daqiqa.", reply_markup=admin_menu())
+    await state.clear(); await message.answer(success_text, reply_markup=admin_menu())
 
 
 @router.message(F.text == "🧹 Vaqtni bekor qilish")
@@ -296,7 +327,7 @@ async def stop_exam(message: Message, sessions, settings):
     for participant, correct, total_questions, maximum, percent in results:
         try:
             await message.bot.send_message(
-                participant.telegram_id,
+                contact_telegram_id(participant),
                 f"⛔ Test admin tomonidan to‘xtatildi.\n"
                 f"✅ To‘g‘ri: {correct}/{total_questions}\n"
                 f"📈 Siz {percent:.1f}% topdingiz.",
@@ -325,7 +356,7 @@ async def toggle_results(message: Message, sessions, settings):
     await message.answer("📣 Natijalar o‘quvchilarga e’lon qilindi." if status else "🔕 Natijalar yana yashirildi.")
     if status:
         for attempt, participant in reviewed:
-            try: await message.bot.send_message(participant.telegram_id, f"🎉 Olimpiada natijalari e’lon qilindi!\nSizning natijangiz: {attempt.total_score:g} ball.\nBatafsil ma’lumot uchun 📊 Natijam tugmasini bosing.")
+            try: await message.bot.send_message(contact_telegram_id(participant), f"🎉 Olimpiada natijalari e’lon qilindi!\nSizning natijangiz: {attempt.total_score:g} ball.\nBatafsil ma’lumot uchun 📊 Natijam tugmasini bosing.")
             except Exception: pass
 
 

@@ -5,6 +5,7 @@ O‘quvchilarni ro‘yxatdan o‘tkazish, vaqtli olimpiada o‘tkazish, testlarn
 ## Imkoniyatlar
 
 - Bitta Telegram akkauntdan bir marta ro‘yxatdan o‘tish
+- Bitta Telegram akkaunt ichida bir nechta qatnashchini ro‘yxatdan o‘tkazish va kerakli profil nomidan test yechish
 - Telegram kanalga majburiy obunani avtomatik tekshirish
 - Instagram sahifasiga obuna bo‘lish uchun havola
 - Ism-familiya, telefon, viloyat, tuman, tug‘ilgan sana va avtomatik yosh
@@ -122,6 +123,10 @@ Majburiy Telegram obunasini tekshirish ishlashi uchun botni ko‘rsatilgan Teleg
 10. Test jarayonini majburiy to‘xtatish uchun **Testni to‘xtatish** tugmasini bosing. Ishlayotgan qatnashchilar yakunlanadi.
 11. Tayyor natijalarni umumiy reytingda ko‘rsatish uchun **Natijani e’lon qilish** tugmasini bosing.
 12. **Excel yuklash** hisobotida ism familya, fan, daraja/sinf, to‘g‘ri topgani, foizi va nechta daqiqada ishlagani chiqadi.
+
+## Bir telefondan bir nechta qatnashchi
+
+Foydalanuvchi birinchi ro‘yxatdan o‘tgandan keyin **Yangi qatnashchi qo‘shish** tugmasi orqali boshqa odamni ham ro‘yxatdan o‘tkazishi mumkin. **Qatnashchilarim** bo‘limida qaysi qatnashchi faol ekanini tanlaydi. Test, natija va profil ma’lumotlari aynan tanlangan qatnashchi nomidan ishlaydi.
 
 ## Muhim xavfsizlik
 
