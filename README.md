@@ -15,11 +15,14 @@ O‘quvchilarni ro‘yxatdan o‘tkazish, vaqtli olimpiada o‘tkazish, testlarn
 - A/B/C/D testlarda to‘g‘ri javob kaliti va avtomatik baholash
 - To‘g‘ri, noto‘g‘ri, umumiy ball va foizni avtomatik hisoblash
 - Toshkent vaqti bo‘yicha boshlanish sanasi va davomiylik
+- Admin vaqtni bekor qilsa test barcha foydalanuvchilar uchun yopiladi va yangi vaqt belgilanguncha hech kim test yecha olmaydi
+- Admin testni to‘xtatsa ishlayotgan qatnashchilar avtomatik yakunlanadi
 - Har bir javobning darhol bazaga saqlanishi
 - Bot yopilib qolsa qolgan savoldan davom etish
 - Vaqt tugaganda avtomatik yakunlash
 - Kalitli testlarni avtomatik, matn va rasmli javoblarni admin tomonidan baholash
 - Natijani yashirish/e’lon qilish va TOP-20 reyting
+- Avtomatik test tugagach o‘quvchi o‘z foizini darhol ko‘radi
 - Qatnashchini bloklash/qayta ochish
 - 24 soat va 1 soat oldin avtomatik eslatma
 - Qatnashchilar va barcha javoblarni `.xlsx` shaklida yuklab olish
@@ -113,9 +116,12 @@ Majburiy Telegram obunasini tekshirish ishlashi uchun botni ko‘rsatilgan Teleg
 4. Yangi A/B/C/D savol qo‘shsangiz, variantlardan to‘g‘ri javobni ham tanlang. Matn va rasm javoblari qo‘lda baholanadi.
 5. Olimpiada boshlanish vaqti hamda davomiyligini belgilang.
 6. Qatnashchilar uchun ro‘yxatdan o‘tishni ochiq qoldiring.
-7. A/B/C/D testlar avtomatik tekshiriladi. Matn va rasm javoblari bo‘lsa, **Javoblarni tekshirish** bo‘limida ball qo‘ying.
+7. A/B/C/D testlar avtomatik tekshiriladi va o‘quvchiga foizi darhol ko‘rinadi. Matn va rasm javoblari bo‘lsa, **Javoblarni tekshirish** bo‘limida ball qo‘ying.
 8. Mental arifmetika savollarini **Matn** turida qo‘shing. Bot to‘g‘ri sonli javobni ham so‘raydi; 100 ta misol to‘liq kiritilgach, o‘quvchiga 10 daqiqalik rejim ochiladi.
-9. Tayyor natijalarni o‘quvchilarga ko‘rsatish uchun **Natijani e’lon qilish** tugmasini bosing.
+9. Vaqtni butunlay bekor qilish uchun **Vaqtni bekor qilish** tugmasini bosing. Bu eski urinishlarni tozalaydi va yangi vaqt belgilanguncha testni yopadi.
+10. Test jarayonini majburiy to‘xtatish uchun **Testni to‘xtatish** tugmasini bosing. Ishlayotgan qatnashchilar yakunlanadi.
+11. Tayyor natijalarni umumiy reytingda ko‘rsatish uchun **Natijani e’lon qilish** tugmasini bosing.
+12. **Excel yuklash** hisobotida ism familya, fan, daraja/sinf, to‘g‘ri topgani, foizi va nechta daqiqada ishlagani chiqadi.
 
 ## Muhim xavfsizlik
 

@@ -61,6 +61,14 @@ def attempt_deadline(attempt, cfg, mental=False):
     return utc_value(cfg.start_at) + timedelta(minutes=cfg.duration_minutes)
 
 
+def score_summary(attempt, questions, answers):
+    maximum = float(sum(question.max_score for question in questions))
+    total_score = float(attempt.total_score or 0)
+    correct = sum(1 for answer in answers if answer.score is not None and answer.score > 0)
+    percent = total_score / maximum * 100 if maximum else 0
+    return maximum, total_score, correct, percent
+
+
 async def telegram_subscribed(bot: Bot, user_id: int, channel: str) -> bool:
     if not channel:
         return True
@@ -300,6 +308,9 @@ async def schedule_info(message: Message, sessions, settings):
         p = await get_participant(session, message.from_user.id)
         subject = await session.get(Subject, p.subject_id) if p else None
     duration = MENTAL_DURATION_MINUTES if is_mental_subject(subject) else cfg.duration_minutes
+    if cfg.test_stopped or not cfg.start_at:
+        await message.answer("⛔ Hozir test vaqti belgilanmagan. Admin vaqt qo‘ygandan keyin test boshlanadi.")
+        return
     await message.answer(f"🏆 {cfg.title}\n📅 Boshlanish: {fmt_dt(cfg.start_at, settings.timezone)}\n⏳ Davomiyligi: {duration} daqiqa")
 
 
@@ -329,13 +340,25 @@ async def send_current_question(message: Message, state: FSMContext, sessions, s
         mental = is_mental_subject(subject)
         questions = await participant_questions(session, p, mental)
         if not attempt or attempt.submitted_at: return
+        if cfg.test_stopped or not cfg.start_at:
+            await message.answer("⛔ Test hozir yopilgan. Admin vaqt qo‘ygandan keyin qayta boshlanadi.", reply_markup=cabinet())
+            await state.clear()
+            return
         deadline = attempt_deadline(attempt, cfg, mental)
         if datetime.now(timezone.utc) >= deadline or attempt.current_index >= len(questions):
             auto_graded = await complete_attempt(session, attempt, questions)
             max_score = float(sum(question.max_score for question in questions))
             await session.commit(); await state.clear()
             if auto_graded:
-                await message.answer("✅ Test yakunlandi va javoblaringiz avtomatik tekshirildi. Natija admin e’lon qilgandan keyin ko‘rinadi.", reply_markup=cabinet())
+                answers = (await session.execute(select(Answer).where(Answer.attempt_id == attempt.id))).scalars().all()
+                maximum, total_score, correct, percent = score_summary(attempt, questions, answers)
+                await message.answer(
+                    f"✅ Test yakunlandi.\n"
+                    f"✅ To‘g‘ri: {correct}/{len(questions)}\n"
+                    f"🏆 Ball: {total_score:g}/{maximum:g}\n"
+                    f"📈 Siz {percent:.1f}% topdingiz.",
+                    reply_markup=cabinet(),
+                )
             else:
                 await message.answer("✅ Javoblaringiz adminga yuborildi. Natija tekshirilgach e’lon qilinadi.", reply_markup=cabinet())
             for admin_id in settings.admin_ids:
@@ -373,7 +396,7 @@ async def begin_exam(message: Message, state: FSMContext, sessions, settings):
         p = await get_participant(session, message.from_user.id); cfg = await session.get(OlympiadConfig, 1)
         if not p: await message.answer("Avval ro‘yxatdan o‘ting."); return
         if p.blocked: await message.answer("Siz bloklangansiz."); return
-        if not cfg.start_at: await message.answer("Admin hali olimpiada vaqtini belgilamagan."); return
+        if cfg.test_stopped or not cfg.start_at: await message.answer("Admin hali olimpiada vaqtini belgilamagan yoki testni yopgan."); return
         now = local_now(settings.timezone); start_at = as_aware(cfg.start_at, settings.timezone)
         if now < start_at: await message.answer(f"Olimpiada {fmt_dt(cfg.start_at, settings.timezone)} da boshlanadi."); return
         if now >= start_at + timedelta(minutes=cfg.duration_minutes):
@@ -404,6 +427,10 @@ async def save_answer(message: Message, state: FSMContext, sessions, settings, t
         questions = await participant_questions(session, p, mental)
         if not attempt or attempt.submitted_at or attempt.current_index >= len(questions): return
         cfg = await session.get(OlympiadConfig, 1)
+        if cfg.test_stopped or not cfg.start_at:
+            await message.answer("⛔ Test hozir yopilgan. Admin vaqt qo‘ygandan keyin boshlanadi.", reply_markup=cabinet())
+            await state.clear()
+            return
         if datetime.now(timezone.utc) >= attempt_deadline(attempt, cfg, mental):
             await session.rollback()
             expired = True
@@ -464,7 +491,7 @@ async def result(message: Message, sessions):
         questions = (await session.execute(select(Question).where(Question.subject_id == p.subject_id, Question.level_id == p.level_id, Question.active.is_(True)))).scalars().all() if p else []
         answers = (await session.execute(select(Answer).where(Answer.attempt_id == attempt.id))).scalars().all() if attempt else []
     if not attempt or not attempt.submitted_at: await message.answer("Sizda yakunlangan natija yo‘q."); return
-    if not cfg.results_published or attempt.status != "reviewed": await message.answer("Javoblaringiz tekshirilmoqda. Natija hali e’lon qilinmagan."); return
+    if attempt.status != "reviewed": await message.answer("Javoblaringiz tekshirilmoqda. Natija hali e’lon qilinmagan."); return
     max_score = float(sum(question.max_score for question in questions))
     total_score = float(attempt.total_score or 0)
     percent = total_score / max_score * 100 if max_score else 0

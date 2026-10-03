@@ -22,6 +22,7 @@ def admin_menu():
     return ReplyKeyboardMarkup(keyboard=[
         [KeyboardButton(text="➕ Fan"), KeyboardButton(text="➕ Daraja")],
         [KeyboardButton(text="❓ Savol qo‘shish"), KeyboardButton(text="🗓 Vaqt belgilash")],
+        [KeyboardButton(text="🧹 Vaqtni bekor qilish"), KeyboardButton(text="⛔ Testni to‘xtatish")],
         [KeyboardButton(text="👥 Qatnashchilar"), KeyboardButton(text="📥 Excel yuklash")],
         [KeyboardButton(text="📝 Javoblarni tekshirish")],
         [KeyboardButton(text="🔓 Ro‘yxatni yoqish/o‘chirish"), KeyboardButton(text="📣 Natijani e’lon qilish")],

@@ -21,7 +21,7 @@ async def reminder_loop(bot, sessions, settings, dispatcher):
         try:
             async with sessions() as session:
                 cfg = await session.get(OlympiadConfig, 1)
-                if cfg.start_at:
+                if cfg.start_at and not cfg.test_stopped:
                     start = utc_value(cfg.start_at)
                     now = datetime.now(timezone.utc)
                     seconds = (start - now).total_seconds()

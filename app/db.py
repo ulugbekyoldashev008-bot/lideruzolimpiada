@@ -71,6 +71,7 @@ class OlympiadConfig(Base):
     duration_minutes: Mapped[int] = mapped_column(Integer, default=60)
     results_published: Mapped[bool] = mapped_column(Boolean, default=False)
     show_ranking: Mapped[bool] = mapped_column(Boolean, default=True)
+    test_stopped: Mapped[bool] = mapped_column(Boolean, default=False)
 
 
 class Question(Base):
@@ -234,8 +235,11 @@ async def init_db(engine, sessions):
 def ensure_schema(sync_conn):
     """Add new auto-grading columns without deleting existing Railway/SQLite data."""
     schema = inspect(sync_conn)
+    config_columns = {column["name"] for column in schema.get_columns("olympiad_config")}
     question_columns = {column["name"] for column in schema.get_columns("questions")}
     answer_columns = {column["name"] for column in schema.get_columns("answers")}
+    if "test_stopped" not in config_columns:
+        sync_conn.execute(text("ALTER TABLE olympiad_config ADD COLUMN test_stopped BOOLEAN DEFAULT FALSE"))
     if "correct_option" not in question_columns:
         sync_conn.execute(text("ALTER TABLE questions ADD COLUMN correct_option INTEGER"))
     if "seed_key" not in question_columns:

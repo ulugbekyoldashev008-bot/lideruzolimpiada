@@ -1,14 +1,29 @@
 from pathlib import Path
 from tempfile import NamedTemporaryFile
+from datetime import timezone
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font, PatternFill
 from sqlalchemy import select
 from .db import Answer, Attempt, Level, Participant, Question, Subject
 
 
+def utc_value(value):
+    if value is None:
+        return None
+    return value.replace(tzinfo=timezone.utc) if value.tzinfo is None else value.astimezone(timezone.utc)
+
+
+def elapsed_minutes(attempt):
+    if not attempt or not attempt.started_at or not attempt.submitted_at:
+        return None
+    started = utc_value(attempt.started_at)
+    submitted = utc_value(attempt.submitted_at)
+    return round(max(0, (submitted - started).total_seconds()) / 60, 1)
+
+
 async def create_excel(session) -> Path:
     wb = Workbook(); ws = wb.active; ws.title = "Qatnashchilar"
-    headers = ["№", "Qatnashchi ID", "F.I.O", "Telefon", "Viloyat", "Tuman", "Tug‘ilgan sana", "Yosh", "Fan", "Daraja", "Login", "Holati", "To‘g‘ri", "Noto‘g‘ri/javobsiz", "Ball", "Maksimal ball", "Foiz", "Admin izohi"]
+    headers = ["№", "Ism familya", "Fan", "Darajasi", "Sinfi", "To‘g‘ri topgani", "Foizi", "Nechta daqiqada bo‘lgani", "Telefon", "Viloyat", "Tuman", "Qatnashchi ID", "Login", "Holati", "Ball", "Maksimal ball", "Admin izohi"]
     ws.append(headers)
     all_questions = (await session.execute(select(Question).where(Question.active.is_(True)))).scalars().all()
     questions_by_level = {}
@@ -28,7 +43,25 @@ async def create_excel(session) -> Path:
         incorrect = len(questions) - correct if correct is not None else None
         maximum = float(sum(question.max_score for question in questions)) if questions else None
         percent = (float(a.total_score or 0) / maximum * 100) if a and maximum else None
-        ws.append([i, p.participant_code, p.full_name, p.phone, p.region, p.district, p.birth_date.strftime("%d.%m.%Y"), p.age, s.name, l.name, p.login, a.status if a else "ishlamagan", correct, incorrect, a.total_score if a else None, maximum, percent, a.admin_comment if a else None])
+        ws.append([
+            i,
+            p.full_name,
+            s.name,
+            l.name,
+            l.name,
+            correct,
+            percent,
+            elapsed_minutes(a),
+            p.phone,
+            p.region,
+            p.district,
+            p.participant_code,
+            p.login,
+            a.status if a else "ishlamagan",
+            a.total_score if a else None,
+            maximum,
+            a.admin_comment if a else None,
+        ])
     ws2 = wb.create_sheet("Javoblar"); ws2.append(["Qatnashchi ID", "F.I.O", "Savol", "Javob", "Rasm file_id", "Ball", "Izoh"])
     for a, q, attempt, p in all_answer_rows: ws2.append([p.participant_code, p.full_name, q.text, a.text_answer, a.file_id, a.score, a.admin_comment])
     for sheet in (ws, ws2):

@@ -8,7 +8,7 @@ from aiogram import F, Router
 from aiogram.enums import ParseMode
 from aiogram.fsm.context import FSMContext
 from aiogram.types import CallbackQuery, FSInputFile, Message
-from sqlalchemy import func, select
+from sqlalchemy import delete, func, select
 
 from .db import AdminLog, Answer, Attempt, Level, OlympiadConfig, Participant, Question, Subject
 from .exporter import create_excel
@@ -33,6 +33,50 @@ async def deny(message_or_call, settings):
 
 async def log(session, admin_id, action):
     session.add(AdminLog(admin_id=admin_id, action=action))
+
+
+def utc_value(value):
+    if value is None:
+        return None
+    return value.replace(tzinfo=timezone.utc) if value.tzinfo is None else value.astimezone(timezone.utc)
+
+
+def attempt_minutes(attempt):
+    if not attempt or not attempt.started_at or not attempt.submitted_at:
+        return 0
+    started = utc_value(attempt.started_at)
+    submitted = utc_value(attempt.submitted_at)
+    return max(0, int((submitted - started).total_seconds() // 60))
+
+
+async def reset_exam_progress(session):
+    await session.execute(delete(Answer))
+    await session.execute(delete(Attempt))
+
+
+async def clear_reminders(session):
+    from .db import Reminder
+    await session.execute(delete(Reminder))
+
+
+async def auto_finish_attempt(session, attempt):
+    participant = await session.get(Participant, attempt.participant_id)
+    questions = (await session.execute(
+        select(Question).where(
+            Question.subject_id == participant.subject_id,
+            Question.level_id == participant.level_id,
+            Question.active.is_(True),
+        )
+    )).scalars().all()
+    answers = (await session.execute(select(Answer).where(Answer.attempt_id == attempt.id))).scalars().all()
+    attempt.submitted_at = datetime.now(timezone.utc)
+    attempt.total_score = float(sum(answer.score or 0 for answer in answers))
+    attempt.admin_comment = "Admin testni to‘xtatdi."
+    attempt.status = "reviewed"
+    maximum = float(sum(question.max_score for question in questions))
+    correct = sum(1 for answer in answers if answer.score is not None and answer.score > 0)
+    percent = (attempt.total_score or 0) / maximum * 100 if maximum else 0
+    return participant, correct, len(questions), maximum, percent
 
 
 @router.message(F.text == "🔐 Admin")
@@ -208,9 +252,58 @@ async def schedule_duration(message: Message, state: FSMContext, sessions, setti
     except (ValueError, TypeError, AssertionError): await message.answer("5 dan 1440 gacha daqiqa yozing."); return
     data = await state.get_data()
     async with sessions() as session:
-        cfg = await session.get(OlympiadConfig, 1); cfg.start_at = datetime.fromisoformat(data["start_at"]); cfg.duration_minutes = minutes
-        await log(session, message.from_user.id, f"Olimpiada vaqti: {data['start_at']}, {minutes} daqiqa"); await session.commit()
+        cfg = await session.get(OlympiadConfig, 1)
+        await reset_exam_progress(session)
+        await clear_reminders(session)
+        cfg.start_at = datetime.fromisoformat(data["start_at"])
+        cfg.duration_minutes = minutes
+        cfg.test_stopped = False
+        cfg.results_published = False
+        await log(session, message.from_user.id, f"Olimpiada vaqti: {data['start_at']}, {minutes} daqiqa")
+        await session.commit()
     await state.clear(); await message.answer(f"✅ Vaqt belgilandi: {fmt_dt(cfg.start_at, settings.timezone)}, {minutes} daqiqa.", reply_markup=admin_menu())
+
+
+@router.message(F.text == "🧹 Vaqtni bekor qilish")
+async def clear_schedule(message: Message, sessions, settings):
+    if await deny(message, settings): return
+    async with sessions() as session:
+        cfg = await session.get(OlympiadConfig, 1)
+        await reset_exam_progress(session)
+        await clear_reminders(session)
+        cfg.start_at = None
+        cfg.test_stopped = True
+        cfg.results_published = False
+        await log(session, message.from_user.id, "Olimpiada vaqti bekor qilindi va urinishlar tozalandi")
+        await session.commit()
+    await message.answer("✅ Vaqt bekor qilindi. Endi vaqt qayta belgilanmaguncha hech kim test yecha olmaydi.", reply_markup=admin_menu())
+
+
+@router.message(F.text == "⛔ Testni to‘xtatish")
+async def stop_exam(message: Message, sessions, settings):
+    if await deny(message, settings): return
+    async with sessions() as session:
+        cfg = await session.get(OlympiadConfig, 1)
+        cfg.test_stopped = True
+        working = (await session.execute(
+            select(Attempt).where(Attempt.status == "working", Attempt.submitted_at.is_(None))
+        )).scalars().all()
+        results = []
+        for attempt in working:
+            results.append(await auto_finish_attempt(session, attempt))
+        await log(session, message.from_user.id, f"Test to‘xtatildi. Yakunlangan urinishlar: {len(results)}")
+        await session.commit()
+    for participant, correct, total_questions, maximum, percent in results:
+        try:
+            await message.bot.send_message(
+                participant.telegram_id,
+                f"⛔ Test admin tomonidan to‘xtatildi.\n"
+                f"✅ To‘g‘ri: {correct}/{total_questions}\n"
+                f"📈 Siz {percent:.1f}% topdingiz.",
+            )
+        except Exception:
+            pass
+    await message.answer(f"⛔ Test to‘xtatildi. {len(results)} ta ishlayotgan o‘quvchi yakunlandi.", reply_markup=admin_menu())
 
 
 @router.message(F.text == "🔓 Ro‘yxatni yoqish/o‘chirish")
