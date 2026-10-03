@@ -126,7 +126,7 @@ Majburiy Telegram obunasini tekshirish ishlashi uchun botni ko‘rsatilgan Teleg
 
 ## Bir telefondan bir nechta qatnashchi
 
-Foydalanuvchi birinchi ro‘yxatdan o‘tgandan keyin **Yangi qatnashchi qo‘shish** tugmasi orqali boshqa odamni ham ro‘yxatdan o‘tkazishi mumkin. **Qatnashchilarim** bo‘limida qaysi qatnashchi faol ekanini tanlaydi. Test, natija va profil ma’lumotlari aynan tanlangan qatnashchi nomidan ishlaydi.
+Foydalanuvchi birinchi ro‘yxatdan o‘tgandan keyin `/start` bosganda **Mening profilim**, **Yangi qatnashchi qo‘shish** va **Admin** tugmalari chiqadi. **Yangi qatnashchi qo‘shish** faqat bosh menyuda turadi; test panelida ko‘rinmaydi. **Qatnashchilarim** bo‘limida qaysi qatnashchi faol ekanini tanlaydi. Test, natija va profil ma’lumotlari aynan tanlangan qatnashchi nomidan ishlaydi.
 
 ## Muhim xavfsizlik
 

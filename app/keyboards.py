@@ -6,7 +6,7 @@ def home(is_registered=False):
     rows = [[KeyboardButton(text="🏆 Olimpiadaga qatnashish")], [KeyboardButton(text="🔐 Admin")]]
     if is_registered:
         rows = [
-            [KeyboardButton(text="👤 Mening kabinetim")],
+            [KeyboardButton(text="👤 Mening profilim")],
             [KeyboardButton(text="➕ Yangi qatnashchi qo‘shish")],
             [KeyboardButton(text="🔐 Admin")],
         ]
@@ -18,7 +18,7 @@ def cabinet():
         [KeyboardButton(text="🏆 Olimpiadani boshlash")],
         [KeyboardButton(text="📅 Boshlanish vaqti"), KeyboardButton(text="📊 Natijam")],
         [KeyboardButton(text="🏅 Reyting"), KeyboardButton(text="👤 Ma’lumotlarim")],
-        [KeyboardButton(text="👥 Qatnashchilarim"), KeyboardButton(text="➕ Yangi qatnashchi qo‘shish")],
+        [KeyboardButton(text="👥 Qatnashchilarim")],
         [KeyboardButton(text="🏠 Bosh menyu")],
     ], resize_keyboard=True)
 

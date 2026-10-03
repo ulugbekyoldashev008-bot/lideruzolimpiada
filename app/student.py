@@ -328,7 +328,7 @@ async def reg_confirm(call: CallbackQuery, state: FSMContext, sessions, settings
         except Exception: pass
 
 
-@router.message(F.text == "👤 Mening kabinetim")
+@router.message(F.text.in_({"👤 Mening kabinetim", "👤 Mening profilim"}))
 async def my_cabinet(message: Message, sessions):
     async with sessions() as session: p = await get_participant(session, message.from_user.id)
     if not p: await message.answer("Avval ro‘yxatdan o‘ting.", reply_markup=home()); return
