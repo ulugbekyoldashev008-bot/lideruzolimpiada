@@ -543,8 +543,6 @@ async def save_answer(message: Message, state: FSMContext, sessions, settings, t
         else:
             session.add(Answer(attempt_id=attempt.id, question_id=q.id, text_answer=text_answer, file_id=file_id, selected_option=selected_option, score=auto_score))
         attempt.current_index += 1; await session.commit()
-    if not mental:
-        await message.answer("✅ Javob saqlandi.")
     await send_current_question(message, state, sessions, settings)
 
 
@@ -554,7 +552,7 @@ async def choice_answer(call: CallbackQuery, state: FSMContext, sessions, settin
     option_index = int(idx)
     async with sessions() as session: q = await session.get(Question, int(qid))
     options = (q.options or "").split("|"); value = f"{chr(65+option_index)}) {options[option_index]}"
-    await call.answer("Javob saqlandi"); await call.message.edit_reply_markup(reply_markup=None)
+    await call.answer(); await call.message.edit_reply_markup(reply_markup=None)
     await save_answer(call.message, state, sessions, settings, text_answer=value, selected_option=option_index, expected_type="choice", expected_question_id=int(qid))
 
 
