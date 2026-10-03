@@ -475,10 +475,9 @@ async def send_current_question(message: Message, state: FSMContext, sessions, s
     await message.answer(text, parse_mode=ParseMode.HTML, reply_markup=markup)
 
 
-@router.message(F.text == "🏆 Olimpiadani boshlash")
-async def begin_exam(message: Message, state: FSMContext, sessions, settings):
+async def start_exam_for_user(message: Message, state: FSMContext, sessions, settings, user_id: int):
     async with sessions() as session:
-        p = await get_participant(session, message.from_user.id); cfg = await session.get(OlympiadConfig, 1)
+        p = await get_participant(session, user_id); cfg = await session.get(OlympiadConfig, 1)
         if not p: await message.answer("Avval ro‘yxatdan o‘ting."); return
         if p.blocked: await message.answer("Siz bloklangansiz."); return
         if cfg.test_stopped or not cfg.start_at: await message.answer("Admin hali olimpiada vaqtini belgilamagan yoki testni yopgan."); return
@@ -493,7 +492,9 @@ async def begin_exam(message: Message, state: FSMContext, sessions, settings):
         if mental and questions_count < MENTAL_QUESTION_LIMIT:
             await message.answer(f"Mental arifmetika uchun hozir {questions_count} ta misol kiritilgan. Boshlash uchun {MENTAL_QUESTION_LIMIT} ta misol to‘liq bo‘lishi kerak."); return
         attempt = await session.scalar(select(Attempt).where(Attempt.participant_id == p.id))
-        if attempt and attempt.submitted_at: await message.answer("Siz olimpiadani yakunlagansiz. Qayta ishlash mumkin emas."); return
+        if attempt and attempt.submitted_at:
+            await message.answer("Bu qatnashchi testni yakunlagan. Qayta ishlash mumkin emas.")
+            return
         if not attempt:
             attempt = Attempt(participant_id=p.id, started_at=datetime.now(timezone.utc)); session.add(attempt); await session.commit()
     await state.set_state(Exam.answering)
@@ -502,6 +503,11 @@ async def begin_exam(message: Message, state: FSMContext, sessions, settings):
     else:
         await message.answer("Olimpiada boshlandi. Har bir javob darhol saqlanadi.")
     await send_current_question(message, state, sessions, settings)
+
+
+@router.message(F.text == "🏆 Olimpiadani boshlash")
+async def begin_exam(message: Message, state: FSMContext, sessions, settings):
+    await start_exam_for_user(message, state, sessions, settings, message.from_user.id)
 
 
 async def save_answer(message: Message, state: FSMContext, sessions, settings, text_answer=None, file_id=None, selected_option=None, expected_type=None, expected_question_id=None):
@@ -552,7 +558,11 @@ async def choice_answer(call: CallbackQuery, state: FSMContext, sessions, settin
     option_index = int(idx)
     async with sessions() as session: q = await session.get(Question, int(qid))
     options = (q.options or "").split("|"); value = f"{chr(65+option_index)}) {options[option_index]}"
-    await call.answer(); await call.message.edit_reply_markup(reply_markup=None)
+    await call.answer()
+    try:
+        await call.message.delete()
+    except Exception:
+        await call.message.edit_reply_markup(reply_markup=None)
     await save_answer(call.message, state, sessions, settings, text_answer=value, selected_option=option_index, expected_type="choice", expected_question_id=int(qid))
 
 
