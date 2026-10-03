@@ -11,14 +11,19 @@ class Base(AsyncAttrs, DeclarativeBase):
 
 
 DEFAULT_CATALOG = {
-    "Ingliz tili": ["Starter", "Beginner", "Elementary", "Pre-Intermediate", "Intermediate", "Upper-Intermediate", "Advanced", "IELTS"],
+    "Ingliz tili": ["Starter", "Beginner", "Elementary", "Pre-Intermediate", "Intermediate"],
     "Rus tili": ["A1", "A2", "B1"],
-    "Koreys tili": ["Boshlang‘ich", "O‘rta"],
+    "Koreys tili": ["O‘rta"],
     "Arab tili": ["A1", "A2", "B1"],
     "Matematika": ["4-sinf", "5-sinf", "6-sinf", "7-sinf", "8-sinf", "9-sinf", "10-sinf", "11-sinf"],
     "Mental arifmetika": ["1-xonali A", "2-xonali B", "2-xonali C"],
     "IT": ["HTML", "HTML CSS", "HTML CSS JS", "JavaScript", "Vue", "React", "Python"],
     "Kompyuter": ["Word", "Excel", "PowerPoint"],
+}
+
+HIDDEN_LEVELS = {
+    "Ingliz tili": {"upper-intermediate", "advanced", "ielts"},
+    "Koreys tili": {"boshlang‘ich"},
 }
 
 
@@ -174,6 +179,10 @@ async def init_db(engine, sessions):
                 if level_name.casefold() not in level_keys:
                     session.add(Level(subject_id=subject.id, name=level_name, active=True))
                     level_keys.add(level_name.casefold())
+            hidden_levels = HIDDEN_LEVELS.get(subject_name, set())
+            for existing_level in existing_levels:
+                if existing_level.name.casefold() in hidden_levels:
+                    existing_level.active = False
             if subject_name == "Matematika":
                 legacy_math_levels = {"boshlang‘ich", "b", "b+", "c+"}
                 for existing_level in existing_levels:

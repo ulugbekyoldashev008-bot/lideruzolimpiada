@@ -1,5 +1,6 @@
 from .seed_arabic import ARABIC_TESTS
 from .seed_it import IT_TESTS
+from .seed_korean import KOREAN_TESTS
 from .seed_math import MATH_TESTS
 from .seed_mental import MENTAL_TESTS
 from .seed_office import OFFICE_TESTS
@@ -196,5 +197,6 @@ SEEDED_TESTS = {
     "Kompyuter": OFFICE_TESTS,
     "Matematika": MATH_TESTS,
     "Arab tili": ARABIC_TESTS,
+    "Koreys tili": KOREAN_TESTS,
     "Mental arifmetika": MENTAL_TESTS,
 }
