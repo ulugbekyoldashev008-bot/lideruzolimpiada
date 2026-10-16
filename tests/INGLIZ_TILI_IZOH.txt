@@ -1,0 +1,12 @@
+INGLIZ TILI SAVOLLARI: IZOH
+
+Asl hujjatda (English_asl.docx) javoblar kaliti yo'q edi. 100 ta savolning to'g'ri javobi alohida yechib belgilandi.
+Har bir savolda to'g'ri javob harfi bir xil bo'lib qolmasligi uchun variantlar tartibi aralashtirildi.
+
+Bir nechta to'g'ri deb hisoblanishi mumkin bo'lgan variantlar almashtirildi (to'g'ri javob o'zgarmagan):
+Elementary, 3-savol: «had» varianti «would have» ga almashtirildi (u ham to‘g‘ri deb hisoblanishi mumkin edi)
+Elementary, 4-savol: «walked» varianti «walk» ga almashtirildi (u ham to‘g‘ri deb hisoblanishi mumkin edi)
+Pre-Intermediate, 16-savol: «went» varianti «go» ga almashtirildi (u ham to‘g‘ri deb hisoblanishi mumkin edi)
+Advanced, 9-savol: «made» varianti «would make» ga almashtirildi (u ham to‘g‘ri deb hisoblanishi mumkin edi)
+
+"Advanced" bo'limi savollari faylda bor, lekin ro'yxatdan o'tishda daraja sifatida ko'rsatilmaydi.

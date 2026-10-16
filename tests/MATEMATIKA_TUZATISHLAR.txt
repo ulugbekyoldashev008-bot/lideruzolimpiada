@@ -1,0 +1,31 @@
+MATEMATIKA SAVOLLARI: ASL HUJJATGA KIRITILGAN TUZATISHLAR
+
+Asl fayl: Matematika_1-11_sinf_asl.docx. Hamma savollar qayta hisoblab tekshirildi (225 ta).
+5, 6, 8, 9, 10, 11-sinf kalitlari to'g'ri chiqdi. Quyidagilar tuzatildi:
+
+2-sinf, 8-savol: variant almashtirildi (118 m → 138 m)
+2-sinf, 15-savol: variant almashtirildi (67 → 65)
+3-sinf, 6-savol: variant almashtirildi (1212 → 1236)
+3-sinf, 15-savol: variant almashtirildi (798 → 690)
+2-sinf, 18-savol: takroriy variant (4 soat 35 daqiqa → 4 soat 45 daqiqa)
+2-sinf, 18-savol: 4 soat 35 daqiqaga teng variant (3 soat 95 daqiqa → 3 soat 85 daqiqa)
+3-sinf, 18-savol: takroriy variant (4 soat 35 daqiqa → 4 soat 55 daqiqa)
+1-sinf, 2-savol: kalit tuzatildi (C → A (to‘g‘ri javob 18))
+1-sinf, 3-savol: kalit tuzatildi (B → A (to‘g‘ri javob 32))
+1-sinf, 4-savol: kalit tuzatildi (D → B (to‘g‘ri javob 44))
+1-sinf, 6-savol: kalit tuzatildi (C → B (to‘g‘ri javob 45))
+1-sinf, 7-savol: kalit tuzatildi (B → A (to‘g‘ri javob 40))
+1-sinf, 9-savol: kalit tuzatildi (D → A (to‘g‘ri javob 36))
+1-sinf, 10-savol: kalit tuzatildi (C → A (to‘g‘ri javob 29))
+1-sinf, 13-savol: kalit tuzatildi (C → B (to‘g‘ri javob 56))
+1-sinf, 14-savol: kalit tuzatildi (D → A (to‘g‘ri javob 19))
+1-sinf, 17-savol: kalit tuzatildi (C → A (to‘g‘ri javob 32))
+1-sinf, 18-savol: kalit tuzatildi (D → A (to‘g‘ri javob 24))
+1-sinf, 20-savol: kalit tuzatildi (B → A (to‘g‘ri javob 32))
+2-sinf, 12-savol: kalit tuzatildi (D → A (66))
+2-sinf, 19-savol: kalit tuzatildi (A → C (68))
+4-sinf, 12-savol: kalit tuzatildi (B → C (4 m 25 cm))
+7-sinf, 19-savol: kalit tuzatildi (B → A (2))
+
+1-sinf: to'g'ri javob 20 tadan 14 tasida 'A' bo'lgani uchun variantlar tartibi aralashtirildi.
+Savol matnida o'zbek, rus va ingliz tillari birga ko'rsatiladi (asl hujjatdagidek).

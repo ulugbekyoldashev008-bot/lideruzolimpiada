@@ -2,7 +2,7 @@
 
 ## Imkoniyatlar
 **O'quvchi**
-- Ro'yxatdan o'tish: ism-familya → tug'ilgan sana (yil.oy.kun) → viloyat → shahar/tuman → sinf → fan → daraja. Keyin shaxsiy kabinet ochiladi.
+- Ro'yxatdan o'tish: ism-familya → tug'ilgan sana (yil.oy.kun) → maktab raqami → sinf → fan → daraja. Keyin shaxsiy kabinet ochiladi.
 - Fanlar: Ingliz tili (Starter, Beginner, Elementary, Pre-Intermediate), Matematika (1–11-sinf).
 - Olimpiada vaqti kelganda bot xabar yuboradi; test tanlangan fan va daraja bo'yicha beriladi (30 ta tasodifiy savol).
 - Test admin belgilagan davomiylik tugagach avtomatik to'xtaydi; javob berilmagan savollar noto'g'ri hisoblanadi.
@@ -43,8 +43,8 @@ Test holati bazada saqlanadi, shuning uchun bot qayta ishga tushsa ham o'quvchin
 Admin panel → «🕒 Olimpiada vaqtini belgilash»: avval boshlanish vaqti (`YYYY-MM-DD HH:MM`, masalan `2026-10-20 17:00`), keyin davomiylik (daqiqada). Tugash vaqti = boshlanish + davomiylik. Shundan keyin test ishlash to'xtatiladi. Kech boshlagan o'quvchiga faqat qolgan vaqt beriladi.
 
 ## Savollar
-- `tests/questions.json` — ingliz tili (Starter = "Kids" bo'limi, Pre-Intermediate = "Intermediate" bo'limi).
-- `tests/matematika.json` — 1–11-sinf bo'limlari, hozircha bo'sh. Format `tests/TESTS_INFO.txt` da.
+- `tests/questions.json` — ingliz tili: Starter, Beginner, Elementary, Pre-Intermediate (+ Advanced, ko'rsatilmaydi). To'g'ri javoblar alohida yechilgan, izoh: `tests/INGLIZ_TILI_IZOH.txt`.
+- `tests/matematika.json` — 1–11-sinf savollari (asl hujjatdan olingan, kalitlar qayta hisoblab tekshirilgan; tuzatishlar `tests/MATEMATIKA_TUZATISHLAR.txt` da).
 Savollarni o'zgartirgach, ilovani qayta deploy qiling.
 
 ## Xavfsizlik

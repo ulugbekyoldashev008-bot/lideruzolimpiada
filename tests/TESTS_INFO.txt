@@ -1,11 +1,7 @@
-Darajalar va ajratilgan savollar soni:
-Kids: 92
-Beginner: 92
-Elementary: 92
-Intermediate: 92
-Advanced: 92
+Ingliz tili (tests/questions.json): Starter, Beginner, Elementary, Pre-Intermediate (har biri 20 ta savol) va Advanced (20 ta, hozircha ro'yxatdan o'tishda ko'rsatilmaydi).
+Asl fayl: English_asl.docx. Asl faylda javoblar kaliti yo'q edi, to'g'ri javoblar alohida yechib belgilangan.
+Eski savollar tests/arxiv/ papkasida saqlangan.
 
 Matematika savollari: tests/matematika.json fayliga 1-sinf ... 11-sinf bo'limlari bo'yicha qo'shiladi.
 Format (questions.json bilan bir xil): {"n": 1, "q": "2 + 3 = ?", "options": ["4","5","6","7"], "correct": "B"}
-Bo'sh bo'lim uchun o'quvchiga "savollar hali qo'shilmagan" xabari chiqadi.
-Ingliz tili darajalari: Starter = "Kids" savollari, Pre-Intermediate = "Intermediate" savollari (Beginner va Elementary o'z nomi bilan).
+Matematika: 1–11-sinf savollari qo'shilgan (tuzatishlar: MATEMATIKA_TUZATISHLAR.txt). Bo'sh bo'lim bo'lsa o'quvchiga "savollar hali qo'shilmagan" xabari chiqadi.

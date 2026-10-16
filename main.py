@@ -23,8 +23,8 @@ except Exception:
     TZ = timezone(timedelta(hours=5))
 
 SUBJECTS = ["Ingliz tili", "Matematika"]
-# Ingliz tili darajalari -> questions.json dagi bo‘limlar
-ENGLISH_LEVELS = {"Starter": "Kids", "Beginner": "Beginner", "Elementary": "Elementary", "Pre-Intermediate": "Intermediate"}
+# Ingliz tili darajalari (tests/questions.json dagi bo‘limlar). "Advanced" savollari faylda bor, lekin ro‘yxatdan o‘tishda ko‘rsatilmaydi.
+ENGLISH_LEVELS = {"Starter": "Starter", "Beginner": "Beginner", "Elementary": "Elementary", "Pre-Intermediate": "Pre-Intermediate"}
 MATH_LEVELS = [f"{n}-sinf" for n in range(1, 12)]
 GRADES = [f"{n}-sinf" for n in range(1, 12)]
 QUESTIONS_PER_TEST = 30
@@ -43,31 +43,14 @@ QBANK = {
 LEVELS = {subj: list(levels) for subj, levels in QBANK.items()}
 QINDEX = {s: {lvl: {q["n"]: q for q in qs} for lvl, qs in lv.items()} for s, lv in QBANK.items()}
 
-REG_FIELDS = ["name", "birth", "region", "city", "grade", "subject", "level"]
+REG_FIELDS = ["name", "birth", "school", "grade", "subject", "level"]
 REG_LABELS = {
     "name": "Ism va familyangizni to‘liq kiriting:",
     "birth": "Tug‘ilgan sanangizni yil.oy.kun ko‘rinishida kiriting.\nMasalan: 2012.05.23",
-    "region": "Qaysi viloyatda yashaysiz? Tugmalardan tanlang:",
-    "city": "Qaysi shahar yoki tumanda yashaysiz? Tugmalardan tanlang (ro‘yxatda bo‘lmasa, qo‘lda yozing):",
+    "school": "Nechinchi maktabda o‘qiysiz?\nMaktab raqamini kiriting (masalan: 25):",
     "grade": "Nechinchi sinfda o‘qiysiz?",
     "subject": "Qaysi fandan test topshirmoqchisiz?",
     "level": "Qaysi darajadansiz? Tanlang:",
-}
-REGIONS = {
-    "Toshkent shahri": ["Bektemir tumani", "Chilonzor tumani", "Yashnobod tumani", "Mirobod tumani", "Mirzo Ulug‘bek tumani", "Olmazor tumani", "Sergeli tumani", "Shayxontohur tumani", "Uchtepa tumani", "Yakkasaroy tumani", "Yunusobod tumani", "Yangihayot tumani"],
-    "Toshkent viloyati": ["Nurafshon shahri", "Angren shahri", "Bekobod shahri", "Chirchiq shahri", "Olmaliq shahri", "Ohangaron shahri", "Yangiyo‘l shahri", "Bo‘stonliq tumani", "Zangiota tumani", "Qibray tumani", "Parkent tumani", "Piskent tumani", "O‘rtachirchiq tumani", "Yuqorichirchiq tumani", "Quyichirchiq tumani", "Chinoz tumani", "Bo‘ka tumani", "Oqqo‘rg‘on tumani", "Bekobod tumani", "Ohangaron tumani", "Toshkent tumani"],
-    "Samarqand viloyati": ["Samarqand shahri", "Kattaqo‘rg‘on shahri", "Urgut tumani", "Pastdarg‘om tumani", "Ishtixon tumani", "Toyloq tumani", "Payariq tumani", "Jomboy tumani", "Oqdaryo tumani", "Narpay tumani", "Bulung‘ur tumani", "Nurobod tumani", "Paxtachi tumani", "Qo‘shrabot tumani"],
-    "Andijon viloyati": ["Andijon shahri", "Xonobod shahri", "Asaka tumani", "Shahrixon tumani", "Andijon tumani", "Baliqchi tumani", "Bo‘z tumani", "Buloqboshi tumani", "Izboskan tumani", "Jalaquduq tumani", "Marhamat tumani", "Oltinko‘l tumani", "Paxtaobod tumani", "Qo‘rg‘ontepa tumani", "Ulug‘nor tumani", "Xo‘jaobod tumani"],
-    "Farg‘ona viloyati": ["Farg‘ona shahri", "Marg‘ilon shahri", "Qo‘qon shahri", "Quvasoy shahri", "Rishton tumani", "Oltiariq tumani", "Beshariq tumani", "Bag‘dod tumani", "Buvayda tumani", "Dang‘ara tumani", "Furqat tumani", "O‘zbekiston tumani", "Quva tumani", "Toshloq tumani", "Uchko‘prik tumani", "Yozyovon tumani", "So‘x tumani"],
-    "Namangan viloyati": ["Namangan shahri", "Chust tumani", "Chortoq tumani", "Pop tumani", "To‘raqo‘rg‘on tumani", "Uychi tumani", "Yangiqo‘rg‘on tumani", "Kosonsoy tumani", "Mingbuloq tumani", "Norin tumani", "Uchqo‘rg‘on tumani"],
-    "Buxoro viloyati": ["Buxoro shahri", "Kogon shahri", "G‘ijduvon tumani", "Vobkent tumani", "Jondor tumani", "Qorako‘l tumani", "Qorovulbozor tumani", "Olot tumani", "Peshku tumani", "Romitan tumani", "Shofirkon tumani", "Kogon tumani"],
-    "Xorazm viloyati": ["Urganch shahri", "Xiva shahri", "Hazorasp tumani", "Bog‘ot tumani", "Gurlan tumani", "Qo‘shko‘pir tumani", "Shovot tumani", "Yangiariq tumani", "Yangibozor tumani", "Xonqa tumani", "Urganch tumani"],
-    "Qashqadaryo viloyati": ["Qarshi shahri", "Shahrisabz shahri", "Kitob tumani", "Chiroqchi tumani", "Koson tumani", "Kasbi tumani", "Muborak tumani", "Nishon tumani", "Yakkabog‘ tumani", "G‘uzor tumani", "Dehqonobod tumani", "Qamashi tumani", "Mirishkor tumani"],
-    "Surxondaryo viloyati": ["Termiz shahri", "Denov tumani", "Boysun tumani", "Jarqo‘rg‘on tumani", "Qumqo‘rg‘on tumani", "Sherobod tumani", "Sho‘rchi tumani", "Angor tumani", "Muzrabot tumani", "Oltinsoy tumani", "Sariosiyo tumani", "Uzun tumani"],
-    "Jizzax viloyati": ["Jizzax shahri", "Do‘stlik tumani", "Zomin tumani", "Paxtakor tumani", "G‘allaorol tumani", "Forish tumani", "Arnasoy tumani", "Baxmal tumani", "Mirzacho‘l tumani", "Yangiobod tumani", "Zafarobod tumani"],
-    "Sirdaryo viloyati": ["Guliston shahri", "Yangiyer shahri", "Shirin shahri", "Boyovut tumani", "Guliston tumani", "Mirzaobod tumani", "Oqoltin tumani", "Sardoba tumani", "Sayxunobod tumani", "Sirdaryo tumani", "Xovos tumani"],
-    "Navoiy viloyati": ["Navoiy shahri", "Zarafshon shahri", "Uchquduq tumani", "Karmana tumani", "Konimex tumani", "Qiziltepa tumani", "Navbahor tumani", "Nurota tumani", "Tomdi tumani", "Xatirchi tumani"],
-    "Qoraqalpog‘iston Respublikasi": ["Nukus shahri", "Mo‘ynoq tumani", "Beruniy tumani", "Chimboy tumani", "Ellikqal’a tumani", "Kegeyli tumani", "Qo‘ng‘irot tumani", "Qonliko‘l tumani", "Qorao‘zak tumani", "Shumanay tumani", "Taxtako‘pir tumani", "To‘rtko‘l tumani", "Xo‘jayli tumani", "Amudaryo tumani", "Taxiatosh shahri"]
 }
 REGISTRATION, ADMIN_LOGIN_STATE, ADMIN_PASSWORD_STATE = range(3)
 CANCEL = "❌ Bekor qilish"
@@ -93,7 +76,7 @@ def q_exec(sql, params=()):
 SCHEMA = [
     """CREATE TABLE IF NOT EXISTS users(
         telegram_id BIGINT PRIMARY KEY, username TEXT, full_name TEXT NOT NULL, birth_date TEXT, age INTEGER,
-        grade TEXT, region TEXT, city TEXT, subject TEXT, level TEXT, registered_at TEXT)""",
+        grade TEXT, school TEXT, subject TEXT, level TEXT, registered_at TEXT)""",
     # hozir ishlanayotgan testlar (qayta ishga tushganda ham yo‘qolmaydi)
     """CREATE TABLE IF NOT EXISTS exams(
         telegram_id BIGINT PRIMARY KEY, subject TEXT, level TEXT, question_ids TEXT,
@@ -114,6 +97,7 @@ def init_db():
     with db() as c:
         for stmt in SCHEMA:
             c.execute(stmt)
+        c.execute("ALTER TABLE users ADD COLUMN IF NOT EXISTS school TEXT")
         for k, v in {"registration_enabled": "1", "start_at": "", "duration_min": str(DEFAULT_DURATION_MIN), "notified_for": ""}.items():
             c.execute("INSERT INTO settings(key,value) VALUES(%s,%s) ON CONFLICT(key) DO NOTHING", (k, v))
 
@@ -193,11 +177,7 @@ def chunk(items, n=2):
 def reg_keyboard(key, reg=None):
     reg = reg or {}
     rows = []
-    if key == "region":
-        rows = chunk(list(REGIONS))
-    elif key == "city":
-        rows = chunk(REGIONS.get(reg.get("region"), []))
-    elif key == "grade":
+    if key == "grade":
         rows = chunk(GRADES, 3)
     elif key == "subject":
         rows = [[s_] for s_ in SUBJECTS]
@@ -235,7 +215,7 @@ def profile_text(u, title="👤 Shaxsiy kabinet"):
     else:
         status = f"⏳ Olimpiada: {schedule_line()}"
     return (f"{title}\n\nIsm-familya: {u['full_name']}\nTug‘ilgan sana: {birth} ({u['age']} yosh)\n"
-            f"Viloyat: {u['region']}\nShahar/tuman: {u['city']}\nSinf: {u['grade']}\n"
+            f"Maktab: {u['school'] + '-maktab' if u['school'] else '—'}\nSinf: {u['grade']}\n"
             f"Fan: {u['subject'] or '—'}\nDaraja: {u['level'] or '—'}\n\n{status}\n"
             "Test vaqti kelganda tanlagan fan va darajangiz bo‘yicha test beriladi.")
 
@@ -277,10 +257,11 @@ async def registration_step(update: Update, context: ContextTypes.DEFAULT_TYPE):
             text = d.strftime("%Y-%m-%d")
         else:
             error = "Sana noto‘g‘ri. Yil.oy.kun ko‘rinishida kiriting, masalan: 2012.05.23"
-    elif key == "region" and text not in REGIONS:
-        error = "Iltimos, viloyatni tugmalardan tanlang."
-    elif key == "city" and len(text) < 2:
-        error = "Shahar yoki tuman nomini tanlang yoki yozing."
+    elif key == "school":
+        if text.isdigit() and 1 <= int(text) <= 999:
+            text = str(int(text))
+        else:
+            error = "Maktab raqamini faqat raqam bilan kiriting, masalan: 25"
     elif key == "grade" and text not in GRADES:
         error = "Iltimos, sinfni tugmalardan tanlang."
     elif key == "subject" and text not in SUBJECTS:
@@ -297,13 +278,13 @@ async def registration_step(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(REG_LABELS[REG_FIELDS[i]], reply_markup=reg_keyboard(REG_FIELDS[i], reg))
         return REGISTRATION
     user = update.effective_user
-    q_exec("""INSERT INTO users(telegram_id,username,full_name,birth_date,age,grade,region,city,subject,level,registered_at)
-        VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) ON CONFLICT(telegram_id) DO UPDATE SET
+    q_exec("""INSERT INTO users(telegram_id,username,full_name,birth_date,age,grade,school,subject,level,registered_at)
+        VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) ON CONFLICT(telegram_id) DO UPDATE SET
         username=EXCLUDED.username, full_name=EXCLUDED.full_name, birth_date=EXCLUDED.birth_date, age=EXCLUDED.age,
-        grade=EXCLUDED.grade, region=EXCLUDED.region, city=EXCLUDED.city, subject=EXCLUDED.subject,
+        grade=EXCLUDED.grade, school=EXCLUDED.school, subject=EXCLUDED.subject,
         level=EXCLUDED.level, registered_at=EXCLUDED.registered_at""",
-        (user.id, user.username, reg["name"], reg["birth"], age_from(reg["birth"]), reg["grade"], reg["region"],
-         reg["city"], reg["subject"], reg["level"], stamp()))
+        (user.id, user.username, reg["name"], reg["birth"], age_from(reg["birth"]), reg["grade"],
+         reg["school"], reg["subject"], reg["level"], stamp()))
     context.user_data.pop("reg", None)
     context.user_data.pop("reg_index", None)
     await update.message.reply_text(profile_text(get_user(user.id), "✅ Ro‘yxatdan o‘tish yakunlandi!\n\n👤 Shaxsiy kabinetingiz ochildi"),
@@ -572,7 +553,7 @@ WAITING_SQL = """SELECT u.* FROM users u
 async def admin_waiting(update, context):
     if not is_admin(update.effective_user.id): return
     rows = q_all(WAITING_SQL)
-    lines = [f"{i}. {r['full_name']} — {r['subject']}/{r['level']} ({r['region']}, {r['city']})" for i, r in enumerate(rows, 1)]
+    lines = [f"{i}. {r['full_name']} — {r['subject']}/{r['level']} ({(r['school'] + '-maktab') if r['school'] else 'maktab kiritilmagan'})" for i, r in enumerate(rows, 1)]
     await send_lines(update, f"⏳ Hali test ishlamaganlar: {len(rows)} ta", lines)
 
 async def toggle_registration(update, context):
@@ -669,11 +650,11 @@ async def export_excel(update, context):
         place = place + 1 if grp == prev else 1
         prev = grp
         u = udict.get(r["telegram_id"]) or {}
-        rows.append([place, r["full_name"], u.get("birth_date"), u.get("grade"), u.get("region"), u.get("city"),
+        rows.append([place, r["full_name"], u.get("birth_date"), u.get("grade"), u.get("school"),
                      r["subject"], r["level"], r["correct"], r["total"] - r["correct"], r["answered"], r["total"], r["percent"],
                      fmt_dur(r["duration_sec"]), r["duration_sec"], r["started_at"], r["finished_at"], r["reason"],
                      u.get("username"), r["telegram_id"]])
-    write_sheet(ws, ["O‘rin (fan/daraja ichida)", "Ism-familya", "Tug‘ilgan sana", "Sinf", "Viloyat", "Shahar/tuman", "Fan", "Daraja",
+    write_sheet(ws, ["O‘rin (fan/daraja ichida)", "Ism-familya", "Tug‘ilgan sana", "Sinf", "Maktab", "Fan", "Daraja",
                      "To‘g‘ri", "Noto‘g‘ri", "Javob berilgan", "Jami savol", "Foiz (%)", "Sarflangan vaqt", "Sarflangan vaqt (soniya)",
                      "Boshlangan", "Tugagan", "Tugash sababi", "Username", "Telegram ID"], rows)
 
@@ -684,9 +665,9 @@ async def export_excel(update, context):
         uid = u["telegram_id"]
         r, e = rdict.get(uid), edict.get(uid)
         status = "Topshirgan" if r else ("Ishlayapti" if e else "Topshirmagan")
-        rows.append([u["full_name"], u["birth_date"], u["age"], u["grade"], u["region"], u["city"], u["subject"], u["level"], status,
+        rows.append([u["full_name"], u["birth_date"], u["age"], u["grade"], u["school"], u["subject"], u["level"], status,
                      r["percent"] if r else None, fmt_dur(r["duration_sec"]) if r else None, u["registered_at"], u["username"], uid])
-    write_sheet(ws2, ["Ism-familya", "Tug‘ilgan sana", "Yosh", "Sinf", "Viloyat", "Shahar/tuman", "Fan", "Daraja", "Holati",
+    write_sheet(ws2, ["Ism-familya", "Tug‘ilgan sana", "Yosh", "Sinf", "Maktab", "Fan", "Daraja", "Holati",
                       "Foiz (%)", "Sarflangan vaqt", "Ro‘yxatdan o‘tgan vaqt", "Username", "Telegram ID"], rows)
 
     # 3) Hozir ishlayotganlar
@@ -700,9 +681,9 @@ async def export_excel(update, context):
 
     # 4) Hali topshirmaganlar
     ws4 = wb.create_sheet("Topshirmaganlar")
-    rows = [[u["full_name"], u["birth_date"], u["grade"], u["region"], u["city"], u["subject"], u["level"], u["registered_at"], u["username"], u["telegram_id"]]
+    rows = [[u["full_name"], u["birth_date"], u["grade"], u["school"], u["subject"], u["level"], u["registered_at"], u["username"], u["telegram_id"]]
             for u in users if u["telegram_id"] not in rdict and u["telegram_id"] not in edict]
-    write_sheet(ws4, ["Ism-familya", "Tug‘ilgan sana", "Sinf", "Viloyat", "Shahar/tuman", "Fan", "Daraja", "Ro‘yxatdan o‘tgan vaqt", "Username", "Telegram ID"], rows)
+    write_sheet(ws4, ["Ism-familya", "Tug‘ilgan sana", "Sinf", "Maktab", "Fan", "Daraja", "Ro‘yxatdan o‘tgan vaqt", "Username", "Telegram ID"], rows)
 
     bio = io.BytesIO(); wb.save(bio); bio.seek(0)
     await update.message.reply_document(document=bio, filename=f"olimpiada_hisobot_{datetime.now(TZ).strftime('%Y%m%d_%H%M')}.xlsx",
