@@ -1,0 +1,5072 @@
+{
+  "Kids": [
+    {
+      "n": 1,
+      "q": "I ___ seven years old.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 2,
+      "q": "My brother ___ a red bike.",
+      "options": [
+        "have",
+        "has",
+        "having",
+        "is have"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 3,
+      "q": "Look! The baby ___ asleep.",
+      "options": [
+        "am",
+        "are",
+        "is",
+        "be"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 4,
+      "q": "___ you like apples?",
+      "options": [
+        "Do",
+        "Does",
+        "Are",
+        "Is"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 5,
+      "q": "She ___ not like milk.",
+      "options": [
+        "do",
+        "does",
+        "is",
+        "are"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 6,
+      "q": "We ___ football after school.",
+      "options": [
+        "play",
+        "plays",
+        "playing",
+        "is play"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 7,
+      "q": "Tom ___ his teeth every morning.",
+      "options": [
+        "brush",
+        "brushes",
+        "brushing",
+        "is brush"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 8,
+      "q": "They ___ from Uzbekistan.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 9,
+      "q": "This is ___ cat.",
+      "options": [
+        "I",
+        "me",
+        "my",
+        "mine"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 10,
+      "q": "Anna and I are friends. ___ are in Class 2.",
+      "options": [
+        "We",
+        "They",
+        "He",
+        "She"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 11,
+      "q": "That is Ben. ___ is my cousin.",
+      "options": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 12,
+      "q": "Where ___ your pencil?",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 13,
+      "q": "The books ___ on the desk.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 14,
+      "q": "I have two ___.",
+      "options": [
+        "foot",
+        "feet",
+        "foots",
+        "feets"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 15,
+      "q": "One ___ is sleeping in the tree.",
+      "options": [
+        "birds",
+        "bird",
+        "birdes",
+        "a birds"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 16,
+      "q": "There ___ a ball under the chair.",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "be"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 17,
+      "q": "There ___ three windows in our classroom.",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 18,
+      "q": "I can ___ very fast.",
+      "options": [
+        "runs",
+        "running",
+        "run",
+        "to run"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 19,
+      "q": "Can your sister ___?",
+      "options": [
+        "swims",
+        "swim",
+        "swimming",
+        "to swimming"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 20,
+      "q": "Birds can ___.",
+      "options": [
+        "fly",
+        "flies",
+        "flying",
+        "to flies"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 21,
+      "q": "The dog is ___ the box.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "from"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 22,
+      "q": "The picture is ___ the wall.",
+      "options": [
+        "in",
+        "on",
+        "under",
+        "from"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 23,
+      "q": "The shoes are ___ the bed.",
+      "options": [
+        "under",
+        "between",
+        "from",
+        "with"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 24,
+      "q": "My birthday is ___ May.",
+      "options": [
+        "on",
+        "at",
+        "in",
+        "by"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 25,
+      "q": "We have English ___ Monday.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "from"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 26,
+      "q": "I get up ___ seven o'clock.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "to"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 27,
+      "q": "This is ___ orange.",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "some"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 28,
+      "q": "He has ___ new bag.",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 29,
+      "q": "I can see ___ elephants at the zoo.",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 30,
+      "q": "___ is your favourite colour?",
+      "options": [
+        "What",
+        "Where",
+        "When",
+        "Who"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 31,
+      "q": "___ is your teacher?",
+      "options": [
+        "What",
+        "Where",
+        "Who",
+        "How"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 32,
+      "q": "___ do you go to bed? At nine o'clock.",
+      "options": [
+        "What",
+        "Where",
+        "When",
+        "Who"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 33,
+      "q": "The sun is ___.",
+      "options": [
+        "cold",
+        "hot",
+        "small",
+        "wet"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 34,
+      "q": "An elephant is ___ than a mouse.",
+      "options": [
+        "small",
+        "big",
+        "bigger",
+        "biggest"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 35,
+      "q": "My teddy bear is ___ and brown.",
+      "options": [
+        "soft",
+        "softly",
+        "softer",
+        "softest"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 36,
+      "q": "I ___ breakfast at home.",
+      "options": [
+        "have",
+        "has",
+        "am have",
+        "having"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 37,
+      "q": "Mum ___ dinner in the evening.",
+      "options": [
+        "cook",
+        "cooks",
+        "cooking",
+        "is cooks"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 38,
+      "q": "We ___ cartoons on Saturday.",
+      "options": [
+        "watch",
+        "watches",
+        "watching",
+        "is watch"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 39,
+      "q": "The children ___ happy today.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 40,
+      "q": "My father ___ at work now.",
+      "options": [
+        "am",
+        "are",
+        "is",
+        "be"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 41,
+      "q": "___ your name Ali?",
+      "options": [
+        "Am",
+        "Are",
+        "Is",
+        "Do"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 42,
+      "q": "___ these your gloves?",
+      "options": [
+        "Is",
+        "Are",
+        "Do",
+        "Does"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 43,
+      "q": "I ___ a blue pen, but I do not have a red pen.",
+      "options": [
+        "have",
+        "has",
+        "am",
+        "is"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 44,
+      "q": "Sara ___ got a little brother.",
+      "options": [
+        "have",
+        "has",
+        "is",
+        "are"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 45,
+      "q": "___ you got a pet?",
+      "options": [
+        "Have",
+        "Has",
+        "Are",
+        "Do"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 46,
+      "q": "We have not got ___ cheese.",
+      "options": [
+        "some",
+        "any",
+        "a",
+        "an"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 47,
+      "q": "Please ___ the door.",
+      "options": [
+        "open",
+        "opens",
+        "opening",
+        "to open"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 48,
+      "q": "___ your hands before lunch.",
+      "options": [
+        "Washes",
+        "Washing",
+        "Wash",
+        "To wash"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 49,
+      "q": "Do not ___ in the classroom.",
+      "options": [
+        "run",
+        "runs",
+        "running",
+        "to running"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 50,
+      "q": "The children are ___ in the park now.",
+      "options": [
+        "play",
+        "plays",
+        "playing",
+        "to play"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 51,
+      "q": "Dad is ___ a book.",
+      "options": [
+        "read",
+        "reads",
+        "reading",
+        "to reads"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 52,
+      "q": "I am ___ my homework now.",
+      "options": [
+        "do",
+        "does",
+        "doing",
+        "to do"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 53,
+      "q": "What ___ you doing?",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "do"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 54,
+      "q": "___ he wearing a hat?",
+      "options": [
+        "Am",
+        "Are",
+        "Is",
+        "Do"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 55,
+      "q": "The apples are ___ the bowl.",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "from"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 56,
+      "q": "The boy is sitting ___ his friend.",
+      "options": [
+        "next to",
+        "in",
+        "from",
+        "under"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 57,
+      "q": "My school is ___ my house and the park.",
+      "options": [
+        "under",
+        "between",
+        "from",
+        "into"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 58,
+      "q": "I have ___ water in my bottle.",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 59,
+      "q": "Would you like ___ juice?",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 60,
+      "q": "How ___ pencils are there?",
+      "options": [
+        "much",
+        "many",
+        "old",
+        "often"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 61,
+      "q": "How ___ milk do you drink?",
+      "options": [
+        "many",
+        "much",
+        "long",
+        "old"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 62,
+      "q": "A monkey has two ___.",
+      "options": [
+        "hand",
+        "hands",
+        "handes",
+        "a hands"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 63,
+      "q": "The children ___ their grandparents every Friday.",
+      "options": [
+        "visit",
+        "visits",
+        "visiting",
+        "is visit"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 64,
+      "q": "My baby sister ___ every afternoon.",
+      "options": [
+        "sleep",
+        "sleeps",
+        "sleeping",
+        "are sleep"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 65,
+      "q": "We ___ not eat sweets before dinner.",
+      "options": [
+        "do",
+        "does",
+        "are",
+        "is"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 66,
+      "q": "___ he go to school by bus?",
+      "options": [
+        "Do",
+        "Does",
+        "Is",
+        "Are"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 67,
+      "q": "What colour ___ your eyes?",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "do"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 68,
+      "q": "My shoes are ___ than yours.",
+      "options": [
+        "big",
+        "bigger",
+        "biggest",
+        "more big"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 69,
+      "q": "This is the ___ animal in the zoo.",
+      "options": [
+        "tall",
+        "taller",
+        "tallest",
+        "more tall"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 70,
+      "q": "January comes ___ February.",
+      "options": [
+        "before",
+        "under",
+        "inside",
+        "between"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 71,
+      "q": "We eat lunch ___ noon.",
+      "options": [
+        "on",
+        "at",
+        "in",
+        "from"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 72,
+      "q": "It is rainy. Take ___ umbrella.",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 73,
+      "q": "___ your coat on the hook, please.",
+      "options": [
+        "Put",
+        "Puts",
+        "Putting",
+        "To put"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 74,
+      "q": "The baby is tired, so she ___ crying.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 75,
+      "q": "I like cats, but I ___ like spiders.",
+      "options": [
+        "do not",
+        "does not",
+        "am not",
+        "is not"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 76,
+      "q": "___ they have lunch at school?",
+      "options": [
+        "Do",
+        "Does",
+        "Are",
+        "Is"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 77,
+      "q": "Our classroom ___ twenty desks.",
+      "options": [
+        "have",
+        "has",
+        "is have",
+        "having"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 78,
+      "q": "The teacher is ___ the board.",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "from"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 79,
+      "q": "My friends ___ in the playground now.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 80,
+      "q": "What ___ your mother do? She is a teacher.",
+      "options": [
+        "do",
+        "does",
+        "is",
+        "are"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 81,
+      "q": "What pet does Mina have?",
+      "options": [
+        "A rabbit",
+        "A cat",
+        "A bird",
+        "A fish"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 82,
+      "q": "What colour are Snowy's ears?",
+      "options": [
+        "Black",
+        "Brown",
+        "Grey",
+        "White"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 83,
+      "q": "When does Mina feed Snowy?",
+      "options": [
+        "Every morning",
+        "At night",
+        "On Fridays",
+        "After school"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 86,
+      "q": "Why cannot Omar play football?",
+      "options": [
+        "He is ill",
+        "It is raining",
+        "He has no ball",
+        "The park is closed"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 87,
+      "q": "What does Omar make?",
+      "options": [
+        "A kite",
+        "A tower",
+        "A cake",
+        "A boat"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 88,
+      "q": "Who helps Omar later?",
+      "options": [
+        "His teacher",
+        "His brother",
+        "His sister",
+        "His friend"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 91,
+      "q": "Where is the garden?",
+      "options": [
+        "Behind the school",
+        "Near the shop",
+        "In the classroom",
+        "Next to a river"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 92,
+      "q": "What do the children plant?",
+      "options": [
+        "Trees",
+        "Yellow flowers",
+        "Potatoes",
+        "Grass"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 93,
+      "q": "What day do they plant the flowers?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 96,
+      "q": "Whose birthday is it?",
+      "options": [
+        "Leo's",
+        "His grandmother's",
+        "His sister's",
+        "His mother's"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 97,
+      "q": "What kind of cake does the family make?",
+      "options": [
+        "Apple",
+        "Chocolate",
+        "Cheese",
+        "Lemon"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 98,
+      "q": "How many candles are on the cake?",
+      "options": [
+        "Four",
+        "Five",
+        "Six",
+        "Seven"
+      ],
+      "correct": "C"
+    }
+  ],
+  "Beginner": [
+    {
+      "n": 1,
+      "q": "My parents ___ to work by bus every day.",
+      "options": [
+        "go",
+        "goes",
+        "are going",
+        "went"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 2,
+      "q": "Look! The children ___ in the pool.",
+      "options": [
+        "swim",
+        "swims",
+        "are swimming",
+        "swam"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 3,
+      "q": "She usually ___ coffee in the morning.",
+      "options": [
+        "drink",
+        "drinks",
+        "is drinking",
+        "drank"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 4,
+      "q": "We ___ dinner at a restaurant last night.",
+      "options": [
+        "have",
+        "had",
+        "are having",
+        "has"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 5,
+      "q": "I ___ my keys on the table yesterday.",
+      "options": [
+        "leave",
+        "left",
+        "am leaving",
+        "leaves"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 6,
+      "q": "They ___ at home last Sunday.",
+      "options": [
+        "were",
+        "was",
+        "are",
+        "be"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 7,
+      "q": "There ___ any milk in the fridge.",
+      "options": [
+        "isn't",
+        "aren't",
+        "don't",
+        "doesn't"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 8,
+      "q": "How ___ chairs are in the room?",
+      "options": [
+        "much",
+        "many",
+        "any",
+        "some"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 9,
+      "q": "I need ___ water after the game.",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "many"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 10,
+      "q": "Would you like ___ apple?",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "any"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 11,
+      "q": "We do not have ___ eggs.",
+      "options": [
+        "some",
+        "any",
+        "much",
+        "a"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 12,
+      "q": "My sister is ___ than I am.",
+      "options": [
+        "tall",
+        "taller",
+        "tallest",
+        "more tall"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 13,
+      "q": "This is the ___ film I have seen this year.",
+      "options": [
+        "funny",
+        "funnier",
+        "funniest",
+        "more funny"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 14,
+      "q": "The blue bag is ___ than the black one.",
+      "options": [
+        "expensive",
+        "more expensive",
+        "most expensive",
+        "expensiver"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 15,
+      "q": "I can ___ you with your homework.",
+      "options": [
+        "help",
+        "to help",
+        "helping",
+        "helps"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 16,
+      "q": "You ___ wear a seat belt in a car.",
+      "options": [
+        "should",
+        "should to",
+        "are",
+        "do"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 17,
+      "q": "___ I use your phone, please?",
+      "options": [
+        "Can",
+        "Do",
+        "Am",
+        "Have"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 18,
+      "q": "He ___ play the guitar when he was five.",
+      "options": [
+        "can",
+        "could",
+        "can to",
+        "could to"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 19,
+      "q": "I ___ visit my aunt tomorrow.",
+      "options": [
+        "am going to",
+        "go",
+        "went",
+        "going"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 20,
+      "q": "The lesson ___ at nine tomorrow.",
+      "options": [
+        "starts",
+        "start",
+        "is start",
+        "started"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 21,
+      "q": "What ___ you do last weekend?",
+      "options": [
+        "do",
+        "did",
+        "were",
+        "are"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 22,
+      "q": "Where ___ she live?",
+      "options": [
+        "do",
+        "does",
+        "is",
+        "has"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 23,
+      "q": "They ___ not watching television now.",
+      "options": [
+        "is",
+        "are",
+        "do",
+        "does"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 24,
+      "q": "My father ___ cooking at the moment.",
+      "options": [
+        "is",
+        "are",
+        "does",
+        "has"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 25,
+      "q": "We ___ breakfast before school every day.",
+      "options": [
+        "have",
+        "are having",
+        "had",
+        "has"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 26,
+      "q": "I ___ my room every Saturday.",
+      "options": [
+        "clean",
+        "am cleaning",
+        "cleaned",
+        "cleans"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 27,
+      "q": "Sara ___ her grandmother last week.",
+      "options": [
+        "visits",
+        "visited",
+        "is visiting",
+        "visit"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 28,
+      "q": "The train ___ ten minutes ago.",
+      "options": [
+        "leave",
+        "left",
+        "leaves",
+        "is leaving"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 29,
+      "q": "We went ___ the museum on Friday.",
+      "options": [
+        "at",
+        "to",
+        "in",
+        "on"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 30,
+      "q": "The cat is hiding ___ the sofa.",
+      "options": [
+        "between",
+        "under",
+        "through",
+        "from"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 31,
+      "q": "My birthday is ___ 14 October.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "by"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 32,
+      "q": "The shop closes ___ 6 p.m.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "from"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 33,
+      "q": "I usually read ___ the evening.",
+      "options": [
+        "on",
+        "at",
+        "in",
+        "by"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 34,
+      "q": "There ___ two bedrooms in our flat.",
+      "options": [
+        "is",
+        "are",
+        "was",
+        "be"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 35,
+      "q": "There was not ___ bread at the bakery.",
+      "options": [
+        "many",
+        "much",
+        "a few",
+        "an"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 36,
+      "q": "She has got ___ brothers.",
+      "options": [
+        "any",
+        "some",
+        "much",
+        "a"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 37,
+      "q": "___ your brother got a bicycle?",
+      "options": [
+        "Have",
+        "Has",
+        "Does",
+        "Is"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 38,
+      "q": "I have never ___ sushi.",
+      "options": [
+        "eat",
+        "eaten",
+        "ate",
+        "eating"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 39,
+      "q": "We ___ just finished our project.",
+      "options": [
+        "has",
+        "have",
+        "are",
+        "do"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 40,
+      "q": "Have you ___ your homework yet?",
+      "options": [
+        "finish",
+        "finished",
+        "finishing",
+        "finishes"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 41,
+      "q": "My mother ___ already made dinner.",
+      "options": [
+        "have",
+        "has",
+        "is",
+        "does"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 42,
+      "q": "I have lived here ___ 2022.",
+      "options": [
+        "for",
+        "since",
+        "from",
+        "during"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 43,
+      "q": "They have known each other ___ three years.",
+      "options": [
+        "since",
+        "for",
+        "from",
+        "at"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 44,
+      "q": "I am interested ___ science.",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "for"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 45,
+      "q": "Please listen ___ the teacher.",
+      "options": [
+        "at",
+        "to",
+        "for",
+        "on"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 46,
+      "q": "He is good ___ maths.",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "for"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 47,
+      "q": "We arrived ___ the station early.",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "to"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 48,
+      "q": "I do not like tea. ___ do I.",
+      "options": [
+        "So",
+        "Neither",
+        "Either",
+        "Too"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 49,
+      "q": "My friends ___ tennis on Tuesdays.",
+      "options": [
+        "play",
+        "plays",
+        "are play",
+        "played"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 50,
+      "q": "She ___ her teeth twice a day.",
+      "options": [
+        "brush",
+        "brushes",
+        "brushed",
+        "is brush"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 51,
+      "q": "___ there a bank near here?",
+      "options": [
+        "Are",
+        "Is",
+        "Do",
+        "Does"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 52,
+      "q": "How often ___ you go swimming?",
+      "options": [
+        "are",
+        "do",
+        "does",
+        "did"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 53,
+      "q": "He ___ usually late for school.",
+      "options": [
+        "is",
+        "are",
+        "does",
+        "has"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 54,
+      "q": "My cousins ___ lunch now.",
+      "options": [
+        "have",
+        "are having",
+        "had",
+        "has"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 55,
+      "q": "Yesterday, it ___ all afternoon.",
+      "options": [
+        "rain",
+        "rained",
+        "is raining",
+        "rains"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 56,
+      "q": "I ___ a funny book last month.",
+      "options": [
+        "buy",
+        "bought",
+        "am buying",
+        "buys"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 57,
+      "q": "She ___ a blue dress to the party.",
+      "options": [
+        "wear",
+        "wore",
+        "wears",
+        "is wear"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 58,
+      "q": "We ___ see a film this evening.",
+      "options": [
+        "will",
+        "are",
+        "do",
+        "did"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 59,
+      "q": "I think it ___ rain tomorrow.",
+      "options": [
+        "will",
+        "is",
+        "does",
+        "has"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 60,
+      "q": "They are going ___ a new computer.",
+      "options": [
+        "buy",
+        "to buy",
+        "buying",
+        "bought"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 61,
+      "q": "What time ___ the meeting start?",
+      "options": [
+        "do",
+        "does",
+        "is",
+        "are"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 62,
+      "q": "You ___ eat so many sweets; they are not healthy.",
+      "options": [
+        "shouldn't",
+        "don't",
+        "aren't",
+        "haven't"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 63,
+      "q": "You ___ speak quietly in the library.",
+      "options": [
+        "must",
+        "must to",
+        "are",
+        "do"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 64,
+      "q": "My uncle is a doctor. ___ works at a hospital.",
+      "options": [
+        "He",
+        "She",
+        "It",
+        "They"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 65,
+      "q": "Can you give this letter to Maya? Give it to ___.",
+      "options": [
+        "she",
+        "her",
+        "hers",
+        "herself"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 66,
+      "q": "That bicycle is ___.",
+      "options": [
+        "my",
+        "mine",
+        "me",
+        "I"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 67,
+      "q": "We enjoy ___ board games.",
+      "options": [
+        "play",
+        "playing",
+        "to playing",
+        "played"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 68,
+      "q": "I want ___ an English course.",
+      "options": [
+        "join",
+        "to join",
+        "joining",
+        "joined"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 69,
+      "q": "It is important ___ enough sleep.",
+      "options": [
+        "get",
+        "to get",
+        "getting",
+        "got"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 70,
+      "q": "The boy ___ sits by the window is my neighbour.",
+      "options": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 71,
+      "q": "This is the café ___ we met.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 72,
+      "q": "A person ___ flies a plane is a pilot.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "when"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 73,
+      "q": "I was tired, ___ I went to bed early.",
+      "options": [
+        "but",
+        "so",
+        "because",
+        "although"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 74,
+      "q": "We stayed inside ___ it was cold.",
+      "options": [
+        "so",
+        "because",
+        "but",
+        "or"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 75,
+      "q": "I like tea, ___ my brother prefers coffee.",
+      "options": [
+        "because",
+        "but",
+        "so",
+        "or"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 76,
+      "q": "Would you like tea ___ juice?",
+      "options": [
+        "and",
+        "but",
+        "or",
+        "because"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 77,
+      "q": "There are ___ people in the queue than yesterday.",
+      "options": [
+        "few",
+        "fewer",
+        "less",
+        "little"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 78,
+      "q": "This exercise is ___ difficult than the last one.",
+      "options": [
+        "more",
+        "most",
+        "much",
+        "many"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 79,
+      "q": "I have ___ money than my sister.",
+      "options": [
+        "fewer",
+        "less",
+        "few",
+        "many"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 80,
+      "q": "Please ___ your coat before you enter.",
+      "options": [
+        "take off",
+        "put on",
+        "look after",
+        "turn on"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 81,
+      "q": "When did Nodira join the library?",
+      "options": [
+        "Friday",
+        "Saturday",
+        "Sunday",
+        "Monday"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 82,
+      "q": "What is one of Nodira's books about?",
+      "options": [
+        "Planets",
+        "Cooking",
+        "Football",
+        "Animals"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 83,
+      "q": "Who told Nodira when to return the books?",
+      "options": [
+        "Her friend",
+        "Her teacher",
+        "The librarian",
+        "Her mother"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 86,
+      "q": "Why did Karim leave home late?",
+      "options": [
+        "He overslept",
+        "He could not find his bag",
+        "It was raining",
+        "The bus was late"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 87,
+      "q": "What had happened when he reached the bus stop?",
+      "options": [
+        "The bus had gone",
+        "The bus was broken",
+        "His father arrived",
+        "School had closed"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 88,
+      "q": "Who took Karim to school?",
+      "options": [
+        "His neighbour",
+        "His father",
+        "The bus driver",
+        "His teacher"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 91,
+      "q": "What sport did Amina play?",
+      "options": [
+        "Tennis",
+        "Basketball",
+        "Football",
+        "Volleyball"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 92,
+      "q": "What was the weather like?",
+      "options": [
+        "Sunny",
+        "Windy",
+        "Snowy",
+        "Hot"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 93,
+      "q": "When did Amina score?",
+      "options": [
+        "Before the match",
+        "In the first half",
+        "In the second half",
+        "After the match"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 96,
+      "q": "Why did the daughter cook dinner?",
+      "options": [
+        "It was her birthday",
+        "Her father was tired",
+        "She had a cooking lesson",
+        "There was no food"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 97,
+      "q": "What did she make?",
+      "options": [
+        "Pizza and salad",
+        "Soup and rice",
+        "Fish and chips",
+        "Pasta and cake"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 98,
+      "q": "Where did the recipe come from?",
+      "options": [
+        "A website",
+        "Her aunt",
+        "A bookshop",
+        "Her teacher"
+      ],
+      "correct": "B"
+    }
+  ],
+  "Elementary": [
+    {
+      "n": 1,
+      "q": "I ___ this book twice already.",
+      "options": [
+        "read",
+        "have read",
+        "am reading",
+        "had read"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 2,
+      "q": "She ___ to Paris three years ago.",
+      "options": [
+        "goes",
+        "has gone",
+        "went",
+        "was going"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 3,
+      "q": "We ___ dinner when the lights went out.",
+      "options": [
+        "had",
+        "were having",
+        "have had",
+        "are having"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 4,
+      "q": "While I ___ home, I saw an old friend.",
+      "options": [
+        "walked",
+        "was walking",
+        "have walked",
+        "am walking"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 5,
+      "q": "They ___ in this house since 2020.",
+      "options": [
+        "live",
+        "lived",
+        "have lived",
+        "are living"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 6,
+      "q": "I have not seen Jamshid ___.",
+      "options": [
+        "already",
+        "yet",
+        "just",
+        "ever"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 7,
+      "q": "Have you ___ been to Samarkand?",
+      "options": [
+        "never",
+        "ever",
+        "yet",
+        "for"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 8,
+      "q": "The train ___ before we arrived at the station.",
+      "options": [
+        "leaves",
+        "has left",
+        "had left",
+        "was leaving"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 9,
+      "q": "We ___ to the beach if the weather is good tomorrow.",
+      "options": [
+        "go",
+        "will go",
+        "went",
+        "would go"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 10,
+      "q": "If you heat ice, it ___.",
+      "options": [
+        "melts",
+        "will melt",
+        "would melt",
+        "melted"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 11,
+      "q": "You ___ see a dentist if your tooth hurts.",
+      "options": [
+        "should",
+        "might",
+        "mustn't",
+        "couldn't"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 12,
+      "q": "You ___ park here; it is against the rules.",
+      "options": [
+        "don't have to",
+        "mustn't",
+        "should",
+        "can"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 13,
+      "q": "I ___ finish this report tonight because it is due tomorrow.",
+      "options": [
+        "must",
+        "may",
+        "could",
+        "would"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 14,
+      "q": "It ___ rain later, so take an umbrella.",
+      "options": [
+        "must",
+        "might",
+        "shouldn't",
+        "can't"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 15,
+      "q": "My car is ___ than yours.",
+      "options": [
+        "more fast",
+        "faster",
+        "fastest",
+        "the faster"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 16,
+      "q": "This is the ___ restaurant in the area.",
+      "options": [
+        "good",
+        "better",
+        "best",
+        "most good"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 17,
+      "q": "My new phone is not as ___ as my old one.",
+      "options": [
+        "expensive",
+        "more expensive",
+        "expensiver",
+        "most expensive"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 18,
+      "q": "There is ___ sugar in this tea than in that one.",
+      "options": [
+        "fewer",
+        "less",
+        "few",
+        "many"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 19,
+      "q": "Only ___ students came to the meeting.",
+      "options": [
+        "a little",
+        "a few",
+        "much",
+        "any"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 20,
+      "q": "We have ___ time before the bus leaves.",
+      "options": [
+        "a few",
+        "a little",
+        "many",
+        "few"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 21,
+      "q": "I need ___ information before I decide.",
+      "options": [
+        "a few",
+        "a little",
+        "many",
+        "an"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 22,
+      "q": "There are not ___ seats left.",
+      "options": [
+        "much",
+        "many",
+        "a little",
+        "less"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 23,
+      "q": "The window ___ by the wind last night.",
+      "options": [
+        "broke",
+        "was broken",
+        "is breaking",
+        "has broke"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 24,
+      "q": "English ___ in many countries.",
+      "options": [
+        "speaks",
+        "is spoken",
+        "is speaking",
+        "has spoken"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 25,
+      "q": "The new bridge ___ next year.",
+      "options": [
+        "will finish",
+        "will be finished",
+        "is finishing",
+        "finishes"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 26,
+      "q": "This letter ___ by my manager yesterday.",
+      "options": [
+        "sent",
+        "was sent",
+        "is sent",
+        "has sent"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 27,
+      "q": "I enjoy ___ new places.",
+      "options": [
+        "visit",
+        "to visit",
+        "visiting",
+        "visited"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 28,
+      "q": "She decided ___ a taxi home.",
+      "options": [
+        "take",
+        "taking",
+        "to take",
+        "took"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 29,
+      "q": "Would you mind ___ the window?",
+      "options": [
+        "close",
+        "to close",
+        "closing",
+        "closed"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 30,
+      "q": "My parents let me ___ out late on Saturdays.",
+      "options": [
+        "stay",
+        "to stay",
+        "staying",
+        "stayed"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 31,
+      "q": "I am looking forward to ___ you soon.",
+      "options": [
+        "see",
+        "to see",
+        "seeing",
+        "saw"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 32,
+      "q": "The woman ___ lives next door is a nurse.",
+      "options": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 33,
+      "q": "The book ___ I borrowed was very useful.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "when"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 34,
+      "q": "That is the boy ___ bicycle was stolen.",
+      "options": [
+        "who",
+        "which",
+        "whose",
+        "where"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 35,
+      "q": "The café ___ we had lunch is closed now.",
+      "options": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 36,
+      "q": "I used to ___ in a small village.",
+      "options": [
+        "live",
+        "lived",
+        "living",
+        "to live"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 37,
+      "q": "Did you use to ___ glasses?",
+      "options": [
+        "wear",
+        "wore",
+        "wearing",
+        "to wear"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 38,
+      "q": "I am used to ___ early for work.",
+      "options": [
+        "get up",
+        "getting up",
+        "got up",
+        "to get up"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 39,
+      "q": "She asked me ___ I was tired.",
+      "options": [
+        "what",
+        "if",
+        "where",
+        "which"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 40,
+      "q": "He said that he ___ busy.",
+      "options": [
+        "is",
+        "was",
+        "were",
+        "has"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 41,
+      "q": "My teacher told us ___ quietly.",
+      "options": [
+        "work",
+        "to work",
+        "working",
+        "worked"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 42,
+      "q": "I wish I ___ more free time.",
+      "options": [
+        "have",
+        "had",
+        "will have",
+        "am having"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 43,
+      "q": "If I ___ rich, I would travel the world.",
+      "options": [
+        "am",
+        "was",
+        "were",
+        "will be"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 44,
+      "q": "What would you do if you ___ a year off?",
+      "options": [
+        "have",
+        "had",
+        "will have",
+        "would have"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 45,
+      "q": "You look tired. You ___ go to bed early.",
+      "options": [
+        "should",
+        "mustn't",
+        "can't",
+        "needn't"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 46,
+      "q": "I cannot find my wallet. I ___ have left it at home.",
+      "options": [
+        "must",
+        "might",
+        "should",
+        "need"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 47,
+      "q": "He ___ be at home; his car is not outside.",
+      "options": [
+        "must",
+        "can't",
+        "should",
+        "may"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 48,
+      "q": "The meeting starts ___ 10:30.",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "by"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 49,
+      "q": "I have an appointment ___ Monday morning.",
+      "options": [
+        "at",
+        "on",
+        "in",
+        "to"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 50,
+      "q": "We have been waiting ___ twenty minutes.",
+      "options": [
+        "since",
+        "for",
+        "during",
+        "from"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 51,
+      "q": "I have not spoken to him ___ last month.",
+      "options": [
+        "for",
+        "since",
+        "during",
+        "from"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 52,
+      "q": "Please turn ___ the television; the baby is asleep.",
+      "options": [
+        "on",
+        "off",
+        "up",
+        "over"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 53,
+      "q": "Can you look ___ my cat while I am away?",
+      "options": [
+        "after",
+        "for",
+        "at",
+        "into"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 54,
+      "q": "We ran ___ of milk this morning.",
+      "options": [
+        "over",
+        "away",
+        "out",
+        "into"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 55,
+      "q": "I need to find ___ what time the shop opens.",
+      "options": [
+        "out",
+        "up",
+        "on",
+        "away"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 56,
+      "q": "Neither my brother nor I ___ hungry.",
+      "options": [
+        "is",
+        "are",
+        "am",
+        "be"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 57,
+      "q": "Everyone ___ to bring an ID card.",
+      "options": [
+        "have",
+        "has",
+        "are",
+        "were"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 58,
+      "q": "There is somebody at the door, ___?",
+      "options": [
+        "is there",
+        "isn't there",
+        "doesn't there",
+        "aren't they"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 59,
+      "q": "You have finished the work, ___?",
+      "options": [
+        "have you",
+        "haven't you",
+        "did you",
+        "don't you"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 60,
+      "q": "Let's take a break, ___?",
+      "options": [
+        "will we",
+        "shall we",
+        "do we",
+        "aren't we"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 61,
+      "q": "I would rather ___ at home tonight.",
+      "options": [
+        "stay",
+        "to stay",
+        "staying",
+        "stayed"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 62,
+      "q": "It took me an hour ___ the exercise.",
+      "options": [
+        "finish",
+        "to finish",
+        "finishing",
+        "finished"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 63,
+      "q": "I am not tall enough ___ that shelf.",
+      "options": [
+        "reach",
+        "to reach",
+        "reaching",
+        "reached"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 64,
+      "q": "This bag is too heavy for me ___ .",
+      "options": [
+        "carry",
+        "to carry",
+        "carrying",
+        "carried"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 65,
+      "q": "We had ___ weather during our holiday.",
+      "options": [
+        "such beautiful",
+        "so beautiful",
+        "such a beautiful",
+        "too beautiful"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 66,
+      "q": "It was ___ interesting film that we watched it twice.",
+      "options": [
+        "so",
+        "such",
+        "such an",
+        "too"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 67,
+      "q": "I will call you as soon as I ___ home.",
+      "options": [
+        "get",
+        "will get",
+        "got",
+        "would get"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 68,
+      "q": "Before you leave, ___ sure you lock the door.",
+      "options": [
+        "do",
+        "make",
+        "have",
+        "get"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 69,
+      "q": "The hotel was full, ___ we stayed somewhere else.",
+      "options": [
+        "because",
+        "so",
+        "although",
+        "unless"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 70,
+      "q": "___ it was raining, we went for a walk.",
+      "options": [
+        "Because",
+        "Although",
+        "So",
+        "Unless"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 71,
+      "q": "I will not go out ___ I finish my homework.",
+      "options": [
+        "if",
+        "unless",
+        "until",
+        "because"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 72,
+      "q": "You will miss the bus ___ you leave now.",
+      "options": [
+        "if",
+        "unless",
+        "because",
+        "although"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 73,
+      "q": "This problem is not ___ difficult as the previous one.",
+      "options": [
+        "too",
+        "so",
+        "as",
+        "enough"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 74,
+      "q": "My sister speaks English ___ than I do.",
+      "options": [
+        "more fluent",
+        "more fluently",
+        "most fluently",
+        "fluent"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 75,
+      "q": "He drives ___ .",
+      "options": [
+        "careful",
+        "carefully",
+        "more careful",
+        "carefuller"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 76,
+      "q": "I ___ to the gym twice a week.",
+      "options": [
+        "go",
+        "am going",
+        "have gone",
+        "was going"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 77,
+      "q": "At this time yesterday, we ___ for the exam.",
+      "options": [
+        "study",
+        "were studying",
+        "have studied",
+        "studied"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 78,
+      "q": "When I was a child, I ___ afraid of dogs.",
+      "options": [
+        "am",
+        "was",
+        "have been",
+        "will be"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 79,
+      "q": "The tickets ___ online last week.",
+      "options": [
+        "bought",
+        "were bought",
+        "are buying",
+        "have bought"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 80,
+      "q": "You ___ bring food; we have enough for everyone.",
+      "options": [
+        "mustn't",
+        "don't have to",
+        "shouldn't",
+        "cannot"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 81,
+      "q": "Where did the residents meet?",
+      "options": [
+        "At a school",
+        "In the park",
+        "At the library",
+        "In a shop"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 82,
+      "q": "What did they plant?",
+      "options": [
+        "Flowers",
+        "Five young trees",
+        "Vegetables",
+        "Grass"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 83,
+      "q": "When did the park look cleaner?",
+      "options": [
+        "By lunchtime",
+        "At midnight",
+        "Before breakfast",
+        "The next week"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 86,
+      "q": "Why did Diyor download the app?",
+      "options": [
+        "To play games",
+        "To improve vocabulary",
+        "To buy a phone",
+        "To speak to friends"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 87,
+      "q": "How many new words does the app give each day?",
+      "options": [
+        "Five",
+        "Ten",
+        "Twenty",
+        "One hundred"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 88,
+      "q": "When does the app test him?",
+      "options": [
+        "Every day",
+        "At the end of each week",
+        "Once a month",
+        "Only on Sundays"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 91,
+      "q": "Where was Farida travelling?",
+      "options": [
+        "To Tashkent",
+        "To Bukhara",
+        "To Khiva",
+        "To her school"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 92,
+      "q": "What had Farida planned to do?",
+      "options": [
+        "Sleep",
+        "Read",
+        "Watch a film",
+        "Write a letter"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 93,
+      "q": "Who did she talk to?",
+      "options": [
+        "Her uncle",
+        "The conductor",
+        "An elderly woman",
+        "A classmate"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 96,
+      "q": "What was wrong with Aziz's camera?",
+      "options": [
+        "It was lost",
+        "It would not turn on",
+        "It had no lens",
+        "It was too old"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 97,
+      "q": "Who repaired the camera?",
+      "options": [
+        "A teacher",
+        "A technician",
+        "Aziz's friend",
+        "His father"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 98,
+      "q": "What did the technician replace?",
+      "options": [
+        "The screen",
+        "The battery",
+        "The lens",
+        "The case"
+      ],
+      "correct": "B"
+    }
+  ],
+  "Intermediate": [
+    {
+      "n": 1,
+      "q": "By the time we arrived, the film ___.",
+      "options": [
+        "started",
+        "has started",
+        "had started",
+        "was starting"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 2,
+      "q": "I ___ for this company since I graduated.",
+      "options": [
+        "work",
+        "worked",
+        "have been working",
+        "am working"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 3,
+      "q": "This time next week, we ___ on the beach.",
+      "options": [
+        "will relax",
+        "will be relaxing",
+        "relax",
+        "have relaxed"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 4,
+      "q": "By next June, she ___ her degree.",
+      "options": [
+        "will complete",
+        "will have completed",
+        "completes",
+        "has completed"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 5,
+      "q": "I wish I ___ how to solve this problem.",
+      "options": [
+        "know",
+        "knew",
+        "will know",
+        "have known"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 6,
+      "q": "If I ___ about the traffic, I would have left earlier.",
+      "options": [
+        "know",
+        "had known",
+        "would know",
+        "have known"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 7,
+      "q": "If he had studied harder, he ___ the exam.",
+      "options": [
+        "would pass",
+        "would have passed",
+        "will pass",
+        "had passed"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 8,
+      "q": "If I were you, I ___ to the manager.",
+      "options": [
+        "speak",
+        "would speak",
+        "will speak",
+        "would have spoken"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 9,
+      "q": "Had I known about the sale, I ___ a new laptop.",
+      "options": [
+        "would buy",
+        "would have bought",
+        "will buy",
+        "bought"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 10,
+      "q": "I would rather you ___ me before you come over.",
+      "options": [
+        "call",
+        "called",
+        "will call",
+        "had called"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 11,
+      "q": "The report ___ by Friday afternoon.",
+      "options": [
+        "must finish",
+        "must be finished",
+        "must have finished",
+        "must be finishing"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 12,
+      "q": "The suspect ___ by the police last night.",
+      "options": [
+        "arrested",
+        "was arrested",
+        "has arrested",
+        "is arresting"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 13,
+      "q": "The new stadium ___ at the moment.",
+      "options": [
+        "builds",
+        "is being built",
+        "has built",
+        "was built"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 14,
+      "q": "The invitations ___ before the event began.",
+      "options": [
+        "had sent",
+        "had been sent",
+        "were sending",
+        "have sent"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 15,
+      "q": "She said she ___ the following day.",
+      "options": [
+        "will come",
+        "would come",
+        "comes",
+        "has come"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 16,
+      "q": "He asked me where I ___ the previous weekend.",
+      "options": [
+        "went",
+        "had gone",
+        "have gone",
+        "was going"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 17,
+      "q": "The teacher told us ___ late again.",
+      "options": [
+        "not be",
+        "not to be",
+        "not being",
+        "don't be"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 18,
+      "q": "My friend suggested ___ a taxi instead of walking.",
+      "options": [
+        "take",
+        "to take",
+        "taking",
+        "took"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 19,
+      "q": "I regret ___ you that your application was unsuccessful.",
+      "options": [
+        "tell",
+        "to tell",
+        "telling",
+        "told"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 20,
+      "q": "I remember ___ this museum when I was a child.",
+      "options": [
+        "visit",
+        "to visit",
+        "visiting",
+        "visited"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 21,
+      "q": "Please remember ___ the door when you leave.",
+      "options": [
+        "lock",
+        "to lock",
+        "locking",
+        "locked"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 22,
+      "q": "We stopped ___ some water because it was hot.",
+      "options": [
+        "buy",
+        "to buy",
+        "buying",
+        "bought"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 23,
+      "q": "He stopped ___ after the doctor warned him.",
+      "options": [
+        "smoke",
+        "to smoke",
+        "smoking",
+        "smoked"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 24,
+      "q": "I am not used to ___ in such a noisy office.",
+      "options": [
+        "work",
+        "working",
+        "worked",
+        "to work"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 25,
+      "q": "She made me ___ the letter again.",
+      "options": [
+        "read",
+        "to read",
+        "reading",
+        "readed"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 26,
+      "q": "I had my hair ___ yesterday.",
+      "options": [
+        "cut",
+        "to cut",
+        "cutting",
+        "was cut"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 27,
+      "q": "The man ___ car was blocking the road moved it quickly.",
+      "options": [
+        "who",
+        "which",
+        "whose",
+        "where"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 28,
+      "q": "The laptop, ___ I bought last year, is already slow.",
+      "options": [
+        "who",
+        "which",
+        "where",
+        "whose"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 29,
+      "q": "Students ___ assignments are late may lose marks.",
+      "options": [
+        "who submit",
+        "submitting",
+        "submitted",
+        "to submit"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 30,
+      "q": "The book ___ on the table belongs to my sister.",
+      "options": [
+        "lying",
+        "lay",
+        "is lying",
+        "to lie"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 31,
+      "q": "___ tired, he continued working until midnight.",
+      "options": [
+        "Although",
+        "Despite",
+        "In spite",
+        "Because"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 32,
+      "q": "___ the heavy rain, the match was cancelled.",
+      "options": [
+        "Although",
+        "Because",
+        "Because of",
+        "However"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 33,
+      "q": "She missed the train; ___, she arrived on time for the meeting.",
+      "options": [
+        "therefore",
+        "however",
+        "because",
+        "although"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 34,
+      "q": "The road was closed; ___, we took a different route.",
+      "options": [
+        "however",
+        "therefore",
+        "although",
+        "despite"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 35,
+      "q": "Not only ___ late, but he had also forgotten the documents.",
+      "options": [
+        "he was",
+        "was he",
+        "he has",
+        "has he"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 36,
+      "q": "Hardly ___ the room when the phone rang.",
+      "options": [
+        "I had entered",
+        "had I entered",
+        "I entered",
+        "did I enter"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 37,
+      "q": "No sooner had we sat down ___ the lights went out.",
+      "options": [
+        "when",
+        "than",
+        "then",
+        "that"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 38,
+      "q": "You ___ have told me; I could have helped.",
+      "options": [
+        "should",
+        "shouldn't",
+        "must",
+        "needn't"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 39,
+      "q": "You ___ have taken an umbrella; it did not rain.",
+      "options": [
+        "needn't",
+        "mustn't",
+        "couldn't",
+        "should"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 40,
+      "q": "They ___ be at home; all the lights are off.",
+      "options": [
+        "must",
+        "can't",
+        "should",
+        "ought"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 41,
+      "q": "She ___ have left already, because her coat is gone.",
+      "options": [
+        "must",
+        "can't",
+        "shouldn't",
+        "needn't"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 42,
+      "q": "You ___ smoke in this building.",
+      "options": [
+        "do not have to",
+        "mustn't",
+        "needn't",
+        "wouldn't"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 43,
+      "q": "I would like ___ information about the course.",
+      "options": [
+        "few",
+        "a few",
+        "little",
+        "a little"
+      ],
+      "correct": "D"
+    },
+    {
+      "n": 44,
+      "q": "There were ___ people at the concert than we expected.",
+      "options": [
+        "less",
+        "fewer",
+        "little",
+        "much"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 45,
+      "q": "___ of the two options is suitable for beginners.",
+      "options": [
+        "Neither",
+        "Either",
+        "Both",
+        "Every"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 46,
+      "q": "___ student must submit the form by Friday.",
+      "options": [
+        "All",
+        "Every",
+        "Much",
+        "Any"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 47,
+      "q": "I have two sisters, ___ of whom live abroad.",
+      "options": [
+        "both",
+        "all",
+        "either",
+        "every"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 48,
+      "q": "The meeting has been put ___ until next Tuesday.",
+      "options": [
+        "up",
+        "off",
+        "out",
+        "away"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 49,
+      "q": "I came ___ an interesting article while I was researching the topic.",
+      "options": [
+        "across",
+        "over",
+        "out",
+        "up"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 50,
+      "q": "Please look ___ the word in a dictionary.",
+      "options": [
+        "for",
+        "after",
+        "up",
+        "into"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 51,
+      "q": "The plane took ___ on time despite the fog.",
+      "options": [
+        "off",
+        "up",
+        "away",
+        "over"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 52,
+      "q": "I wish I ___ so much money on that jacket yesterday.",
+      "options": [
+        "didn't spend",
+        "hadn't spent",
+        "wouldn't spend",
+        "haven't spent"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 53,
+      "q": "It is high time we ___ home.",
+      "options": [
+        "go",
+        "went",
+        "will go",
+        "have gone"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 54,
+      "q": "I'd rather ___ out tonight; I am exhausted.",
+      "options": [
+        "not go",
+        "not to go",
+        "not going",
+        "didn't go"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 55,
+      "q": "She is believed ___ abroad at the moment.",
+      "options": [
+        "work",
+        "to work",
+        "to be working",
+        "working"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 56,
+      "q": "The company is said ___ a new product next month.",
+      "options": [
+        "launch",
+        "to launch",
+        "to be launched",
+        "launching"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 57,
+      "q": "I expect ___ the results by Friday.",
+      "options": [
+        "receive",
+        "to receive",
+        "receiving",
+        "received"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 58,
+      "q": "It was such a difficult puzzle that nobody could ___ it.",
+      "options": [
+        "solve",
+        "to solve",
+        "solving",
+        "solved"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 59,
+      "q": "The box was too heavy for me ___ alone.",
+      "options": [
+        "lift",
+        "to lift",
+        "lifting",
+        "lifted"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 60,
+      "q": "We need someone ___ can speak both languages.",
+      "options": [
+        "which",
+        "who",
+        "where",
+        "whose"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 61,
+      "q": "The reason ___ I called was to check your address.",
+      "options": [
+        "why",
+        "which",
+        "who",
+        "whose"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 62,
+      "q": "I will lend you the book provided that you ___ it next week.",
+      "options": [
+        "return",
+        "will return",
+        "returned",
+        "would return"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 63,
+      "q": "Unless the weather improves, the flight ___ cancelled.",
+      "options": [
+        "is",
+        "will be",
+        "was",
+        "would be"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 64,
+      "q": "By the time he gets here, we ___ the meeting.",
+      "options": [
+        "will start",
+        "will have started",
+        "start",
+        "have started"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 65,
+      "q": "I ___ her for years before we became colleagues.",
+      "options": [
+        "know",
+        "have known",
+        "had known",
+        "was knowing"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 66,
+      "q": "When I arrived, they ___ about the problem for an hour.",
+      "options": [
+        "discussed",
+        "had been discussing",
+        "were discussing",
+        "have discussed"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 67,
+      "q": "The more you practise, the ___ you become.",
+      "options": [
+        "good",
+        "better",
+        "best",
+        "well"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 68,
+      "q": "This is the first time I ___ snow.",
+      "options": [
+        "see",
+        "saw",
+        "have seen",
+        "had seen"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 69,
+      "q": "He acts as if he ___ everything.",
+      "options": [
+        "knows",
+        "knew",
+        "has known",
+        "will know"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 70,
+      "q": "I am responsible ___ checking the final figures.",
+      "options": [
+        "to",
+        "for",
+        "at",
+        "with"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 71,
+      "q": "She apologised ___ being late.",
+      "options": [
+        "to",
+        "for",
+        "about",
+        "with"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 72,
+      "q": "We succeeded ___ finding a cheaper hotel.",
+      "options": [
+        "to",
+        "in",
+        "at",
+        "for"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 73,
+      "q": "He accused me ___ breaking the window.",
+      "options": [
+        "for",
+        "of",
+        "to",
+        "with"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 74,
+      "q": "The concert was ___ because the singer was ill.",
+      "options": [
+        "called off",
+        "put on",
+        "taken over",
+        "brought up"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 75,
+      "q": "Can you ___ this application form before you submit it?",
+      "options": [
+        "fill in",
+        "make up",
+        "turn down",
+        "set off"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 76,
+      "q": "The manager asked us to ___ a solution by Friday.",
+      "options": [
+        "come up with",
+        "look after",
+        "put off",
+        "get over"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 77,
+      "q": "He has a reputation ___ being reliable.",
+      "options": [
+        "for",
+        "of",
+        "at",
+        "to"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 78,
+      "q": "I would prefer tea ___ coffee this morning.",
+      "options": [
+        "than",
+        "from",
+        "to",
+        "over"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 79,
+      "q": "Neither of the answers ___ correct.",
+      "options": [
+        "are",
+        "is",
+        "were",
+        "be"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 80,
+      "q": "The news ___ surprising to everyone.",
+      "options": [
+        "were",
+        "are",
+        "was",
+        "have"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 81,
+      "q": "How long was the trial?",
+      "options": [
+        "Two weeks",
+        "Two months",
+        "Six months",
+        "One year"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 82,
+      "q": "When must employees attend office meetings?",
+      "options": [
+        "Mondays",
+        "Wednesdays",
+        "Fridays",
+        "Every day"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 83,
+      "q": "According to the manager, what has not decreased?",
+      "options": [
+        "Office space",
+        "Productivity",
+        "Staff numbers",
+        "Salaries"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 86,
+      "q": "Where was the box found?",
+      "options": [
+        "In a garden",
+        "Under the floorboards",
+        "In the attic",
+        "Behind a wall"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 87,
+      "q": "When were the letters written?",
+      "options": [
+        "The 1840s",
+        "The 1940s",
+        "The 1960s",
+        "This year"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 88,
+      "q": "What does the museum hope to do?",
+      "options": [
+        "Sell the box",
+        "Repair the house",
+        "Identify people in the photograph",
+        "Write new letters"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 91,
+      "q": "Why was the flight delayed?",
+      "options": [
+        "Bad weather",
+        "A technical inspection",
+        "A strike",
+        "A missing pilot"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 92,
+      "q": "What did the airline provide?",
+      "options": [
+        "Free tickets",
+        "Hotel rooms",
+        "Meal vouchers and updates",
+        "New passports"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 93,
+      "q": "How late did the plane leave?",
+      "options": [
+        "One hour",
+        "Two hours",
+        "Three hours",
+        "Four hours"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 96,
+      "q": "Why had Murod not used the bicycle?",
+      "options": [
+        "It was too small",
+        "The brakes were damaged",
+        "He moved away",
+        "It was stolen"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 97,
+      "q": "Who ran the repair workshop?",
+      "options": [
+        "A school",
+        "Volunteers",
+        "The police",
+        "A bicycle company"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 98,
+      "q": "What did the volunteers replace?",
+      "options": [
+        "The tyres",
+        "The chain",
+        "The brakes",
+        "The seat"
+      ],
+      "correct": "C"
+    }
+  ],
+  "Advanced": [
+    {
+      "n": 1,
+      "q": "Rarely ___ such a convincing performance.",
+      "options": [
+        "I have seen",
+        "have I seen",
+        "I saw",
+        "did I see"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 2,
+      "q": "Not until the report was published ___ the scale of the problem.",
+      "options": [
+        "we understood",
+        "did we understand",
+        "we had understood",
+        "had we understood"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 3,
+      "q": "Were the proposal ___, the project could begin immediately.",
+      "options": [
+        "approve",
+        "approved",
+        "to approve",
+        "approving"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 4,
+      "q": "Had it not been for her intervention, the negotiations ___ .",
+      "options": [
+        "would fail",
+        "would have failed",
+        "will fail",
+        "had failed"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 5,
+      "q": "So complex ___ that even experts disagreed about its cause.",
+      "options": [
+        "the issue was",
+        "was the issue",
+        "the issue",
+        "did the issue"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 6,
+      "q": "It is essential that every applicant ___ the form personally.",
+      "options": [
+        "signs",
+        "sign",
+        "signed",
+        "will sign"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 7,
+      "q": "The committee recommended that the policy ___ immediately.",
+      "options": [
+        "is revised",
+        "be revised",
+        "was revised",
+        "will be revised"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 8,
+      "q": "I would sooner you ___ me the truth from the beginning.",
+      "options": [
+        "tell",
+        "told",
+        "had told",
+        "would tell"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 9,
+      "q": "She behaves as though she ___ the decision herself.",
+      "options": [
+        "made",
+        "had made",
+        "has made",
+        "will make"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 10,
+      "q": "If only I ___ the warning more seriously at the time.",
+      "options": [
+        "take",
+        "had taken",
+        "would take",
+        "have taken"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 11,
+      "q": "The manager ___ the documents before the meeting, but apparently she did not.",
+      "options": [
+        "should have read",
+        "must read",
+        "needn't have read",
+        "couldn't read"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 12,
+      "q": "You ___ the tickets; entry to the exhibition was free.",
+      "options": [
+        "needn't have bought",
+        "mustn't buy",
+        "shouldn't buy",
+        "could not buy"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 13,
+      "q": "He ___ have misunderstood the instructions; his answer is completely unrelated.",
+      "options": [
+        "must",
+        "can't",
+        "should",
+        "need"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 14,
+      "q": "They ___ have reached the summit yet; the climb normally takes six hours.",
+      "options": [
+        "must",
+        "can't",
+        "should",
+        "needn't"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 15,
+      "q": "The figures are believed ___ by an independent auditor.",
+      "options": [
+        "to verify",
+        "to have been verified",
+        "verifying",
+        "to be verifying"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 16,
+      "q": "The minister is reported ___ a statement later today.",
+      "options": [
+        "to make",
+        "to have made",
+        "making",
+        "to be made"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 17,
+      "q": "The new regulations are expected ___ next month.",
+      "options": [
+        "to introduce",
+        "to be introduced",
+        "introducing",
+        "to have introduced"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 18,
+      "q": "Having ___ all the evidence, the jury reached a verdict.",
+      "options": [
+        "consider",
+        "considered",
+        "been considering",
+        "to consider"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 19,
+      "q": "___ by the sudden noise, the horse ran across the field.",
+      "options": [
+        "Startling",
+        "Startled",
+        "Having startled",
+        "To startle"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 20,
+      "q": "___ no further questions, the chair brought the meeting to a close.",
+      "options": [
+        "There being",
+        "Being there",
+        "There to be",
+        "There had"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 21,
+      "q": "The report, ___ by several specialists, was published yesterday.",
+      "options": [
+        "reviewing",
+        "reviewed",
+        "having review",
+        "to review"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 22,
+      "q": "The candidate ___ application was incomplete was asked to resubmit it.",
+      "options": [
+        "who",
+        "whose",
+        "which",
+        "whom"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 23,
+      "q": "The proposal, the details of ___ remain confidential, was approved.",
+      "options": [
+        "that",
+        "which",
+        "whom",
+        "whose"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 24,
+      "q": "The only person to ___ was the project leader.",
+      "options": [
+        "consult",
+        "be consulted",
+        "have consulted",
+        "consulting"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 25,
+      "q": "What the organisation needs ___ a clearer long-term strategy.",
+      "options": [
+        "are",
+        "is",
+        "were",
+        "have"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 26,
+      "q": "It was the timing of the announcement ___ caused the confusion.",
+      "options": [
+        "which",
+        "what",
+        "that",
+        "where"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 27,
+      "q": "No matter how carefully the figures are checked, errors may still ___ .",
+      "options": [
+        "arise",
+        "arose",
+        "arising",
+        "to arise"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 28,
+      "q": "The company postponed the launch ___ further testing could be completed.",
+      "options": [
+        "despite",
+        "so that",
+        "whereas",
+        "unless"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 29,
+      "q": "___ his considerable experience, he found the role challenging.",
+      "options": [
+        "Although",
+        "Despite",
+        "Because",
+        "Since"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 30,
+      "q": "The evidence was inconclusive; ___, the case was reopened.",
+      "options": [
+        "nevertheless",
+        "therefore",
+        "whereas",
+        "similarly"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 31,
+      "q": "The two studies reached similar conclusions, ___ they used different methods.",
+      "options": [
+        "whereas",
+        "although",
+        "therefore",
+        "provided"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 32,
+      "q": "The contract will be renewed ___ both parties agree to the revised terms.",
+      "options": [
+        "unless",
+        "provided that",
+        "despite",
+        "whereas"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 33,
+      "q": "The results cannot be regarded as reliable ___ the sample is larger.",
+      "options": [
+        "unless",
+        "although",
+        "therefore",
+        "despite"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 34,
+      "q": "___ it is late, I will stay until the work is finished.",
+      "options": [
+        "Even though",
+        "Because of",
+        "In spite of",
+        "Due to"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 35,
+      "q": "The article is written in a style ___ to non-specialists.",
+      "options": [
+        "access",
+        "accessible",
+        "accessibly",
+        "accessing"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 36,
+      "q": "There has been a noticeable ___ in customer complaints.",
+      "options": [
+        "decline",
+        "declining",
+        "declined",
+        "declinable"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 37,
+      "q": "The policy aims to reduce the ___ of young people from education.",
+      "options": [
+        "exclude",
+        "exclusion",
+        "exclusive",
+        "exclusively"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 38,
+      "q": "Her explanation lacked ___ and failed to address the main issue.",
+      "options": [
+        "clear",
+        "clarity",
+        "clearly",
+        "clarification"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 39,
+      "q": "The board expressed ___ about the project's financial viability.",
+      "options": [
+        "concern",
+        "concerned",
+        "concerning",
+        "concernedly"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 40,
+      "q": "The decision was made ___ with current safety guidelines.",
+      "options": [
+        "in accordance",
+        "on account",
+        "by means",
+        "at risk"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 41,
+      "q": "The researchers carried ___ a series of controlled experiments.",
+      "options": [
+        "on",
+        "out",
+        "over",
+        "off"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 42,
+      "q": "We need to account ___ the possibility of delays.",
+      "options": [
+        "of",
+        "for",
+        "with",
+        "to"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 43,
+      "q": "The committee came ___ a compromise after several hours.",
+      "options": [
+        "across",
+        "to",
+        "up",
+        "over"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 44,
+      "q": "The report falls short ___ explaining how the funds were used.",
+      "options": [
+        "from",
+        "of",
+        "to",
+        "with"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 45,
+      "q": "His remarks were open ___ more than one interpretation.",
+      "options": [
+        "at",
+        "to",
+        "for",
+        "with"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 46,
+      "q": "The new system is intended to be compatible ___ existing software.",
+      "options": [
+        "to",
+        "with",
+        "for",
+        "of"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 47,
+      "q": "The company is committed ___ reducing its environmental impact.",
+      "options": [
+        "with",
+        "to",
+        "for",
+        "at"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 48,
+      "q": "Not only ___ the deadline, but they also exceeded the budget.",
+      "options": [
+        "they missed",
+        "did they miss",
+        "they had missed",
+        "had they missed"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 49,
+      "q": "Under no circumstances ___ this information be shared publicly.",
+      "options": [
+        "you should",
+        "should you",
+        "you will",
+        "will you"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 50,
+      "q": "Little ___ that the seemingly minor error would have such consequences.",
+      "options": [
+        "we knew",
+        "did we know",
+        "we had known",
+        "had we known"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 51,
+      "q": "Scarcely had the lecture begun ___ the fire alarm sounded.",
+      "options": [
+        "than",
+        "when",
+        "then",
+        "that"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 52,
+      "q": "The more carefully you plan, the less likely you ___ unexpected costs.",
+      "options": [
+        "face",
+        "are to face",
+        "faced",
+        "have faced"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 53,
+      "q": "It is not so much the cost ___ the lack of time that concerns me.",
+      "options": [
+        "than",
+        "as",
+        "that",
+        "which"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 54,
+      "q": "I would prefer ___ the issue privately rather than in the meeting.",
+      "options": [
+        "discuss",
+        "to discuss",
+        "discussing",
+        "to discussing"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 55,
+      "q": "She would rather not ___ drawn into the argument.",
+      "options": [
+        "be",
+        "to be",
+        "being",
+        "been"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 56,
+      "q": "The director had the presentation ___ before the conference.",
+      "options": [
+        "redesign",
+        "redesigned",
+        "redesigning",
+        "to redesign"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 57,
+      "q": "We had the office ___ last summer.",
+      "options": [
+        "renovate",
+        "renovated",
+        "renovating",
+        "to renovate"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 58,
+      "q": "She is unlikely ___ the offer without further negotiation.",
+      "options": [
+        "accept",
+        "to accept",
+        "accepting",
+        "to accepting"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 59,
+      "q": "The company would benefit from ___ its internal communication.",
+      "options": [
+        "improve",
+        "to improve",
+        "improving",
+        "improved"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 60,
+      "q": "I object to ___ as though I were incapable of deciding.",
+      "options": [
+        "treat",
+        "be treated",
+        "being treated",
+        "have treated"
+      ],
+      "correct": "C"
+    },
+    {
+      "n": 61,
+      "q": "He denied ___ any confidential information.",
+      "options": [
+        "to disclose",
+        "disclosing",
+        "disclose",
+        "having disclose"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 62,
+      "q": "The room needs ___ before the guests arrive.",
+      "options": [
+        "to clean",
+        "cleaning",
+        "clean",
+        "having cleaned"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 63,
+      "q": "No explanation was given for the delay, ___?",
+      "options": [
+        "was it",
+        "was there",
+        "did it",
+        "did there"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 64,
+      "q": "Let's not make a decision until we have all the facts, ___?",
+      "options": [
+        "shall we",
+        "will we",
+        "do we",
+        "are we"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 65,
+      "q": "Few of the proposals were realistic, ___?",
+      "options": [
+        "were they",
+        "weren't they",
+        "did they",
+        "didn't they"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 66,
+      "q": "I would have attended the conference, ___ I been invited.",
+      "options": [
+        "if",
+        "had",
+        "unless",
+        "were"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 67,
+      "q": "___ the weather been better, the event would have taken place outdoors.",
+      "options": [
+        "If",
+        "Had",
+        "Were",
+        "Should"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 68,
+      "q": "Should you ___ any difficulties, please contact the support team.",
+      "options": [
+        "encounter",
+        "encountered",
+        "to encounter",
+        "encountering"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 69,
+      "q": "The consultant spoke so quietly that I could ___ hear her.",
+      "options": [
+        "hard",
+        "hardly",
+        "harder",
+        "hardest"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 70,
+      "q": "The plan is feasible in theory, but difficult to implement in ___.",
+      "options": [
+        "practice",
+        "practise",
+        "practicing",
+        "practised"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 71,
+      "q": "The staff were asked to work ___ to meet the deadline.",
+      "options": [
+        "hard",
+        "hardly",
+        "harderly",
+        "hardness"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 72,
+      "q": "He is one of the most ___ analysts in the department.",
+      "options": [
+        "rely",
+        "reliable",
+        "reliably",
+        "reliance"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 73,
+      "q": "The distinction between the two terms is often ___.",
+      "options": [
+        "overlook",
+        "overlooked",
+        "overlooking",
+        "overlooks"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 74,
+      "q": "The results ___ further investigation before any conclusion is drawn.",
+      "options": [
+        "merit",
+        "point",
+        "find",
+        "allow"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 75,
+      "q": "The proposal was rejected ___ that it was too expensive.",
+      "options": [
+        "on the grounds",
+        "in case",
+        "by contrast",
+        "in terms"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 76,
+      "q": "The report is due tomorrow, ___ we need to finalise it today.",
+      "options": [
+        "whereas",
+        "hence",
+        "despite",
+        "unless"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 77,
+      "q": "The museum has introduced measures to ___ access for visitors with disabilities.",
+      "options": [
+        "facilitate",
+        "facilitator",
+        "facility",
+        "facile"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 78,
+      "q": "The speaker's argument was persuasive, though not entirely ___.",
+      "options": [
+        "convinced",
+        "convincing",
+        "unconvincing",
+        "incontrovertible"
+      ],
+      "correct": "D"
+    },
+    {
+      "n": 79,
+      "q": "The scheme is designed to ___ young entrepreneurs to start businesses.",
+      "options": [
+        "enable",
+        "allow for",
+        "make",
+        "result"
+      ],
+      "correct": "A"
+    },
+    {
+      "n": 80,
+      "q": "The outcome depends largely ___ how quickly the data can be analysed.",
+      "options": [
+        "at",
+        "on",
+        "for",
+        "with"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 81,
+      "q": "What does the scheme encourage residents to do first?",
+      "options": [
+        "Recycle items",
+        "Repair items",
+        "Donate money",
+        "Buy new appliances"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 82,
+      "q": "What do participating shops offer?",
+      "options": [
+        "Free delivery",
+        "Discounted repairs",
+        "New products",
+        "Recycling bins"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 83,
+      "q": "What is the purpose of the online directory?",
+      "options": [
+        "To advertise jobs",
+        "To locate workshops",
+        "To collect taxes",
+        "To compare prices"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 86,
+      "q": "What problem did the archive have for decades?",
+      "options": [
+        "It lacked documents",
+        "It was difficult to visit",
+        "It was closed permanently",
+        "It had no staff"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 87,
+      "q": "What is the archive doing now?",
+      "options": [
+        "Selling originals",
+        "Digitising its collection",
+        "Building a museum",
+        "Moving overseas"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 88,
+      "q": "Who can examine materials remotely?",
+      "options": [
+        "Only archivists",
+        "Researchers",
+        "Tourists only",
+        "Building workers"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 91,
+      "q": "Who is expected to use the wearable devices?",
+      "options": [
+        "Patients",
+        "Nurses",
+        "Visitors",
+        "Pharmacists"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 92,
+      "q": "How do the devices reduce noise?",
+      "options": [
+        "They turn off lights",
+        "They replace loud alarms",
+        "They close ward doors",
+        "They reduce visitor numbers"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 93,
+      "q": "What will researchers compare?",
+      "options": [
+        "Hospital buildings",
+        "Patient outcomes and staff stress",
+        "Nurses' salaries",
+        "The price of devices"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 96,
+      "q": "Why is the riverbank less suitable for native birds?",
+      "options": [
+        "It is too dry",
+        "Invasive plants have spread",
+        "There are no volunteers",
+        "The river has moved"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 97,
+      "q": "What will volunteers plant?",
+      "options": [
+        "Imported trees",
+        "Local species",
+        "Invasive plants",
+        "Vegetables"
+      ],
+      "correct": "B"
+    },
+    {
+      "n": 98,
+      "q": "How long will the area be monitored?",
+      "options": [
+        "One season",
+        "One year",
+        "Two years",
+        "Five years"
+      ],
+      "correct": "C"
+    }
+  ]
+}
