@@ -22,7 +22,7 @@ try:
 except Exception:
     TZ = timezone(timedelta(hours=5))
 
-SUBJECTS = ["Ingliz tili", "Matematika"]
+SUBJECTS = ["Ingliz tili", "Matematika", "Koreys tili"]
 # Ingliz tili darajalari (tests/questions.json dagi bo‘limlar). "Advanced" savollari faylda bor, lekin ro‘yxatdan o‘tishda ko‘rsatilmaydi.
 ENGLISH_LEVELS = {"Starter": "Starter", "Beginner": "Beginner", "Elementary": "Elementary", "Pre-Intermediate": "Pre-Intermediate"}
 MATH_LEVELS = [f"{n}-sinf" for n in range(1, 12)]
@@ -35,19 +35,27 @@ def load_questions(name):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 _eng = load_questions("questions.json")
+_kor = load_questions("koreys.json")
 _math = load_questions("matematika.json")  # {"1-sinf": [...], ..., "11-sinf": [...]}
 QBANK = {
     "Ingliz tili": {lvl: _eng.get(key, []) for lvl, key in ENGLISH_LEVELS.items()},
     "Matematika": {lvl: _math.get(lvl, []) for lvl in MATH_LEVELS},
+    "Koreys tili": {"TOPIK II": _kor.get("TOPIK II", [])},
 }
 LEVELS = {subj: list(levels) for subj, levels in QBANK.items()}
 QINDEX = {s: {lvl: {q["n"]: q for q in qs} for lvl, qs in lv.items()} for s, lv in QBANK.items()}
+
+def school_label(v):
+    if not v:
+        return "maktab kiritilmagan"
+    return f"{v}-maktab" if str(v).isdigit() else str(v)
+
 
 REG_FIELDS = ["name", "birth", "school", "grade", "subject", "level"]
 REG_LABELS = {
     "name": "Ism va familyangizni to‘liq kiriting:",
     "birth": "Tug‘ilgan sanangizni yil.oy.kun ko‘rinishida kiriting.\nMasalan: 2012.05.23",
-    "school": "Nechinchi maktabda o‘qiysiz?\nMaktab raqamini kiriting (masalan: 25):",
+    "school": "Qaysi maktabda o‘qiysiz?\nMaktab nomini yozing (masalan: 25-maktab yoki Navoiy nomidagi maktab):",
     "grade": "Nechinchi sinfda o‘qiysiz?",
     "subject": "Qaysi fandan test topshirmoqchisiz?",
     "level": "Qaysi darajadansiz? Tanlang:",
@@ -215,7 +223,7 @@ def profile_text(u, title="👤 Shaxsiy kabinet"):
     else:
         status = f"⏳ Olimpiada: {schedule_line()}"
     return (f"{title}\n\nIsm-familya: {u['full_name']}\nTug‘ilgan sana: {birth} ({u['age']} yosh)\n"
-            f"Maktab: {u['school'] + '-maktab' if u['school'] else '—'}\nSinf: {u['grade']}\n"
+            f"Maktab: {school_label(u['school'])}\nSinf: {u['grade']}\n"
             f"Fan: {u['subject'] or '—'}\nDaraja: {u['level'] or '—'}\n\n{status}\n"
             "Test vaqti kelganda tanlagan fan va darajangiz bo‘yicha test beriladi.")
 
@@ -258,10 +266,9 @@ async def registration_step(update: Update, context: ContextTypes.DEFAULT_TYPE):
         else:
             error = "Sana noto‘g‘ri. Yil.oy.kun ko‘rinishida kiriting, masalan: 2012.05.23"
     elif key == "school":
-        if text.isdigit() and 1 <= int(text) <= 999:
-            text = str(int(text))
-        else:
-            error = "Maktab raqamini faqat raqam bilan kiriting, masalan: 25"
+        text = " ".join(text.split())
+        if len(text) < 2 or len(text) > 100:
+            error = "Maktab nomini to‘liq yozing (kamida 2 ta belgi), masalan: 25-maktab"
     elif key == "grade" and text not in GRADES:
         error = "Iltimos, sinfni tugmalardan tanlang."
     elif key == "subject" and text not in SUBJECTS:
@@ -553,7 +560,7 @@ WAITING_SQL = """SELECT u.* FROM users u
 async def admin_waiting(update, context):
     if not is_admin(update.effective_user.id): return
     rows = q_all(WAITING_SQL)
-    lines = [f"{i}. {r['full_name']} — {r['subject']}/{r['level']} ({(r['school'] + '-maktab') if r['school'] else 'maktab kiritilmagan'})" for i, r in enumerate(rows, 1)]
+    lines = [f"{i}. {r['full_name']} — {r['subject']}/{r['level']} ({school_label(r['school'])})" for i, r in enumerate(rows, 1)]
     await send_lines(update, f"⏳ Hali test ishlamaganlar: {len(rows)} ta", lines)
 
 async def toggle_registration(update, context):

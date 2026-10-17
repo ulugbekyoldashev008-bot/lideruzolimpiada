@@ -1,0 +1,279 @@
+{
+ "TOPIK II": [
+  {
+   "n": 1,
+   "q": "비가 오______ 소풍을 취소했어요. (yomg'ir yog'ayotgani uchun)",
+   "options": [
+    "니까",
+    "려고",
+    "지만",
+    "거나"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 2,
+   "q": "선생님께서 지금 교실에 ______.",
+   "options": [
+    "있어요",
+    "계세요",
+    "있습니다",
+    "있었어요"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 3,
+   "q": "공부를 열심히 했______ 시험에 떨어졌어요. (harakat qilganiga qaramay)",
+   "options": [
+    "으니까",
+    "기 때문에",
+    "는데도",
+    "도록"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 4,
+   "q": "한국에 가______ 한국어를 배우고 있어요. (borish uchun)",
+   "options": [
+    "기 때문에",
+    "더라도",
+    "는 바람에",
+    "기 위해서"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 5,
+   "q": "'눈이 높다' idiomasi nimani anglatadi?",
+   "options": [
+    "Talabi baland, tanlab-saralaydi",
+    "Ko'zi yaxshi ko'radi",
+    "Uzoqni ko'ra oladi",
+    "Boshi baland"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 6,
+   "q": "어제 늦게 자______ 오늘 너무 피곤해요. (kech yotganim sababli — salbiy natija)",
+   "options": [
+    "는 대신에",
+    "는 바람에",
+    "는 동안",
+    "기로 해서"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 7,
+   "q": "A: 왜 늦었어요? B: 길이 많이 막혔______. (sababni izohlab)",
+   "options": [
+    "군요",
+    "네요",
+    "거든요",
+    "을까요"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 8,
+   "q": "'가는 말이 고와야 오는 말이 곱다' maqolining ma'nosi:",
+   "options": [
+    "Yurish yaxshi bo'lsa, yo'l yaxshi",
+    "Gap kumushga arziydi",
+    "Ko'p gapirgan ko'p biladi",
+    "Yaxshi gapirsang, yaxshi javob olasan"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 9,
+   "q": "저는 매일 아침 운동을 하______ 건강해졌어요. (qilib turgani sababli)",
+   "options": [
+    "다 보니",
+    "다가",
+    "고서",
+    "자마자"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 10,
+   "q": "집에 도착하______ 전화할게요. (yetib kelishim bilan)",
+   "options": [
+    "려다가",
+    "자마자",
+    "는 동안",
+    "더라도"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 11,
+   "q": "'아무리 바빠도 밥은 먹어야 해요'dagi '아무리 ~아/어도' ma'nosi:",
+   "options": [
+    "Hech … bo'lmaydi",
+    "Aytgancha …",
+    "Qanchalik … bo'lmasin",
+    "Darhol …"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 12,
+   "q": "Hurmat shakli: '할머니께서 진지를 ______.'",
+   "options": [
+    "먹어요",
+    "마셔요",
+    "주무세요",
+    "드세요"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 13,
+   "q": "'그 사람은 말이 너무 많아서 입이 가벼워요' — '입이 가볍다' ma'nosi:",
+   "options": [
+    "Sirni saqlay olmaydi",
+    "Kam gapiradi",
+    "Ovqatni oz yeydi",
+    "Ovozi past"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 14,
+   "q": "지금 비가 오는 걸 보니까 우산을 가져가______. (bo'lgani yaxshi)",
+   "options": [
+    "는 척했어요",
+    "는 게 좋겠어요",
+    "기 마련이에요",
+    "을 뻔했어요"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 15,
+   "q": "하마터면 기차를 놓칠 ______. (oz qoldi)",
+   "options": [
+    "만했어요",
+    "리 없어요",
+    "뻔했어요",
+    "듯했어요"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 16,
+   "q": "'그는 바쁜 ______ 나를 도와주었다.' (band bo'lsa ham)",
+   "options": [
+    "는 대신에",
+    "기 때문에",
+    "자마자",
+    "데도 불구하고"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 17,
+   "q": "Quyidagilardan qaysi biri 'sabab' emas, 'shart' bildiradi?",
+   "options": [
+    "-(으)면",
+    "-(으)니까",
+    "-기 때문에",
+    "-아/어서"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 18,
+   "q": "'시험 준비를 ______ 밤을 새웠어요.' (tayyorlanish uchun/tayyorlayotib)",
+   "options": [
+    "하더라도",
+    "하느라고",
+    "하든지",
+    "하려면"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 19,
+   "q": "'눈코 뜰 새 없다' idiomasi:",
+   "options": [
+    "Ko'zi og'riydi",
+    "Uyqusi kelmaydi",
+    "Juda band",
+    "Juda go'zal"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 20,
+   "q": "Qaysi gap grammatik jihatdan TO'G'RI?",
+   "options": [
+    "저는 어제 친구를 만나서 영화를 봐요.",
+    "저는 어제 친구를 만났서 영화를 봤어요.",
+    "저는 어제 친구를 만나고서 영화를 보았어서요.",
+    "저는 어제 친구를 만나서 영화를 봤어요."
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 21,
+   "q": "'열심히 공부했______ 성적이 오르지 않아요.' (qancha harakat qilmasin)",
+   "options": [
+    "어도",
+    "으니까",
+    "으려고",
+    "으면서"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 22,
+   "q": "'그 소식을 들었을 때 정말 ______.' ('dovdirab qoldim, hayratda' ma'nosida)",
+   "options": [
+    "발이 넓었어요",
+    "어이가 없었어요",
+    "손이 컸어요",
+    "귀가 얇았어요"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 23,
+   "q": "'그 사람은 약속을 지키지 않을 ______ 없어요.' (bo'lishi mumkin emas)",
+   "options": [
+    "참이",
+    "셈이",
+    "리가",
+    "만큼이"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 24,
+   "q": "'~(으)ㄹ 뿐만 아니라' qaysi ma'noga yaqin?",
+   "options": [
+    "… bo'lsa-da",
+    "… uchun",
+    "… dan keyin",
+    "Nafaqat … balki …"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 25,
+   "q": "Matn: '요즘 건강을 위해 걷기 운동을 하는 사람이 늘고 있다. 걷기는 돈이 들지 않을 뿐만 아니라 누구나 쉽게 할 수 있다.' Matnning asosiy fikri:",
+   "options": [
+    "Yurish — arzon va hamma uchun qulay mashq",
+    "Yurish qimmat sport turi",
+    "Faqat yoshlar yuradi",
+    "Sport zalida shug'ullanish yaxshiroq"
+   ],
+   "correct": "A"
+  }
+ ]
+}
