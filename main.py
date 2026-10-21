@@ -164,9 +164,13 @@ def fmt_dur(sec):
     m, s = divmod(int(sec or 0), 60)
     return f"{m} daq {s:02d} s"
 
-def exam_deadline(subject, started_ts, end_ts):
-    """Mental arifmetikada boshlangandan MENTAL_MINUTES daqiqa (olimpiada tugashidan oshmaydi), boshqalarda olimpiada tugashi."""
-    return min(end_ts, started_ts + MENTAL_MINUTES * 60) if subject == MENTAL else end_ts
+def exam_minutes(subject):
+    return MENTAL_MINUTES if subject == MENTAL else duration_min()
+
+def exam_deadline(subject, started_ts):
+    """Har bir o‘quvchi boshlagan paytidan to‘liq vaqt oladi (mental: 10 daqiqa, boshqalar: admin belgilagan davomiylik).
+    Testni faqat boshlanish–tugash oralig‘ida boshlash mumkin, boshlangan test esa tugash vaqtidan keyin ham davom etadi."""
+    return started_ts + exam_minutes(subject) * 60
 
 def minutes_left(deadline_ts):
     return max(0, math.ceil((deadline_ts - time.time()) / 60))
@@ -228,7 +232,8 @@ def schedule_line():
     start, end = test_time(), test_end()
     if not start:
         return "Olimpiada vaqti hali belgilanmagan"
-    return f"{start.strftime('%d.%m.%Y')}, soat {start.strftime('%H:%M')} – {end.strftime('%H:%M')} (Toshkent vaqti, {duration_min()} daqiqa)"
+    return (f"{start.strftime('%d.%m.%Y')}, testni boshlash mumkin: soat {start.strftime('%H:%M')} – {end.strftime('%H:%M')} (Toshkent vaqti). "
+            f"Har bir o‘quvchiga boshlagan paytidan {duration_min()} daqiqa ({MENTAL}: {MENTAL_MINUTES} daqiqa)")
 
 def profile_text(u, title="👤 Shaxsiy kabinet"):
     birth = u["birth_date"].replace("-", ".") if u["birth_date"] else "—"
@@ -336,10 +341,10 @@ async def start_exam(uid, context):
     now = time.time()
     if now < start.timestamp():
         await send(f"⏳ Olimpiada hali boshlanmadi.\n\n📅 Sana: {start.strftime('%d.%m.%Y')}\n🕒 Vaqt: {start.strftime('%H:%M')} (Toshkent vaqti)\n"
-                   f"⌛ Davomiyligi: {duration_min()} daqiqa\n\nTest aynan shu sana va vaqtda boshlanadi. Shu vaqtda “🧪 Testni boshlash” tugmasini bosing "
+                   f"⌛ Davomiyligi: {exam_minutes(u['subject'])} daqiqa\n\nTest aynan shu sana va vaqtda boshlanadi. Shu vaqtda “🧪 Testni boshlash” tugmasini bosing "
                    "yoki botdan kelgan xabardagi tugmadan foydalaning."); return
-    if now >= end.timestamp():
-        await send("⌛ Olimpiada yakunlangan. Test ishlash vaqti tugadi.", reply_markup=home_keyboard(uid)); return
+    if now >= end.timestamp() and not get_exam(uid):
+        await send(f"⌛ Testni boshlash vaqti tugagan (soat {end.strftime('%H:%M')} gacha edi). Endi testni boshlab bo‘lmaydi.", reply_markup=home_keyboard(uid)); return
     if get_exam(uid):
         await send("Test davom etmoqda. Joriy savolga javob bering.")
         await send_question(uid, bot); return
@@ -350,7 +355,7 @@ async def start_exam(uid, context):
     if not pool:
         await send(f"“{subject} — {level}” uchun savollar hali qo‘shilmagan. Iltimos, admin bilan bog‘laning."); return
     ids = pool if subject == MENTAL else random.sample(pool, min(QUESTIONS_PER_TEST, len(pool)))
-    deadline = exam_deadline(subject, now, end.timestamp())
+    deadline = exam_deadline(subject, now)
     created = q_one("""INSERT INTO exams(telegram_id,subject,level,question_ids,idx,correct,started_ts,deadline_ts)
         VALUES(%s,%s,%s,%s,0,0,%s,%s) ON CONFLICT(telegram_id) DO NOTHING RETURNING telegram_id""",
         (uid, subject, level, json.dumps(ids), now, deadline))
@@ -505,9 +510,8 @@ async def notify_start(bot):
         try:
             await bot.send_message(r["telegram_id"],
                 f"🔔 Olimpiada boshlandi!\nFan: {r['subject'] or '—'}\nDaraja: {r['level'] or '—'}\n"
-                + (f"Testni {end.strftime('%H:%M')} gacha boshlashingiz mumkin. Boshlaganingizdan keyin {MENTAL_MINUTES} daqiqa vaqt beriladi."
-                 if r["subject"] == MENTAL else f"Test {end.strftime('%H:%M')} gacha davom etadi ({duration_min()} daqiqa).")
-                + " Tayyor bo‘lsangiz, tugmani bosing.",
+                f"Testni soat {end.strftime('%H:%M')} gacha boshlashingiz mumkin. Boshlaganingizdan keyin {exam_minutes(r['subject'])} daqiqa vaqt beriladi."
+                " Tayyor bo‘lsangiz, tugmani bosing.",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🧪 Testni boshlash", callback_data="begin:go")]]))
         except Exception as e:
             print("Xabar yuborishda xatolik:", r["telegram_id"], repr(e))
@@ -566,8 +570,9 @@ def olympiad_state():
     if not start: return "Vaqt belgilanmagan"
     now = time.time()
     if now < start.timestamp(): return "Hali boshlanmagan"
-    if now < end.timestamp(): return "Davom etmoqda"
-    return "Yakunlangan"
+    if now < end.timestamp(): return "Davom etmoqda (testni boshlash mumkin)"
+    active = q_one("SELECT COUNT(*) AS n FROM exams")["n"]
+    return f"Boshlash vaqti tugadi, {active} kishi hali ishlayapti" if active else "Yakunlangan"
 
 async def admin_stats(update, context):
     if not is_admin(update.effective_user.id): return
@@ -654,11 +659,8 @@ async def duration_prompt(update, context):
     context.user_data["awaiting_schedule"] = "duration_only"
 
 def apply_new_deadline():
-    """Ishlayotgan testlar muddatini yangi tugash vaqtiga moslaydi."""
-    end = test_end()
-    if end:
-        q_exec("UPDATE exams SET deadline_ts=%s WHERE subject<>%s", (end.timestamp(), MENTAL))
-        q_exec("UPDATE exams SET deadline_ts=LEAST(started_ts+%s, %s) WHERE subject=%s", (MENTAL_MINUTES * 60, end.timestamp(), MENTAL))
+    """Davomiylik o‘zgarsa, ishlayotgan testlar muddati ham yangilanadi (boshlagan vaqtdan + yangi davomiylik)."""
+    q_exec("UPDATE exams SET deadline_ts=started_ts+%s WHERE subject<>%s", (duration_min() * 60, MENTAL))
 
 async def schedule_save(update, context):
     state = context.user_data.get("awaiting_schedule")
@@ -677,7 +679,7 @@ async def schedule_save(update, context):
             await update.message.reply_text("O‘tgan vaqtni belgilab bo‘lmaydi. Qayta kiriting.", reply_markup=cancel_kb); return
         context.user_data["new_start"] = text
         context.user_data["awaiting_schedule"] = "duration"
-        await update.message.reply_text("Test necha daqiqa davom etadi? Raqam bilan kiriting (masalan: 60).\nShu vaqt tugagach test to‘xtatiladi.", reply_markup=cancel_kb)
+        await update.message.reply_text("Test necha daqiqa davom etadi? Raqam bilan kiriting (masalan: 60).\nTestni boshlanish vaqtidan shuncha daqiqa ichida boshlash mumkin. Har bir o‘quvchi boshlagan paytidan shuncha vaqt oladi.", reply_markup=cancel_kb)
         return
     if not text.isdigit() or not 1 <= int(text) <= 1440:
         await update.message.reply_text("Davomiylikni daqiqalarda, 1 dan 1440 gacha raqam bilan kiriting.", reply_markup=cancel_kb); return
