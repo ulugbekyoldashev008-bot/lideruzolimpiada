@@ -4,45 +4,45 @@
    "n": 1,
    "q": "🇺🇿 Stolda 20 ta, 16 ta va 18 ta olma. Hammasi nechta?\n🇷🇺 На столе 20, 16 и 18 яблок. Сколько всего?\n🇬🇧 There are 20, 16 and 18 apples. How many in all?",
    "options": [
-    "64",
-    "50",
+    "54",
     "44",
-    "54"
+    "64",
+    "50"
    ],
-   "correct": "D"
+   "correct": "A"
   },
   {
    "n": 2,
    "q": "🇺🇿 Qutida 30 ta o‘yinchoq bor edi. 12 tasi olindi. Nechta qoldi?\n🇷🇺 В коробке было 30 игрушек. Взяли 12. Сколько осталось?\n🇬🇧 There were 30 toys. 12 were taken. How many are left?",
    "options": [
-    "18",
     "14",
+    "16",
     "22",
-    "16"
+    "18"
    ],
-   "correct": "A"
+   "correct": "D"
   },
   {
    "n": 3,
    "q": "🇺🇿 17 ta + 23 ta − 8 ta = ?\n🇷🇺 17 + 23 − 8 = ?\n🇬🇧 17 + 23 − 8 = ?",
    "options": [
+    "36",
     "32",
     "28",
-    "36",
     "30"
    ],
-   "correct": "A"
+   "correct": "B"
   },
   {
    "n": 4,
    "q": "🇺🇿 Bir javonda 25 ta, ikkinchisida 19 ta kitob. Jami nechta?\n🇷🇺 На одной полке 25 книг, на второй 19. Сколько всего?\n🇬🇧 One shelf has 25 books, the second 19. How many in all?",
    "options": [
-    "40",
+    "44",
     "54",
     "34",
-    "44"
+    "40"
    ],
-   "correct": "D"
+   "correct": "A"
   },
   {
    "n": 5,
@@ -61,8 +61,8 @@
    "options": [
     "55",
     "45",
-    "35",
-    "40"
+    "40",
+    "35"
    ],
    "correct": "B"
   },
@@ -70,54 +70,54 @@
    "n": 7,
    "q": "🇺🇿 Bir uyda 28 ta, ikkinchisida 22 ta deraza. Birinchidan 10 ta yopildi. Qolgan derazalar jami?\n🇷🇺 В одном доме 28 окон, во втором 22. Закрыли 10. Сколько окон осталось всего?\n🇬🇧 One house has 28 windows, the second 22. 10 were closed. How many remain in all?",
    "options": [
-    "36",
+    "42",
     "38",
-    "40",
-    "42"
+    "36",
+    "40"
    ],
-   "correct": "C"
+   "correct": "D"
   },
   {
    "n": 8,
    "q": "🇺🇿 Uch savatda 21, 17 va 14 ta tuxum. Har biridan 3 tadan olindi. Qolgani?\n🇷🇺 В трёх корзинах 21, 17 и 14 яиц. Из каждой взяли по 3. Сколько осталось?\n🇬🇧 Three baskets have 21, 17 and 14 eggs. 3 taken from each. How many remain?",
    "options": [
+    "37",
     "43",
     "34",
-    "37",
     "49"
    ],
-   "correct": "A"
+   "correct": "B"
   },
   {
    "n": 9,
    "q": "🇺🇿 45 ta olma bor edi. 18 tasi berildi, keyin 9 ta keldi. Endi nechta?\n🇷🇺 Было 45 яблок. Отдали 18, потом пришло 9. Сколько сейчас?\n🇬🇧 There were 45 apples. 18 were given away, then 9 arrived. How many now?",
    "options": [
-    "34",
     "36",
-    "38",
-    "32"
+    "32",
+    "34",
+    "38"
    ],
-   "correct": "B"
+   "correct": "A"
   },
   {
    "n": 10,
    "q": "🇺🇿 16 ta + 24 ta − 11 ta = ?\n🇷🇺 16 + 24 − 11 = ?\n🇬🇧 16 + 24 − 11 = ?",
    "options": [
-    "25",
-    "27",
+    "31",
     "29",
-    "31"
+    "27",
+    "25"
    ],
-   "correct": "C"
+   "correct": "B"
   },
   {
    "n": 11,
    "q": "🇺🇿 Qizil mashinada 20 bola, ko‘kda 15, yashilda 13. Hammasi nechta?\n🇷🇺 В красной 20 детей, в синей 15, в зелёной 13. Сколько всего?\n🇬🇧 Red car has 20 children, blue 15, green 13. How many in all?",
    "options": [
-    "42",
     "38",
+    "58",
     "48",
-    "58"
+    "42"
    ],
    "correct": "C"
   },
@@ -127,41 +127,41 @@
    "options": [
     "20",
     "16",
-    "18",
-    "22"
+    "22",
+    "18"
    ],
-   "correct": "C"
+   "correct": "D"
   },
   {
    "n": 13,
    "q": "🇺🇿 22 ta, 19 ta va 15 ta meva. Jami nechta?\n🇷🇺 22, 19 и 15 фруктов. Сколько всего?\n🇬🇧 22, 19 and 15 fruits. How many in all?",
    "options": [
-    "46",
-    "50",
     "56",
-    "66"
+    "66",
+    "46",
+    "50"
    ],
-   "correct": "C"
+   "correct": "A"
   },
   {
    "n": 14,
    "q": "🇺🇿 28 ta sharchik bor edi. 9 tasi uchib ketdi. Nechta qoldi?\n🇷🇺 Было 28 шариков. 9 улетели. Сколько осталось?\n🇬🇧 There were 28 balloons. 9 flew away. How many are left?",
    "options": [
-    "15",
-    "21",
+    "19",
     "17",
-    "19"
+    "15",
+    "21"
    ],
-   "correct": "D"
+   "correct": "A"
   },
   {
    "n": 15,
    "q": "🇺🇿 Bir uyda 26 ta, ikkinchisida 18 ta, uchinchisida 14 ta deraza. Hammasi nechta?\n🇷🇺 В одном доме 26 окон, во втором 18, в третьем 14. Сколько всего?\n🇬🇧 One house has 26 windows, the second 18, the third 14. How many in all?",
    "options": [
     "52",
-    "68",
+    "48",
     "58",
-    "48"
+    "68"
    ],
    "correct": "C"
   },
@@ -169,31 +169,31 @@
    "n": 16,
    "q": "🇺🇿 40 ta tuxum bor edi. 12 tasi ishlatildi. Nechta qoldi?\n🇷🇺 Было 40 яиц. Использовали 12. Сколько осталось?\n🇬🇧 There were 40 eggs. 12 were used. How many are left?",
    "options": [
-    "28",
     "26",
     "32",
+    "28",
     "24"
    ],
-   "correct": "A"
+   "correct": "C"
   },
   {
    "n": 17,
    "q": "🇺🇿 18 ta + 27 ta − 13 ta = ?\n🇷🇺 18 + 27 − 13 = ?\n🇬🇧 18 + 27 − 13 = ?",
    "options": [
-    "32",
+    "28",
     "30",
-    "34",
-    "28"
+    "32",
+    "34"
    ],
-   "correct": "A"
+   "correct": "C"
   },
   {
    "n": 18,
    "q": "🇺🇿 Qutida 36 ta, 24 ta va 12 ta. Eng katta qutidan eng kichigini ayiring.\n🇷🇺 В коробках 36, 24 и 12. Наибольшая минус наименьшая?\n🇬🇧 Boxes have 36, 24 and 12. Largest minus the smallest?",
    "options": [
     "20",
-    "16",
     "28",
+    "16",
     "24"
    ],
    "correct": "D"
@@ -202,23 +202,23 @@
    "n": 19,
    "q": "🇺🇿 30 ta bola bor edi. 11 tasi tushdi, 7 tasi chiqdi. Endi nechta?\n🇷🇺 Было 30 детей. 11 вышли, 7 сели. Сколько сейчас?\n🇬🇧 There were 30 children. 11 got off, 7 got on. How many now?",
    "options": [
-    "22",
     "28",
     "26",
+    "22",
     "24"
    ],
-   "correct": "C"
+   "correct": "B"
   },
   {
    "n": 20,
    "q": "🇺🇿 21 ta kitob + 19 ta kitob − 8 ta kitob = ?\n🇷🇺 21 книга + 19 книг − 8 книг = ?\n🇬🇧 21 books + 19 books − 8 books = ?",
    "options": [
     "34",
-    "32",
     "30",
+    "32",
     "28"
    ],
-   "correct": "B"
+   "correct": "C"
   }
  ],
  "2-sinf": [
@@ -323,7 +323,7 @@
   },
   {
    "n": 10,
-   "q": "🇺🇿 3 ta daftar 18 so‘m, 4 ta qalam 15 so‘m, 2 ta o‘chirg‘ich 16 so‘m. Jami narxdan 25 so‘m chegirma. To‘lov?\n🇷🇺 3 тетради по 18, 4 карандаша по 15, 2 ластика по 16. Минус скидка 25. К оплате?\n🇬🇧 3 notebooks at 18, 4 pencils at 15, 2 erasers at 16, minus 25 discount. Paid?",
+   "q": "🇺🇿 3 ta daftar 18 so‘mdan, 4 ta qalam 15 so‘mdan, 2 ta o‘chirg‘ich 16 so‘mdan. Jami narxdan 25 so‘m chegirma. To‘lov?\n🇷🇺 3 тетради по 18, 4 карандаша по 15, 2 ластика по 16. Минус скидка 25. К оплате?\n🇬🇧 3 notebooks at 18, 4 pencils at 15, 2 erasers at 16, minus 25 discount. Paid?",
    "options": [
     "146",
     "121",
@@ -490,7 +490,7 @@
   },
   {
    "n": 5,
-   "q": "½·420 + ⅓·360 + ¼·280 = ?",
+   "q": "1/2·420 + 1/3·360 + 1/4·280 = ?",
    "options": [
     "370",
     "400",
@@ -512,7 +512,7 @@
   },
   {
    "n": 7,
-   "q": "🇺🇿 Uch savat: 320, 280 va 200 ta tuxum. Har birining ¼ qismi olindi. Olinganlar jami?\n🇷🇺 Три корзины 320, 280 и 200 яиц. Взяли ¼ из каждой. Всего взяли?\n🇬🇧 Three baskets 320, 280 and 200 eggs. ¼ from each. Total taken?",
+   "q": "🇺🇿 Uch savat: 320, 280 va 200 ta tuxum. Har birining 1/4 qismi olindi. Olinganlar jami?\n🇷🇺 Три корзины 320, 280 и 200 яиц. Взяли 1/4 из каждой. Всего взяли?\n🇬🇧 Three baskets 320, 280 and 200 eggs. 1/4 from each. Total taken?",
    "options": [
     "800",
     "160",
@@ -545,7 +545,7 @@
   },
   {
    "n": 10,
-   "q": "🇺🇿 5 tadan 136 so‘m, 4 tadan 125 so‘m, 6 tadan 48 so‘m. Jami + 124 so‘m yetkazib berish. To‘lov?\n🇷🇺 5 товаров по 136, 4 по 125, 6 по 48, плюс доставка 124. К оплате?\n🇬🇧 5 items at 136, 4 at 125, 6 at 48, plus 124 delivery. Paid?",
+   "q": "🇺🇿 5 ta tovar 136 so‘mdan, 4 ta tovar 125 so‘mdan, 6 ta tovar 48 so‘mdan. Jami + 124 so‘m yetkazib berish. To‘lov?\n🇷🇺 5 товаров по 136, 4 по 125, 6 по 48, плюс доставка 124. К оплате?\n🇬🇧 5 items at 136, 4 at 125, 6 at 48, plus 124 delivery. Paid?",
    "options": [
     "1592",
     "1468",
@@ -567,7 +567,7 @@
   },
   {
    "n": 12,
-   "q": "½·560 + ¼·320 - ½·120 = ?",
+   "q": "1/2·560 + 1/4·320 - 1/2·120 = ?",
    "options": [
     "340",
     "280",
@@ -578,7 +578,7 @@
   },
   {
    "n": 13,
-   "q": "🇺🇿 Uch guruh: 180, 260 va 240 bola. Jami bolalarning ¼ qismi medal oldi. Nechta medal?\n🇷🇺 Три группы: 180, 260 и 240 детей. ¼ всех получили медаль. Сколько медалей?\n🇬🇧 Three groups: 180, 260 and 240 children. ¼ of all got a medal. How many medals?",
+   "q": "🇺🇿 Uch guruh: 180, 260 va 240 bola. Jami bolalarning 1/4 qismi medal oldi. Nechta medal?\n🇷🇺 Три группы: 180, 260 и 240 детей. 1/4 всех получили медаль. Сколько медалей?\n🇬🇧 Three groups: 180, 260 and 240 children. 1/4 of all got a medal. How many medals?",
    "options": [
     "170",
     "680",
@@ -622,7 +622,7 @@
   },
   {
    "n": 17,
-   "q": "🇺🇿 To‘rt quti 140, 220, 180 va 100 ta. Eng kichigidan tashqari uchtasining yig‘indisining ¼ qismi?\n🇷🇺 Четыре коробки 140, 220, 180 и 100. ¼ суммы трёх, кроме наименьшей?\n🇬🇧 Four boxes 140, 220, 180 and 100. ¼ of the sum of the three except the smallest?",
+   "q": "🇺🇿 To‘rt quti 140, 220, 180 va 100 ta. Eng kichigidan tashqari uchtasining yig‘indisining 1/4 qismi?\n🇷🇺 Четыре коробки 140, 220, 180 и 100. 1/4 суммы трёх, кроме наименьшей?\n🇬🇧 Four boxes 140, 220, 180 and 100. 1/4 of the sum of the three except the smallest?",
    "options": [
     "135",
     "540",
@@ -655,7 +655,7 @@
   },
   {
    "n": 20,
-   "q": "🇺🇿 Uch ferma 360, 480 va 280 ta tuxum. Jami tuxumning ¼ qismi?\n🇷🇺 Три фермы 360, 480 и 280 яиц. ¼ всех яиц?\n🇬🇧 Three farms 360, 480 and 280 eggs. ¼ of all eggs?",
+   "q": "🇺🇿 Uch ferma 360, 480 va 280 ta tuxum. Jami tuxumning 1/4 qismi?\n🇷🇺 Три фермы 360, 480 и 280 яиц. 1/4 всех яиц?\n🇬🇧 Three farms 360, 480 and 280 eggs. 1/4 of all eggs?",
    "options": [
     "1120",
     "240",
@@ -668,295 +668,240 @@
  "4-sinf": [
   {
    "n": 1,
-   "q": "Hisoblang: 3 458 + 2 765 = ?",
+   "q": "🇺🇿 Bir son 6 ta minglik, 4 ta o‘nlik va 3 ta birlikdan tashkil topgan. Bu qanday son?\n🇷🇺 Какое число состоит из 6 тысяч, 4 десятков и 3 единиц?\n🇬🇧 What is the number made up of 6 thousands, 4 tens and 3 ones?",
    "options": [
-    "6 123",
-    "6 223",
-    "6 323",
-    "6 213"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 2,
-   "q": "Hisoblang: 8 000 − 3 476 = ?",
-   "options": [
-    "4 524",
-    "4 624",
-    "4 534",
-    "5 524"
+    "6 043",
+    "6 403",
+    "6 430",
+    "60 403"
    ],
    "correct": "A"
   },
   {
-   "n": 3,
-   "q": "246 × 4 amalining natijasini toping.",
+   "n": 2,
+   "q": "🇺🇿 Quyidagi sonlardan qaysi biri 5 ga bo‘linganda 3 qoldiq beradi?\n🇷🇺 Какое из следующих чисел при делении на 5 даёт остаток 3?\n🇬🇧 Which of the following numbers leaves a remainder of 3 when divided by 5?",
    "options": [
-    "944",
-    "974",
-    "984",
-    "986"
+    "42",
+    "45",
+    "48",
+    "50"
    ],
    "correct": "C"
   },
   {
-   "n": 4,
-   "q": "936 : 6 = ?",
+   "n": 3,
+   "q": "9999 + 999 + 99 + 9 = ?",
    "options": [
-    "146",
-    "156",
-    "166",
-    "176"
+    "11 106",
+    "11 100",
+    "11 006",
+    "11 110"
    ],
-   "correct": "B"
+   "correct": "A"
+  },
+  {
+   "n": 4,
+   "q": "🇺🇿 □ : 6 = 9 (qoldiq △) tenglamasida △ ning eng katta qiymati nechaga teng?\n🇷🇺 В выражении □ : 6 = 9 (остаток △) чему равно максимальное значение △?\n🇬🇧 In □ ÷ 6 = 9 remainder △, what is the maximum value of △?",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "correct": "C"
   },
   {
    "n": 5,
-   "q": "Hisoblang: (125 + 75) × 6 = ?",
+   "q": "1 + 2 + 3 + 4 + … + 20 = ?",
    "options": [
-    "1 000",
-    "1 100",
-    "1 200",
-    "1 250"
+    "190",
+    "200",
+    "210",
+    "220"
    ],
    "correct": "C"
   },
   {
    "n": 6,
-   "q": "4 560 sonida nechta yuzlik bor?",
+   "q": "🇺🇿 Bir chelak 12 l suv, bir shisha esa 500 ml suv sig‘diradi. Chelakning sig‘imi shishanikidan necha marta katta?\n🇷🇺 Ёмкость ведра 12 л, а бутылки — 500 мл. Во сколько раз вместимость ведра больше вместимости бутылки?\n🇬🇧 A bucket holds 12 l of water and a bottle holds 500 ml. How many times greater is the bucket's capacity than the bottle's?",
    "options": [
-    "45 ta",
-    "456 ta",
-    "4 ta",
-    "56 ta"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 7,
-   "q": "Bir do‘konga 245 kg olma keltirildi. Birinchi kuni 87 kg, ikkinchi kuni 96 kg sotildi. Necha kilogramm olma qoldi?",
-   "options": [
-    "62 kg",
-    "72 kg",
-    "68 kg",
-    "82 kg"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 8,
-   "q": "To‘g‘ri to‘rtburchakning uzunligi 18 cm, eni 7 cm. Uning perimetrini toping.",
-   "options": [
-    "25 cm",
-    "50 cm",
-    "126 cm",
-    "42 cm"
+    "20",
+    "24",
+    "240",
+    "120"
    ],
    "correct": "B"
   },
   {
-   "n": 9,
-   "q": "Kvadratning tomoni 12 cm. Uning yuzini toping.",
+   "n": 7,
+   "q": "🇺🇿 Kvadratning perimetri 36 sm. Uning tomoni uzunligi qancha?\n🇷🇺 Периметр квадрата равен 36 см. Какова длина его стороны?\n🇬🇧 The perimeter of a square is 36 cm. What is the length of its side?",
    "options": [
-    "24 cm²",
-    "48 cm²",
-    "144 cm²",
-    "124 cm²"
+    "6 sm",
+    "8 sm",
+    "9 sm",
+    "12 sm"
    ],
    "correct": "C"
   },
   {
-   "n": 10,
-   "q": "3 soat 45 minut necha minut bo‘ladi?",
+   "n": 8,
+   "q": "🇺🇿 To‘g‘ri to‘rtburchak shaklidagi yerning uzunligi 25 m, eni 13 m. Yuzini hisoblang.\n🇷🇺 Прямоугольный участок имеет длину 25 м и ширину 13 м. Вычислите его площадь.\n🇬🇧 A rectangular garden is 25 m long and 13 m wide. Calculate its area.",
    "options": [
-    "205 minut",
-    "215 minut",
-    "225 minut",
-    "245 minut"
+    "352 m²",
+    "235 m²",
+    "325 m²",
+    "253 m²"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 9,
+   "q": "🇺🇿 5/8 ni o‘nli kasrga aylantiring.\n🇷🇺 Преобразуйте 5/8 в десятичную дробь.\n🇬🇧 Convert 5/8 to a decimal.",
+   "options": [
+    "0,5",
+    "0,625",
+    "0,8",
+    "0,325"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 10,
+   "q": "🇺🇿 To‘g‘ri burchakli parallelepipedning nechta uchi bor?\n🇷🇺 Сколько вершин у прямоугольного параллелепипеда?\n🇬🇧 How many vertices does a cuboid have?",
+   "options": [
+    "5",
+    "4",
+    "8",
+    "9"
    ],
    "correct": "C"
   },
   {
    "n": 11,
-   "q": "5 kg 350 g necha grammga teng?",
+   "q": "🇺🇿 Siti xola har kuni 127 ta qovurilgan banan sotadi. 3 hafta davomida nechta banan sotadi?\n🇷🇺 Тётя Сити каждый день продаёт 127 жареных бананов. Сколько бананов она продаст за 3 недели?\n🇬🇧 Madam Siti sells 127 fried bananas every day. How many does she sell in 3 weeks?",
    "options": [
-    "5 035 g",
-    "5 350 g",
-    "5 530 g",
-    "535 g"
+    "2 766",
+    "2 676",
+    "2 667",
+    "2 776"
    ],
-   "correct": "B"
+   "correct": "C"
   },
   {
    "n": 12,
-   "q": "2 m 45 cm + 1 m 80 cm = ?",
+   "q": "🇺🇿 5 ta sonning o‘rtacha qiymati 12 ga teng. Bitta son olib tashlangach, qolgan 4 ta sonning o‘rtacha qiymati 10 ga teng bo‘ldi. Olib tashlangan son nechaga teng?\n🇷🇺 Среднее 5 чисел равно 12. После удаления одного числа среднее оставшихся 4 чисел равно 10. Какое число удалили?\n🇬🇧 The average of 5 numbers is 12. After removing one number, the average of the remaining 4 is 10. What number was removed?",
    "options": [
-    "3 m 25 cm",
-    "4 m 15 cm",
-    "4 m 25 cm",
-    "3 m 125 cm"
+    "10",
+    "12",
+    "18",
+    "20"
    ],
-   "correct": "C"
+   "correct": "D"
   },
   {
    "n": 13,
-   "q": "Sonning 1/4 qismi 18 ga teng. Shu sonni toping.",
+   "q": "🇺🇿 To‘g‘ri to‘rtburchakning eni 7 sm, uzunligi enidan ikki baravar katta. Yuzini hisoblang.\n🇷🇺 Ширина прямоугольника 7 см, длина в два раза больше ширины. Вычислите площадь.\n🇬🇧 A rectangle is 7 cm wide and its length is twice the width. Calculate its area.",
    "options": [
-    "54",
-    "64",
-    "72",
-    "82"
+    "90 sm²",
+    "94 sm²",
+    "92 sm²",
+    "98 sm²"
    ],
-   "correct": "C"
+   "correct": "D"
   },
   {
    "n": 14,
-   "q": "360 ning 1/3 qismini toping.",
+   "q": "🇺🇿 Hozir soat 13:45. Soat 17:10 gacha qancha vaqt bor?\n🇷🇺 Сейчас 13:45. Сколько времени осталось до 17:10?\n🇬🇧 It is now 1:45 p.m. How much time is there until 5:10 p.m.?",
    "options": [
-    "90",
-    "100",
-    "120",
-    "130"
+    "3 soat 25 daqiqa",
+    "3 soat 20 daqiqa",
+    "3 soat 15 daqiqa",
+    "3 soat 10 daqiqa"
    ],
-   "correct": "C"
+   "correct": "A"
   },
   {
    "n": 15,
-   "q": "Ketma-ketlikni davom ettiring: 125, 150, 175, 200, ...",
+   "q": "🇺🇿 Quyidagi o‘nli kasrlardan qaysi biri eng katta?\n🇷🇺 Какая из следующих десятичных дробей самая большая?\n🇬🇧 Which of the following decimals is the largest?",
    "options": [
-    "215",
-    "220",
-    "225",
-    "250"
+    "7,0",
+    "0,7",
+    "0,07",
+    "0,007"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 16,
+   "q": "🇺🇿 Onam 3 kg olma va 2 kg uzumni jami 24 ming so‘mga sotib oldi. 1 kg olma 4 ming so‘m bo‘lsa, 1 kg uzum necha so‘m?\n🇷🇺 Мама купила 3 кг яблок и 2 кг винограда за 24 тысячи сумов. Если 1 кг яблок стоит 4 тысячи сумов, сколько стоит 1 кг винограда?\n🇬🇧 Mother bought 3 kg of apples and 2 kg of grapes for 24 thousand soums. If apples cost 4 thousand soums per kg, how much is 1 kg of grapes?",
+   "options": [
+    "2 ming so‘m",
+    "4 ming so‘m",
+    "6 ming so‘m",
+    "8 ming so‘m"
    ],
    "correct": "C"
   },
   {
-   "n": 16,
-   "q": "Tenglamani yeching: x + 275 = 640",
-   "options": [
-    "355",
-    "365",
-    "375",
-    "915"
-   ],
-   "correct": "B"
-  },
-  {
    "n": 17,
-   "q": "Tenglamani yeching: 720 : x = 8",
+   "q": "🇺🇿 Yakshanba kuni parkka kelganlar (🙂 = 50 kishi):\nYoshlar: 🙂🙂🙂🙂🙂🙂🙂🙂\nKeksalar: 🙂🙂🙂\nBolalar: keksalardan 🙂🙂 ta ko‘p\nParkka jami necha kishi kelgan?\n🇷🇺 Посетители парка в воскресенье (🙂 = 50 человек): молодые — 8 🙂, пожилые — 3 🙂, детей на 2 🙂 больше, чем пожилых. Сколько всего посетителей?\n🇬🇧 Park visitors on Sunday (🙂 = 50 people): youths — 8 🙂, elderly — 3 🙂, children — 2 🙂 more than the elderly. How many visitors in total?",
    "options": [
-    "80",
-    "90",
-    "100",
-    "96"
+    "850",
+    "800",
+    "750",
+    "700"
    ],
    "correct": "B"
   },
   {
    "n": 18,
-   "q": "Bir avtobusda 48 nafar yo‘lovchi bor edi. Bekatda 17 kishi tushdi va 23 kishi chiqdi. Avtobusda nechta yo‘lovchi bo‘ldi?",
+   "q": "🇺🇿 Shoxruhning 50 ta markasi bor. U Ulug‘bekka 8 ta marka bergach, ikkalasida markalar soni teng bo‘ldi. Ulug‘bekda dastlab nechta marka bo‘lgan?\n🇷🇺 У Шохруха 50 марок. После того как он отдал Улугбеку 8 марок, у них стало поровну. Сколько марок было у Улугбека сначала?\n🇬🇧 Shokhrukh has 50 stamps. After giving 8 stamps to Ulugbek, they have the same number. How many stamps did Ulugbek have at first?",
    "options": [
-    "54",
-    "58",
-    "64",
+    "34",
+    "36",
+    "40",
     "42"
    ],
    "correct": "A"
   },
   {
    "n": 19,
-   "q": "7 846 sonini eng yaqin yuzlikkacha yaxlitlang.",
+   "q": "🇺🇿 Qozonda 8,4 l ichimlik bor. Uning 5/8 qismi ichildi. Qozonda qolgan ichimlik hajmini ml da hisoblang.\n🇷🇺 В кастрюле 8,4 л напитка. Выпили 5/8 его часть. Вычислите объём оставшегося напитка в мл.\n🇬🇧 A pot contains 8.4 l of a drink. 5/8 of it was drunk. Calculate the remaining volume in ml.",
    "options": [
-    "7 800",
-    "7 900",
-    "7 850",
-    "8 000"
+    "3,15",
+    "31,5",
+    "315",
+    "3 150"
    ],
-   "correct": "A"
+   "correct": "D"
   },
   {
    "n": 20,
-   "q": "Bir daftar 3 500 so‘m turadi. 4 ta daftar qancha turadi?",
+   "q": "🇺🇿 Shakl 10 ta bir xil to‘g‘ri to‘rtburchakdan iborat (⬛ — bo‘yalgan):\n⬜⬛⬜⬜⬜\n⬛⬜⬛⬜⬜\nBo‘yalmagan qism butun shaklning necha foizini tashkil qiladi?\n🇷🇺 Фигура из 10 одинаковых прямоугольников (⬛ — закрашены). Какой процент фигуры не закрашен?\n🇬🇧 The figure has 10 equal rectangles (⬛ = shaded). What percentage of the figure is not shaded?",
    "options": [
-    "12 000 so‘m",
-    "13 000 so‘m",
-    "14 000 so‘m",
-    "15 000 so‘m"
+    "40%",
+    "50%",
+    "60%",
+    "70%"
    ],
-   "correct": "C"
-  },
-  {
-   "n": 21,
-   "q": "6 432 sonidagi 6 raqami qaysi xona qiymatini bildiradi?",
-   "options": [
-    "6 yuzlik",
-    "6 minglik",
-    "6 o‘nlik",
-    "6 birlik"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 22,
-   "q": "Bog‘da 8 qator daraxt bor. Har bir qatorda 24 tadan daraxt ekilgan. Jami nechta daraxt bor?",
-   "options": [
-    "182 ta",
-    "192 ta",
-    "202 ta",
-    "212 ta"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 23,
-   "q": "Hisoblang: 4 800 : 8 + 125 = ?",
-   "options": [
-    "725",
-    "625",
-    "600",
-    "525"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 24,
-   "q": "To‘g‘ri to‘rtburchakning perimetri 64 cm. Uzunligi 20 cm bo‘lsa, eni necha santimetr?",
-   "options": [
-    "10 cm",
-    "12 cm",
-    "14 cm",
-    "24 cm"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 25,
-   "q": "Sayohatchi birinchi kuni 125 km, ikkinchi kuni undan 38 km ko‘p yo‘l yurdi. U ikki kunda jami necha kilometr yo‘l yurgan?",
-   "options": [
-    "288 km",
-    "163 km",
-    "250 km",
-    "298 km"
-   ],
-   "correct": "A"
+   "correct": "D"
   }
  ],
  "5-sinf": [
   {
    "n": 1,
-   "q": "((⅚-⅓)·¾):(½+⅛) = ?",
+   "q": "((5/6-1/3)·3/4):(1/2+1/8) = ?",
    "options": [
-    "⅜",
-    "⅗",
-    "⅝",
+    "3/8",
+    "3/5",
+    "5/8",
     "9/20"
    ],
    "correct": "B"
   },
   {
    "n": 2,
-   "q": "5¼-2⅔+1 5/12 = ?",
+   "q": "5¹⁄₄-2²⁄₃+1⁵⁄₁₂ = ?",
    "options": [
     "4",
     "17/4",
@@ -967,33 +912,33 @@
   },
   {
    "n": 3,
-   "q": "⅔·(1½+¾)-⅝ = ?",
+   "q": "2/3·(1¹⁄₂+3/4)-5/8 = ?",
    "options": [
     "3/2",
-    "½",
+    "1/2",
     "1",
-    "⅞"
+    "7/8"
    ],
    "correct": "D"
   },
   {
    "n": 4,
-   "q": "3⅕·1¼:⅖ = ?",
+   "q": "3¹⁄₅·1¹⁄₄:2/5 = ?",
    "options": [
     "8",
     "5",
     "10",
-    "⅘"
+    "4/5"
    ],
    "correct": "C"
   },
   {
    "n": 5,
-   "q": "1-(½·(⅔-⅙))+⅛ = ?",
+   "q": "1-(1/2·(2/3-1/6))+1/8 = ?",
    "options": [
-    "¾",
-    "⅞",
-    "⅝",
+    "3/4",
+    "7/8",
+    "5/8",
     "9/8"
    ],
    "correct": "B"
@@ -1011,7 +956,7 @@
   },
   {
    "n": 7,
-   "q": "🇺🇿 160 ning ⅘ qismining ⅝ qismidan 36 ning ⅓ qismini ayiring.\n🇷🇺 От ⅝ от ⅘ числа 160 отнимите ⅓ от 36.\n🇬🇧 From ⅝ of ⅘ of 160 subtract ⅓ of 36.",
+   "q": "🇺🇿 160 ning 4/5 qismining 5/8 qismidan 36 ning 1/3 qismini ayiring.\n🇷🇺 От 5/8 от 4/5 числа 160 отнимите 1/3 от 36.\n🇬🇧 From 5/8 of 4/5 of 160 subtract 1/3 of 36.",
    "options": [
     "80",
     "56",
@@ -1022,7 +967,7 @@
   },
   {
    "n": 8,
-   "q": "🇺🇿 Avval ¼ qismi, keyin qolganining ⅓ qismi olindi, 30 qoldi. Asl sonning ⅖ qismi?\n🇷🇺 Сначала ¼, затем ⅓ остатка, осталось 30. ⅖ исходного?\n🇬🇧 First ¼, then ⅓ of the rest; 30 remains. ⅖ of the original?",
+   "q": "🇺🇿 Avval 1/4 qismi, keyin qolganining 1/3 qismi olindi, 30 qoldi. Asl sonning 2/5 qismi?\n🇷🇺 Сначала 1/4, затем 1/3 остатка, осталось 30. 2/5 исходного?\n🇬🇧 First 1/4, then 1/3 of the rest; 30 remains. 2/5 of the original?",
    "options": [
     "60",
     "30",
@@ -1033,7 +978,7 @@
   },
   {
    "n": 9,
-   "q": "🇺🇿 240 dan ⅕ qismi ayirildi, yangi songa uning ¼ qismi qo‘shildi. Natijaning ⅗ qismi?\n🇷🇺 От 240 отняли ⅕, к новому прибавили ¼ его. ⅗ результата?\n🇬🇧 From 240 subtract ⅕, then add ¼ of the new number. ⅗ of the result?",
+   "q": "🇺🇿 240 dan 1/5 qismi ayirildi, yangi songa uning 1/4 qismi qo‘shildi. Natijaning 3/5 qismi?\n🇷🇺 От 240 отняли 1/5, к новому прибавили 1/4 его. 3/5 результата?\n🇬🇧 From 240 subtract 1/5, then add 1/4 of the new number. 3/5 of the result?",
    "options": [
     "240",
     "144",
@@ -1055,7 +1000,7 @@
   },
   {
    "n": 11,
-   "q": "🇺🇿 32 soni qaysi sonning ⅘ qismining ⅖ qismi?\n🇷🇺 32 составляет ⅖ от ⅘ какого числа?\n🇬🇧 32 is ⅖ of ⅘ of what number?",
+   "q": "🇺🇿 32 soni qaysi sonning 4/5 qismining 2/5 qismi?\n🇷🇺 32 составляет 2/5 от 4/5 какого числа?\n🇬🇧 32 is 2/5 of 4/5 of what number?",
    "options": [
     "80",
     "160",
@@ -1066,7 +1011,7 @@
   },
   {
    "n": 12,
-   "q": "🇺🇿 240 ta kitob 3:4:5:8 nisbatda. Eng katta qismning ¾ qismi?\n🇷🇺 240 книг в отношении 3:4:5:8. ¾ наибольшей части?\n🇬🇧 240 books in ratio 3:4:5:8. ¾ of the largest part?",
+   "q": "🇺🇿 240 ta kitob 3:4:5:8 nisbatda. Eng katta qismning 3/4 qismi?\n🇷🇺 240 книг в отношении 3:4:5:8. 3/4 наибольшей части?\n🇬🇧 240 books in ratio 3:4:5:8. 3/4 of the largest part?",
    "options": [
     "96",
     "80",
@@ -1077,7 +1022,7 @@
   },
   {
    "n": 13,
-   "q": "🇺🇿 5:12 = x:48 dagi x ga 4 qo‘shib, ¾ qismini oling.\n🇷🇺 К x из 5:12 = x:48 прибавьте 4 и возьмите ¾.\n🇬🇧 Add 4 to x from 5:12 = x:48, then take ¾.",
+   "q": "🇺🇿 5:12 = x:48 dagi x ga 4 qo‘shib, 3/4 qismini oling.\n🇷🇺 К x из 5:12 = x:48 прибавьте 4 и возьмите 3/4.\n🇬🇧 Add 4 to x from 5:12 = x:48, then take 3/4.",
    "options": [
     "18",
     "16",
@@ -1167,7 +1112,7 @@
  "6-sinf": [
   {
    "n": 1,
-   "q": "(⅞-⅙)·(⅖+3/10) = ?",
+   "q": "(7/8-1/6)·(2/5+3/10) = ?",
    "options": [
     "17/24",
     "119/240",
@@ -1178,7 +1123,7 @@
   },
   {
    "n": 2,
-   "q": "4⅙-2⅜+¼ = ?",
+   "q": "4¹⁄₆-2³⁄₈+1/4 = ?",
    "options": [
     "49/24",
     "23/12",
@@ -1189,18 +1134,18 @@
   },
   {
    "n": 3,
-   "q": "(5/9:10/27)-⅔ = ?",
+   "q": "(5/9:10/27)-2/3 = ?",
    "options": [
     "3/2",
     "5/18",
     "1",
-    "⅚"
+    "5/6"
    ],
    "correct": "D"
   },
   {
    "n": 4,
-   "q": "🇺🇿 96 ning ¾ qismining ⅔ qismidan 80 ning ⅕ qismini ayiring.\n🇷🇺 От ⅔ от ¾ числа 96 отнимите ⅕ от 80.\n🇬🇧 From ⅔ of ¾ of 96 subtract ⅕ of 80.",
+   "q": "🇺🇿 96 ning 3/4 qismining 2/3 qismidan 80 ning 1/5 qismini ayiring.\n🇷🇺 От 2/3 от 3/4 числа 96 отнимите 1/5 от 80.\n🇬🇧 From 2/3 of 3/4 of 96 subtract 1/5 of 80.",
    "options": [
     "48",
     "16",
@@ -1211,18 +1156,18 @@
   },
   {
    "n": 5,
-   "q": "((⅘+1/10))/(⅜)·½ = ?",
+   "q": "((4/5+1/10))/3/8·1/2 = ?",
    "options": [
     "12/5",
     "6/5",
     "9/16",
-    "⅜"
+    "3/8"
    ],
    "correct": "B"
   },
   {
    "n": 6,
-   "q": "2⅖·1⅔:4/9 = ?",
+   "q": "2²⁄₅·1²⁄₃:4/9 = ?",
    "options": [
     "9",
     "4",
@@ -1233,12 +1178,12 @@
   },
   {
    "n": 7,
-   "q": "1-(½·(⅓+⅙)) = ?",
+   "q": "1-(1/2·(1/3+1/6)) = ?",
    "options": [
-    "¼",
-    "½",
-    "¾",
-    "⅚"
+    "1/4",
+    "1/2",
+    "3/4",
+    "5/6"
    ],
    "correct": "C"
   },
@@ -1255,7 +1200,7 @@
   },
   {
    "n": 9,
-   "q": "🇺🇿 Son 25% oshib 160 bo‘ldi. Asl sonning ⅜ qismi?\n🇷🇺 Число выросло на 25% и стало 160. Чему равны ⅜ исходного числа?\n🇬🇧 A number increased by 25% becomes 160. What is ⅜ of the original?",
+   "q": "🇺🇿 Son 25% oshib 160 bo‘ldi. Asl sonning 3/8 qismi?\n🇷🇺 Число выросло на 25% и стало 160. Чему равны 3/8 исходного числа?\n🇬🇧 A number increased by 25% becomes 160. What is 3/8 of the original?",
    "options": [
     "60",
     "48",
@@ -1310,7 +1255,7 @@
   },
   {
    "n": 14,
-   "q": "🇺🇿 120 ta qalam 3:5:7 nisbatda. Eng katta qismning ⅖ qismi?\n🇷🇺 120 карандашей в отношении 3:5:7. ⅖ наибольшей части?\n🇬🇧 120 pencils in ratio 3:5:7. ⅖ of the largest part?",
+   "q": "🇺🇿 120 ta qalam 3:5:7 nisbatda. Eng katta qismning 2/5 qismi?\n🇷🇺 120 карандашей в отношении 3:5:7. 2/5 наибольшей части?\n🇬🇧 120 pencils in ratio 3:5:7. 2/5 of the largest part?",
    "options": [
     "56",
     "112/5",
@@ -1400,22 +1345,22 @@
   },
   {
    "n": 2,
-   "q": "⅞:14/15·⅘ = ?",
+   "q": "7/8:14/15·4/5 = ?",
    "options": [
     "21/16",
-    "⅔",
-    "⅝",
-    "¾"
+    "2/3",
+    "5/8",
+    "3/4"
    ],
    "correct": "D"
   },
   {
    "n": 3,
-   "q": "(1-⅖):(¾+⅙) = ?",
+   "q": "(1-2/5):(3/4+1/6) = ?",
    "options": [
     "36/55",
-    "⅗",
-    "⅔",
+    "3/5",
+    "2/3",
     "8/15"
    ],
    "correct": "A"
@@ -1444,7 +1389,7 @@
   },
   {
    "n": 6,
-   "q": "🇺🇿 120 ta qalam 3:4:5 nisbatda. O‘rta guruhning ¾ qismi?\n🇷🇺 120 карандашей в отношении 3:4:5. ¾ средней группы?\n🇬🇧 120 pencils in ratio 3:4:5. What is ¾ of the middle group?",
+   "q": "🇺🇿 120 ta qalam 3:4:5 nisbatda. O‘rta guruhning 3/4 qismi?\n🇷🇺 120 карандашей в отношении 3:4:5. 3/4 средней группы?\n🇬🇧 120 pencils in ratio 3:4:5. What is 3/4 of the middle group?",
    "options": [
     "40",
     "24",
@@ -1543,7 +1488,7 @@
   },
   {
    "n": 15,
-   "q": "🇺🇿 144 ning ⅜ qismining 5/9 qismi?\n🇷🇺 5/9 от ⅜ числа 144?\n🇬🇧 5/9 of ⅜ of 144?",
+   "q": "🇺🇿 144 ning 3/8 qismining 5/9 qismi?\n🇷🇺 5/9 от 3/8 числа 144?\n🇬🇧 5/9 of 3/8 of 144?",
    "options": [
     "30",
     "54",
@@ -1587,7 +1532,7 @@
   },
   {
    "n": 19,
-   "q": "3¼-1⅚+7/12 = ?",
+   "q": "3¹⁄₄-1⁵⁄₆+7/12 = ?",
    "options": [
     "2",
     "25/12",
@@ -1787,7 +1732,7 @@
   },
   {
    "n": 17,
-   "q": "🇺🇿 ((x-3))²=0 tenglamaning ildizi nechaga teng?\n🇷🇺 Чему равен корень ((x-3))²=0?\n🇬🇧 What is the root of ((x-3))²=0?",
+   "q": "🇺🇿 (x-3)²=0 tenglamaning ildizi nechaga teng?\n🇷🇺 Чему равен корень (x-3)²=0?\n🇬🇧 What is the root of (x-3)²=0?",
    "options": [
     "−3",
     "±3",
@@ -1880,20 +1825,20 @@
    "q": "2sin 30° = ?",
    "options": [
     "1",
-    "½",
-    "(√3)/2",
+    "1/2",
+    "√3/2",
     "2"
    ],
    "correct": "A"
   },
   {
    "n": 6,
-   "q": "(cos 45°)² = ?",
+   "q": "cos²45° = ?",
    "options": [
-    "(√2)/2",
-    "½",
+    "√2/2",
+    "1/2",
     "1",
-    "¼"
+    "1/4"
    ],
    "correct": "B"
   },
@@ -1910,11 +1855,11 @@
   },
   {
    "n": 8,
-   "q": "🇺🇿 O‘xshashlik koeffitsienti ½. Yuzalari nisbati nechaga teng?\n🇷🇺 Коэффициент подобия ½. Чему равно отношение площадей?\n🇬🇧 The similarity ratio is ½. What is the ratio of the areas?",
+   "q": "🇺🇿 O‘xshashlik koeffitsienti 1/2. Yuzalari nisbati nechaga teng?\n🇷🇺 Коэффициент подобия 1/2. Чему равно отношение площадей?\n🇬🇧 The similarity ratio is 1/2. What is the ratio of the areas?",
    "options": [
-    "¼",
-    "½",
-    "⅛",
+    "1/4",
+    "1/2",
+    "1/8",
     "2"
    ],
    "correct": "A"
@@ -1924,9 +1869,9 @@
    "q": "tan 30° = ?",
    "options": [
     "√3",
-    "(√3)/2",
-    "½",
-    "1/(√3)"
+    "√3/2",
+    "1/2",
+    "1/√3"
    ],
    "correct": "D"
   },
@@ -1934,10 +1879,10 @@
    "n": 10,
    "q": "🇺🇿 Zar tashlanganda 5 yoki 6 tushish ehtimoli nechaga teng?\n🇷🇺 Какова вероятность выпадения 5 или 6 на кости?\n🇬🇧 What is the probability of rolling a 5 or a 6 on a die?",
    "options": [
-    "⅙",
-    "⅓",
-    "½",
-    "¼"
+    "1/6",
+    "1/3",
+    "1/2",
+    "1/4"
    ],
    "correct": "B"
   },
@@ -1989,10 +1934,10 @@
    "n": 15,
    "q": "🇺🇿 Uchta tanga tashlanganda aynan 1 ta gerb tushish ehtimoli nechaga teng?\n🇷🇺 Какова вероятность ровно одного орла при трёх бросках монеты?\n🇬🇧 Three coins are tossed. Probability of exactly one heads?",
    "options": [
-    "⅛",
-    "½",
-    "⅜",
-    "¾"
+    "1/8",
+    "1/2",
+    "3/8",
+    "3/4"
    ],
    "correct": "C"
   },
@@ -2000,8 +1945,8 @@
    "n": 16,
    "q": "🇺🇿 To‘g‘ri burchakli uchburchakda yondosh katet 8, gipotenuza 10. Burchakning kosinusi nechaga teng?\n🇷🇺 Прилежащий катет 8, гипотенуза 10. Чему равен косинус угла?\n🇬🇧 Adjacent side 8, hypotenuse 10. What is the cosine of the angle?",
    "options": [
-    "⅘",
-    "⅗",
+    "4/5",
+    "3/5",
     "8/6",
     "5/4"
    ],
@@ -2055,11 +2000,11 @@
  "10-sinf": [
   {
    "n": 1,
-   "q": "(sin 40°)²+(cos 40°)² = ?",
+   "q": "sin²40° + cos²40° = ?",
    "options": [
     "1",
     "0",
-    "½",
+    "1/2",
     "2"
    ],
    "correct": "A"
@@ -2091,7 +2036,7 @@
    "q": "tan 45°+sin 30° = ?",
    "options": [
     "1",
-    "½",
+    "1/2",
     "2",
     "3/2"
    ],
@@ -2143,11 +2088,11 @@
   },
   {
    "n": 9,
-   "q": "🇺🇿 ((½))ˣ=8 tenglamaning ildizi nechaga teng?\n🇷🇺 Чему равен корень ((½))ˣ=8?\n🇬🇧 What is the root of ((½))ˣ=8?",
+   "q": "🇺🇿 (1/2)ˣ=8 tenglamaning ildizi nechaga teng?\n🇷🇺 Чему равен корень (1/2)ˣ=8?\n🇬🇧 What is the root of (1/2)ˣ=8?",
    "options": [
     "3",
     "−1",
-    "⅓",
+    "1/3",
     "−3"
    ],
    "correct": "D"
@@ -2156,10 +2101,10 @@
    "n": 10,
    "q": "2sin 30°cos 30° = ?",
    "options": [
-    "½",
-    "¼",
-    "(√3)/2",
-    "(√3)/4"
+    "1/2",
+    "1/4",
+    "√3/2",
+    "√3/4"
    ],
    "correct": "C"
   },
@@ -2220,9 +2165,9 @@
   },
   {
    "n": 16,
-   "q": "🇺🇿 Geometrik progressiyaning birinchi hadi 5, maxraji ½. 4-hadi nechaga teng?\n🇷🇺 Первый член геометрической прогрессии 5, знаменатель ½. Чему равен 4-й член?\n🇬🇧 A geometric sequence has first term 5 and ratio ½. What is the 4th term?",
+   "q": "🇺🇿 Geometrik progressiyaning birinchi hadi 5, maxraji 1/2. 4-hadi nechaga teng?\n🇷🇺 Первый член геометрической прогрессии 5, знаменатель 1/2. Чему равен 4-й член?\n🇬🇧 A geometric sequence has first term 5 and ratio 1/2. What is the 4th term?",
    "options": [
-    "⅝",
+    "5/8",
     "5/4",
     "5/16",
     "5/2"
@@ -2247,7 +2192,7 @@
     "4π sm³",
     "π sm³",
     "2π sm³",
-    "(4π)/3 sm³"
+    "4π/3 sm³"
    ],
    "correct": "D"
   },
@@ -2255,7 +2200,7 @@
    "n": 19,
    "q": "🇺🇿 52 varaqli kartadan tasodifiy 1 ta olinsa, tuz olish ehtimoli nechaga teng?\n🇷🇺 Какова вероятность вытащить туза из колоды в 52 карты?\n🇬🇧 A card is drawn from a 52-card deck. What is the probability it is an ace?",
    "options": [
-    "¼",
+    "1/4",
     "1/52",
     "1/13",
     "4/13"
@@ -2277,18 +2222,18 @@
  "11-sinf": [
   {
    "n": 1,
-   "q": "🇺🇿 Quyidagi limitning qiymati nechaga teng? lim(x→∞) (3x²+2x)/(x²-1)\n🇷🇺 Чему равен предел? lim(x→∞) (3x²+2x)/(x²-1)\n🇬🇧 What is the value of the limit? lim(x→∞) (3x²+2x)/(x²-1)",
+   "q": "🇺🇿 Quyidagi limitning qiymati nechaga teng? lim_(x→∞) (3x²+2x)/(x²-1)\n🇷🇺 Чему равен предел? lim_(x→∞) (3x²+2x)/(x²-1)\n🇬🇧 What is the value of the limit? lim_(x→∞) (3x²+2x)/(x²-1)",
    "options": [
     "0",
     "∞",
     "3",
-    "⅔"
+    "2/3"
    ],
    "correct": "C"
   },
   {
    "n": 2,
-   "q": "🇺🇿 f(x)=((x²+1))⁵ bo‘lsa, f'(1) nechaga teng?\n🇷🇺 Если f(x)=((x²+1))⁵, чему равно f'(1)?\n🇬🇧 If f(x)=((x²+1))⁵, what is f'(1)?",
+   "q": "🇺🇿 f(x)=(x²+1)⁵ bo‘lsa, f'(1) nechaga teng?\n🇷🇺 Если f(x)=(x²+1)⁵, чему равно f'(1)?\n🇬🇧 If f(x)=(x²+1)⁵, what is f'(1)?",
    "options": [
     "80",
     "160",
@@ -2354,11 +2299,11 @@
   },
   {
    "n": 8,
-   "q": "🇺🇿 Cheksiz qator yig‘indisi nechaga teng? ∑[n=1→∞] ((½))ⁿ\n🇷🇺 Чему равна сумма ряда ∑[n=1→∞] ((½))ⁿ?\n🇬🇧 What is the sum of the series ∑[n=1→∞] ((½))ⁿ?",
+   "q": "🇺🇿 Cheksiz qator yig‘indisi nechaga teng? ∑(n=1..∞) (1/2)ⁿ\n🇷🇺 Чему равна сумма ряда ∑(n=1..∞) (1/2)ⁿ?\n🇬🇧 What is the sum of the series ∑(n=1..∞) (1/2)ⁿ?",
    "options": [
     "2",
     "1",
-    "½",
+    "1/2",
     "∞"
    ],
    "correct": "B"
@@ -2389,19 +2334,19 @@
    "n": 11,
    "q": "🇺🇿 Uchta tanga tashlanganda aynan 2 ta gerb tushish ehtimoli nechaga teng?\n🇷🇺 Какова вероятность выпадения ровно 2 орлов при бросании трёх монет?\n🇬🇧 Three coins are tossed. What is the probability of exactly 2 heads?",
    "options": [
-    "½",
-    "⅜",
-    "⅛",
-    "¾"
+    "1/2",
+    "3/8",
+    "1/8",
+    "3/4"
    ],
    "correct": "B"
   },
   {
    "n": 12,
-   "q": "∫[0→π/2] cos x = ?",
+   "q": "∫[0; π/2] cos x dx = ?",
    "options": [
     "0",
-    "(π)/2",
+    "π/2",
     "−1",
     "1"
    ],
@@ -2420,12 +2365,12 @@
   },
   {
    "n": 14,
-   "q": "🇺🇿 cos 2x=½ tenglamaning [0; π] dagi yechimlari qaysi?\n🇷🇺 Каковы решения cos 2x=½ на [0; π]?\n🇬🇧 What are the solutions of cos 2x=½ on [0, π]?",
+   "q": "🇺🇿 cos 2x=1/2 tenglamaning [0; π] dagi yechimlari qaysi?\n🇷🇺 Каковы решения cos 2x=1/2 на [0; π]?\n🇬🇧 What are the solutions of cos 2x=1/2 on [0, π]?",
    "options": [
-    "x=(π)/6, (5π)/6",
-    "x=(π)/3",
-    "x=(π)/4, (3π)/4",
-    "x=(π)/2"
+    "x=π/6, 5π/6",
+    "x=π/3",
+    "x=π/4, 3π/4",
+    "x=π/2"
    ],
    "correct": "A"
   },
@@ -2442,7 +2387,7 @@
   },
   {
    "n": 16,
-   "q": "∫[1→2] x² = ?",
+   "q": "∫[1; 2] x² dx = ?",
    "options": [
     "8/3",
     "7",
@@ -2469,7 +2414,7 @@
     "√2",
     "2√2",
     "2",
-    "1/(√2)"
+    "1/√2"
    ],
    "correct": "A"
   },

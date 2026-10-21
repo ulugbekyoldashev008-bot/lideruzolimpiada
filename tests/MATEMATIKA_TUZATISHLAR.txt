@@ -1,31 +1,42 @@
-MATEMATIKA SAVOLLARI: ASL HUJJATGA KIRITILGAN TUZATISHLAR
+MATEMATIKA SAVOLLARI (2026-10-21 yangilangan)
 
-Asl fayl: Matematika_1-11_sinf_asl.docx. Hamma savollar qayta hisoblab tekshirildi (225 ta).
-5, 6, 8, 9, 10, 11-sinf kalitlari to'g'ri chiqdi. Quyidagilar tuzatildi:
+Asl fayllar: tests/matematika_asl/ ("N-sinf 2 chi test" Word fayllari). Har sinfda 20 ta savol.
+Hamma savollar qayta hisoblab tekshirildi. 5, 6, 8, 9, 10, 11-sinf kalitlari to'g'ri chiqdi.
+Quyidagilar tuzatildi:
 
-2-sinf, 8-savol: variant almashtirildi (118 m → 138 m)
-2-sinf, 15-savol: variant almashtirildi (67 → 65)
-3-sinf, 6-savol: variant almashtirildi (1212 → 1236)
-3-sinf, 15-savol: variant almashtirildi (798 → 690)
-2-sinf, 18-savol: takroriy variant (4 soat 35 daqiqa → 4 soat 45 daqiqa)
-2-sinf, 18-savol: 4 soat 35 daqiqaga teng variant (3 soat 95 daqiqa → 3 soat 85 daqiqa)
-3-sinf, 18-savol: takroriy variant (4 soat 35 daqiqa → 4 soat 55 daqiqa)
-1-sinf, 2-savol: kalit tuzatildi (C → A (to‘g‘ri javob 18))
-1-sinf, 3-savol: kalit tuzatildi (B → A (to‘g‘ri javob 32))
-1-sinf, 4-savol: kalit tuzatildi (D → B (to‘g‘ri javob 44))
-1-sinf, 6-savol: kalit tuzatildi (C → B (to‘g‘ri javob 45))
-1-sinf, 7-savol: kalit tuzatildi (B → A (to‘g‘ri javob 40))
-1-sinf, 9-savol: kalit tuzatildi (D → A (to‘g‘ri javob 36))
-1-sinf, 10-savol: kalit tuzatildi (C → A (to‘g‘ri javob 29))
-1-sinf, 13-savol: kalit tuzatildi (C → B (to‘g‘ri javob 56))
-1-sinf, 14-savol: kalit tuzatildi (D → A (to‘g‘ri javob 19))
-1-sinf, 17-savol: kalit tuzatildi (C → A (to‘g‘ri javob 32))
-1-sinf, 18-savol: kalit tuzatildi (D → A (to‘g‘ri javob 24))
-1-sinf, 20-savol: kalit tuzatildi (B → A (to‘g‘ri javob 32))
-2-sinf, 12-savol: kalit tuzatildi (D → A (66))
-2-sinf, 19-savol: kalit tuzatildi (A → C (68))
-4-sinf, 12-savol: kalit tuzatildi (B → C (4 m 25 cm))
-7-sinf, 19-savol: kalit tuzatildi (B → A (2))
+1-sinf, 2-savol: kalit C → A (to‘g‘ri javob 18)
+1-sinf, 3-savol: kalit B → A (to‘g‘ri javob 32)
+1-sinf, 4-savol: kalit D → B (to‘g‘ri javob 44)
+1-sinf, 6-savol: kalit C → B (to‘g‘ri javob 45)
+1-sinf, 7-savol: kalit B → A (to‘g‘ri javob 40)
+1-sinf, 9-savol: kalit D → A (to‘g‘ri javob 36)
+1-sinf, 10-savol: kalit C → A (to‘g‘ri javob 29)
+1-sinf, 13-savol: kalit C → B (to‘g‘ri javob 56)
+1-sinf, 14-savol: kalit D → A (to‘g‘ri javob 19)
+1-sinf, 17-savol: kalit C → A (to‘g‘ri javob 32)
+1-sinf, 18-savol: kalit D → A (to‘g‘ri javob 24)
+1-sinf, 20-savol: kalit B → A (to‘g‘ri javob 32)
+2-sinf, 8-savol: to‘g‘ri javob variantlarda yo‘q edi (138 m), D varianti 118 m → 138 m
+2-sinf, 10-savol: «18 so‘m» → «18 so‘mdan» (narx har biri uchun ekanligi aniq bo‘lishi uchun)
+2-sinf, 12-savol: kalit D → A (66)
+2-sinf, 15-savol: to‘g‘ri javob variantlarda yo‘q edi (65), A varianti 67 → 65
+2-sinf, 18-savol: A va B bir xil (4 soat 35 daqiqa), D ham unga teng edi (3 soat 95 daqiqa); A → 4 soat 45 daqiqa, D → 3 soat 85 daqiqa
+2-sinf, 19-savol: kalit A → C (68)
+3-sinf, 6-savol: to‘g‘ri javob variantlarda yo‘q edi (1236), A varianti 1212 → 1236
+3-sinf, 10-savol: o‘zbekcha matn aniqlashtirildi («5 ta tovar 136 so‘mdan …»)
+3-sinf, 15-savol: to‘g‘ri javob variantlarda yo‘q edi (690), C varianti 798 → 690
+3-sinf, 18-savol: A va C bir xil edi (4 soat 35 daqiqa); A → 4 soat 55 daqiqa
+7-sinf, 19-savol: kalit B → A (3¹⁄₄ − 1⁵⁄₆ + 7/12 = 2)
 
-1-sinf: to'g'ri javob 20 tadan 14 tasida 'A' bo'lgani uchun variantlar tartibi aralashtirildi.
-Savol matnida o'zbek, rus va ingliz tillari birga ko'rsatiladi (asl hujjatdagidek).
+1-sinf: tuzatishdan keyin to'g'ri javob 20 tadan 14 tasida 'A' bo'lgani uchun variantlar tartibi aralashtirildi.
+1-sinf: savollar yonidagi rasmlar (olma, o'yinchoq va h.k.) bezak uchun edi, botga qo'shilmadi.
+
+4-sinf: faylda javoblar kaliti yo'q edi, hamma savollar alohida yechildi.
+4-sinf o'zgarishlar: ruscha matnda malay tilidagi gap (15-savol) tuzatildi; RM (Malayziya pul birligi) "ming so'm" ga,
+Xiao Ming / Xiao Hong ismlari Shoxruh / Ulug'bek ga almashtirildi; 17-savoldagi ֍ belgisi 🙂 ga,
+20-savoldagi rasm emoji jadval (⬜⬛) ga almashtirildi.
+
+Yozuv: 9-sinf 6 va 10-sinf 1-savolda cos²45°, sin²40° ko'rinishi; 11-sinf 12, 16-savol integrallariga "dx" qo'shildi.
+Aralash sonlar 5¹⁄₄ ko'rinishida yozilgan (5 butun 1/4).
+
+Eski savollar: tests/arxiv/matematika_eski_2026-10-21.json va tests/arxiv/Matematika_1-11_sinf_asl.docx

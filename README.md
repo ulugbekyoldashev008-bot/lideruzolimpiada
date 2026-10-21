@@ -3,7 +3,7 @@
 ## Imkoniyatlar
 **O'quvchi**
 - Ro'yxatdan o'tish: ism-familya → tug'ilgan sana (yil.oy.kun) → maktab raqami → sinf → fan → daraja. Keyin shaxsiy kabinet ochiladi.
-- Fanlar: Ingliz tili (Starter, Beginner, Elementary, Pre-Intermediate), Matematika (1–11-sinf).
+- Fanlar: Ingliz tili (Starter, Beginner, Elementary, Intermediate, Advanced), Matematika (1–11-sinf), Mental arifmetika, IT (Frontend, Backend Python).
 - Olimpiada vaqti kelganda bot xabar yuboradi; test tanlangan fan va daraja bo'yicha beriladi (30 ta tasodifiy savol).
 - Test admin belgilagan davomiylik tugagach avtomatik to'xtaydi; javob berilmagan savollar noto'g'ri hisoblanadi.
 
@@ -43,8 +43,10 @@ Test holati bazada saqlanadi, shuning uchun bot qayta ishga tushsa ham o'quvchin
 Admin panel → «🕒 Olimpiada vaqtini belgilash»: avval boshlanish vaqti (`YYYY-MM-DD HH:MM`, masalan `2026-10-20 17:00`), keyin davomiylik (daqiqada). Tugash vaqti = boshlanish + davomiylik. Shundan keyin test ishlash to'xtatiladi. Kech boshlagan o'quvchiga faqat qolgan vaqt beriladi.
 
 ## Savollar
-- `tests/questions.json` — ingliz tili: Starter, Beginner, Elementary, Pre-Intermediate (+ Advanced, ko'rsatilmaydi). To'g'ri javoblar alohida yechilgan, izoh: `tests/INGLIZ_TILI_IZOH.txt`.
+- `tests/questions.json` — ingliz tili: Starter (30 ta), Beginner, Elementary, Intermediate, Advanced (20 tadan). Izoh: `tests/INGLIZ_TILI_IZOH.txt`.
 - `tests/matematika.json` — 1–11-sinf savollari (asl hujjatdan olingan, kalitlar qayta hisoblab tekshirilgan; tuzatishlar `tests/MATEMATIKA_TUZATISHLAR.txt` da).
+- `tests/mental.json` — Mental arifmetika: 120 ta misol (`tests/mental_asl/megabrain_misollar 2.pdf`, 1 xonali oddiy ±). Misollar ketma-ket chiqadi, o'quvchi javobni raqam bilan yozadi. Test boshlangandan keyin 10 daqiqa beriladi, vaqt tugasa qaysi misolda bo'lsa ham test yakunlanadi. Natija foizda emas, ballda: har bir to'g'ri javob 1 ball (o'rin ball bo'yicha, teng bo'lsa kam vaqt sarflagan yuqorida).
+- `tests/it.json` — IT: Frontend (HTML, CSS) va Backend Python, 20 tadan oson test.
 Savollarni o'zgartirgach, ilovani qayta deploy qiling.
 
 ## Xavfsizlik

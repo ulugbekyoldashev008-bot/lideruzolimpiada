@@ -2,887 +2,947 @@
  "Starter": [
   {
    "n": 1,
-   "q": "I ___ seven years old.",
+   "q": "👦👉👧 ___ is pointing at the girl.",
    "options": [
-    "are",
-    "am",
-    "be",
-    "is"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 2,
-   "q": "My brother ___ a red bike.",
-   "options": [
-    "having",
-    "have",
-    "has",
-    "is have"
-   ],
-   "correct": "C"
-  },
-  {
-   "n": 3,
-   "q": "Look! The baby ___ asleep.",
-   "options": [
-    "are",
-    "is",
-    "be",
-    "am"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 4,
-   "q": "___ you like apples?",
-   "options": [
-    "Do",
-    "Does",
-    "Are",
-    "Is"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 5,
-   "q": "She ___ not like milk.",
-   "options": [
-    "is",
-    "does",
-    "are",
-    "do"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 6,
-   "q": "We ___ football after school.",
-   "options": [
-    "plays",
-    "is play",
-    "play",
-    "playing"
-   ],
-   "correct": "C"
-  },
-  {
-   "n": 7,
-   "q": "Tom ___ his teeth every morning.",
-   "options": [
-    "brushes",
-    "is brush",
-    "brush",
-    "brushing"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 8,
-   "q": "They ___ from Uzbekistan.",
-   "options": [
-    "be",
-    "am",
-    "is",
-    "are"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 9,
-   "q": "This is ___ cat.",
-   "options": [
-    "I",
-    "my",
-    "mine",
-    "me"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 10,
-   "q": "Anna and I are friends. ___ are in Class 2.",
-   "options": [
-    "She",
     "They",
-    "We",
+    "She",
     "He"
    ],
    "correct": "C"
   },
   {
-   "n": 11,
-   "q": "That is Ben. ___ is my cousin.",
+   "n": 2,
+   "q": "👦👦👦⚽ ___ are playing soccer.",
    "options": [
-    "She",
-    "He",
-    "It",
-    "They"
+    "We",
+    "They",
+    "I"
    ],
    "correct": "B"
   },
   {
-   "n": 12,
-   "q": "Where ___ your pencil?",
+   "n": 3,
+   "q": "👦 ___ is my brother.",
    "options": [
-    "are",
-    "be",
-    "am",
-    "is"
+    "It",
+    "She",
+    "He"
    ],
-   "correct": "D"
+   "correct": "C"
+  },
+  {
+   "n": 4,
+   "q": "👧👦👧🌳 ___ are at the park.",
+   "options": [
+    "He",
+    "They",
+    "She"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 5,
+   "q": "👩‍🏫 ___ is a teacher.",
+   "options": [
+    "You",
+    "I",
+    "She"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 6,
+   "q": "What is this? 🍎",
+   "options": [
+    "ball",
+    "apple",
+    "book"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 7,
+   "q": "What is this? 🐶",
+   "options": [
+    "bird",
+    "cat",
+    "dog"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 8,
+   "q": "What is this? 📘",
+   "options": [
+    "pencil",
+    "car",
+    "book"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 9,
+   "q": "What is this? ⚽",
+   "options": [
+    "apple",
+    "ball",
+    "chair"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 10,
+   "q": "What is this? 🚗",
+   "options": [
+    "bird",
+    "tree",
+    "car"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 11,
+   "q": "What is this? 🐦",
+   "options": [
+    "bird",
+    "cat",
+    "pencil"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 12,
+   "q": "What is this? 🚌",
+   "options": [
+    "car",
+    "bus",
+    "book"
+   ],
+   "correct": "B"
   },
   {
    "n": 13,
-   "q": "The books ___ on the desk.",
+   "q": "What is this? 🎒",
    "options": [
-    "be",
+    "chair",
+    "ball",
+    "bag"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 14,
+   "q": "What is this? 🪑",
+   "options": [
+    "table",
+    "chair",
+    "desk"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 15,
+   "q": "What is this? ✏️",
+   "options": [
+    "pencil",
+    "pen",
+    "book"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 16,
+   "q": "The cat is ___ the table.\n(Rasmda: mushuk stolning tagida 🐱)",
+   "options": [
+    "on",
+    "under",
+    "in"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 17,
+   "q": "The book is ___ the desk.\n(Rasmda: kitob partaning ustida 📘)",
+   "options": [
+    "in",
+    "on",
+    "under"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 18,
+   "q": "The ball is ___ the box.\n(Rasmda: to‘p qutining ichida ⚽📦)",
+   "options": [
+    "in",
+    "under",
+    "on"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 19,
+   "q": "The children are ___ the trees.\n🌳 🧒 🌳",
+   "options": [
+    "between",
+    "under",
+    "on"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 20,
+   "q": "The dog is ___ the chair.\n(Rasmda: it stulning tagida 🐶)",
+   "options": [
+    "under",
+    "in",
+    "on"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 21,
+   "q": "👦 I ___ a student.",
+   "options": [
+    "is",
+    "are",
+    "am"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 22,
+   "q": "👧📘 She ___ a book.",
+   "options": [
+    "has",
+    "is",
+    "have"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 23,
+   "q": "👧👦👧 We ___ friends.",
+   "options": [
+    "are",
+    "am",
+    "is"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 24,
+   "q": "🐶 My dog ___ big.",
+   "options": [
+    "are",
+    "have",
+    "is"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 25,
+   "q": "🍎 This is ___ apple.",
+   "options": [
+    "the",
+    "a",
+    "an"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 26,
+   "q": "🐱 I ___ a cat.",
+   "options": [
+    "have",
+    "can",
+    "can't"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 27,
+   "q": "👦⚽ He ___ play football.",
+   "options": [
+    "is",
+    "can",
+    "are"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 28,
+   "q": "🏫 We ___ at school.",
+   "options": [
+    "are",
+    "is",
+    "am"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 29,
+   "q": "👩‍🏫 She ___ a teacher.",
+   "options": [
     "is",
     "am",
     "are"
    ],
-   "correct": "D"
-  },
-  {
-   "n": 14,
-   "q": "I have two ___.",
-   "options": [
-    "feets",
-    "foots",
-    "feet",
-    "foot"
-   ],
-   "correct": "C"
-  },
-  {
-   "n": 15,
-   "q": "One ___ is sleeping in the tree.",
-   "options": [
-    "birds",
-    "birdes",
-    "a birds",
-    "bird"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 16,
-   "q": "There ___ a ball under the chair.",
-   "options": [
-    "are",
-    "be",
-    "is",
-    "am"
-   ],
-   "correct": "C"
-  },
-  {
-   "n": 17,
-   "q": "There ___ three windows in our classroom.",
-   "options": [
-    "are",
-    "be",
-    "is",
-    "am"
-   ],
    "correct": "A"
   },
   {
-   "n": 18,
-   "q": "I can ___ very fast.",
+   "n": 30,
+   "q": "👧👦😊 They ___ happy.",
    "options": [
-    "running",
-    "to run",
-    "runs",
-    "run"
+    "am",
+    "are",
+    "is"
    ],
-   "correct": "D"
-  },
-  {
-   "n": 19,
-   "q": "Can your sister ___?",
-   "options": [
-    "to swimming",
-    "swimming",
-    "swim",
-    "swims"
-   ],
-   "correct": "C"
-  },
-  {
-   "n": 20,
-   "q": "Birds can ___.",
-   "options": [
-    "fly",
-    "flies",
-    "flying",
-    "to flies"
-   ],
-   "correct": "A"
+   "correct": "B"
   }
  ],
  "Beginner": [
   {
    "n": 1,
-   "q": "My parents ___ to work by bus every day.",
+   "q": "She ___ to school every day.",
    "options": [
-    "went",
-    "goes",
     "go",
-    "are going"
-   ],
-   "correct": "C"
-  },
-  {
-   "n": 2,
-   "q": "Look! The children ___ in the pool.",
-   "options": [
-    "swims",
-    "are swimming",
-    "swam",
-    "swim"
+    "goes",
+    "going"
    ],
    "correct": "B"
   },
   {
-   "n": 3,
-   "q": "She usually ___ coffee in the morning.",
+   "n": 2,
+   "q": "Look! They ___ football.",
    "options": [
-    "drinks",
-    "drink",
-    "drank",
-    "is drinking"
+    "are playing",
+    "plays",
+    "played"
    ],
    "correct": "A"
   },
   {
-   "n": 4,
-   "q": "We ___ dinner at a restaurant last night.",
+   "n": 3,
+   "q": "We ___ a film yesterday.",
    "options": [
-    "has",
-    "are having",
-    "have",
-    "had"
+    "watch",
+    "watches",
+    "watched"
    ],
-   "correct": "D"
+   "correct": "C"
+  },
+  {
+   "n": 4,
+   "q": "I ___ visit my grandma tomorrow.",
+   "options": [
+    "did",
+    "am",
+    "will"
+   ],
+   "correct": "C"
   },
   {
    "n": 5,
-   "q": "I ___ my keys on the table yesterday.",
-   "options": [
-    "am leaving",
-    "leave",
-    "left",
-    "leaves"
-   ],
-   "correct": "C"
-  },
-  {
-   "n": 6,
-   "q": "They ___ at home last Sunday.",
-   "options": [
-    "are",
-    "be",
-    "were",
-    "was"
-   ],
-   "correct": "C"
-  },
-  {
-   "n": 7,
-   "q": "There ___ any milk in the fridge.",
-   "options": [
-    "aren't",
-    "doesn't",
-    "don't",
-    "isn't"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 8,
-   "q": "How ___ chairs are in the room?",
+   "q": "There isn't ___ milk in the fridge.",
    "options": [
     "some",
-    "much",
     "any",
-    "many"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 9,
-   "q": "I need ___ water after the game.",
-   "options": [
-    "an",
-    "some",
-    "a",
     "many"
    ],
    "correct": "B"
   },
   {
-   "n": 10,
-   "q": "Would you like ___ apple?",
+   "n": 6,
+   "q": "The lesson starts ___ nine o'clock.",
    "options": [
-    "an",
-    "any",
-    "some",
-    "a"
+    "at",
+    "in",
+    "on"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 7,
+   "q": "The books are ___ the bag.\n(Rasmda: kitoblar sumkaning ichida 📚🎒)",
+   "options": [
+    "under",
+    "in",
+    "between"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 8,
+   "q": "What is this? 🎒",
+   "options": [
+    "bag",
+    "book",
+    "jacket"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 9,
+   "q": "What is this? 📱",
+   "options": [
+    "phone",
+    "laptop",
+    "tablet"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 10,
+   "q": "The cat is ___ the box.\n(Rasmda: mushuk qutining ichida 🐱📦)",
+   "options": [
+    "in",
+    "on",
+    "under"
    ],
    "correct": "A"
   },
   {
    "n": 11,
-   "q": "We do not have ___ eggs.",
+   "q": "The keys are ___ the table.\n(Rasmda: kalitlar stolning ustida 🔑)",
    "options": [
-    "a",
-    "some",
-    "any",
-    "much"
+    "behind",
+    "between",
+    "on"
    ],
    "correct": "C"
   },
   {
    "n": 12,
-   "q": "My sister is ___ than I am.",
+   "q": "We study at ___. 🏫",
    "options": [
-    "more tall",
-    "taller",
-    "tallest",
-    "tall"
+    "a park",
+    "a school",
+    "a library"
    ],
    "correct": "B"
   },
   {
    "n": 13,
-   "q": "This is the ___ film I have seen this year.",
+   "q": "The book is ___ the desk.\n(Rasmda: kitob partaning ustida 📕)",
    "options": [
-    "more funny",
-    "funniest",
-    "funny",
-    "funnier"
+    "under",
+    "on",
+    "in"
    ],
    "correct": "B"
   },
   {
    "n": 14,
-   "q": "The blue bag is ___ than the black one.",
+   "q": "📖 My Friend Sara\nMy friend Sara is eleven. She lives near my house. She likes reading and playing basketball. On Saturdays, we go to the park together.\n\nHow old is Sara?",
    "options": [
-    "more expensive",
-    "expensiver",
-    "expensive",
-    "most expensive"
+    "eleven",
+    "twelve",
+    "ten"
    ],
    "correct": "A"
   },
   {
    "n": 15,
-   "q": "I can ___ you with your homework.",
+   "q": "📖 My Friend Sara\nMy friend Sara is eleven. She lives near my house. She likes reading and playing basketball. On Saturdays, we go to the park together.\n\nWhat does Sara like?",
    "options": [
-    "to help",
-    "helps",
-    "helping",
-    "help"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 16,
-   "q": "You ___ wear a seat belt in a car.",
-   "options": [
-    "should",
-    "should to",
-    "are",
-    "do"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 17,
-   "q": "___ I use your phone, please?",
-   "options": [
-    "Can",
-    "Have",
-    "Do",
-    "Am"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 18,
-   "q": "He ___ play the guitar when he was five.",
-   "options": [
-    "could to",
-    "can",
-    "could",
-    "can to"
-   ],
-   "correct": "C"
-  },
-  {
-   "n": 19,
-   "q": "I ___ visit my aunt tomorrow.",
-   "options": [
-    "going",
-    "am going to",
-    "went",
-    "go"
+    "swimming",
+    "reading and basketball",
+    "cooking"
    ],
    "correct": "B"
   },
   {
-   "n": 20,
-   "q": "The lesson ___ at nine tomorrow.",
+   "n": 16,
+   "q": "📖 My Friend Sara\nMy friend Sara is eleven. She lives near my house. She likes reading and playing basketball. On Saturdays, we go to the park together.\n\nWhen do they go to the park?",
    "options": [
-    "started",
-    "start",
-    "is start",
-    "starts"
+    "Fridays",
+    "Mondays",
+    "Saturdays"
    ],
-   "correct": "D"
+   "correct": "C"
+  },
+  {
+   "n": 17,
+   "q": "📖 My Friend Sara\nMy friend Sara is eleven. She lives near my house. She likes reading and playing basketball. On Saturdays, we go to the park together.\n\nWhere does Sara live?",
+   "options": [
+    "at school",
+    "far away",
+    "near my house"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 18,
+   "q": "🍳 My brother ___ breakfast at 7 every day.",
+   "options": [
+    "has",
+    "having",
+    "have"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 19,
+   "q": "🍎🍎 There ___ two apples on the table.",
+   "options": [
+    "am",
+    "is",
+    "are"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 20,
+   "q": "🐘 I saw ___ elephant at the zoo.",
+   "options": [
+    "a",
+    "an",
+    "the"
+   ],
+   "correct": "B"
   }
  ],
  "Elementary": [
   {
    "n": 1,
-   "q": "I ___ this book twice already.",
+   "q": "By the time the rescue team arrived, the hikers ___ for nearly six hours.",
    "options": [
-    "have read",
-    "had read",
-    "am reading",
-    "read"
+    "had been waiting",
+    "were waiting",
+    "waited",
+    "have been waiting"
    ],
    "correct": "A"
   },
   {
    "n": 2,
-   "q": "She ___ to Paris three years ago.",
+   "q": "Not only ___ the deadline, but the team also exceeded the budget.",
    "options": [
-    "goes",
-    "went",
-    "was going",
-    "has gone"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 3,
-   "q": "We ___ dinner when the lights went out.",
-   "options": [
-    "were having",
-    "would have",
-    "are having",
-    "have had"
+    "did they miss",
+    "had they missed",
+    "they had missed",
+    "they missed"
    ],
    "correct": "A"
   },
   {
-   "n": 4,
-   "q": "While I ___ home, I saw an old friend.",
+   "n": 3,
+   "q": "Had the warning been heeded, the accident ___ avoided.",
    "options": [
-    "am walking",
-    "was walking",
-    "walk",
-    "have walked"
+    "can have been",
+    "could have been",
+    "would be",
+    "could be"
    ],
    "correct": "B"
+  },
+  {
+   "n": 4,
+   "q": "The documents ___ by an independent auditor before the meeting.",
+   "options": [
+    "believe to have been verified",
+    "are believed to verify",
+    "are believing to verify",
+    "are believed to have been verified"
+   ],
+   "correct": "D"
   },
   {
    "n": 5,
-   "q": "They ___ in this house since 2020.",
+   "q": "I would rather you ___ the matter with me before deciding.",
    "options": [
-    "live",
-    "have lived",
-    "lived",
-    "are living"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 6,
-   "q": "I have not seen Jamshid ___.",
-   "options": [
-    "ever",
-    "just",
-    "yet",
-    "already"
+    "have discussed",
+    "discussed",
+    "had discussed",
+    "discuss"
    ],
    "correct": "C"
   },
   {
-   "n": 7,
-   "q": "Have you ___ been to Samarkand?",
+   "n": 6,
+   "q": "Scarcely ___ the door when the alarm sounded.",
    "options": [
-    "ever",
-    "for",
-    "yet",
-    "never"
+    "she closed",
+    "had she closed",
+    "she had closed",
+    "did she close"
    ],
-   "correct": "A"
+   "correct": "B"
+  },
+  {
+   "n": 7,
+   "q": "The proposal, the details of ___ remain confidential, was rejected.",
+   "options": [
+    "whom",
+    "that",
+    "whose",
+    "which"
+   ],
+   "correct": "D"
   },
   {
    "n": 8,
-   "q": "The train ___ before we arrived at the station.",
+   "q": "It is high time the company ___ its outdated procedures.",
    "options": [
-    "has left",
-    "had left",
-    "was leaving",
-    "leaves"
+    "has revised",
+    "revised",
+    "revises",
+    "will revise"
    ],
    "correct": "B"
   },
   {
    "n": 9,
-   "q": "We ___ to the beach if the weather is good tomorrow.",
+   "q": "Under no circumstances ___ this information be shared externally.",
    "options": [
-    "went",
-    "go",
-    "will go",
-    "would go"
+    "you should",
+    "you will",
+    "should",
+    "will you"
    ],
    "correct": "C"
   },
   {
    "n": 10,
-   "q": "If you heat ice, it ___.",
+   "q": "The more carefully the data are examined, the less reliable the original conclusion ___.",
    "options": [
-    "would melt",
-    "melted",
-    "will melt",
-    "melts"
+    "appear",
+    "appears",
+    "appearing",
+    "appeared"
    ],
-   "correct": "D"
+   "correct": "B"
   },
   {
    "n": 11,
-   "q": "You ___ see a dentist if your tooth hurts.",
+   "q": "She is said ___ the offer after prolonged negotiations.",
    "options": [
-    "couldn't",
-    "might",
-    "mustn't",
-    "should"
+    "declining",
+    "to decline",
+    "to be declining",
+    "to have declined"
    ],
    "correct": "D"
   },
   {
    "n": 12,
-   "q": "You ___ park here; it is against the rules.",
+   "q": "No sooner had the results been published ___ several errors were identified.",
    "options": [
-    "don't have to",
-    "should",
-    "mustn't",
-    "can"
+    "then",
+    "than",
+    "that",
+    "when"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 13,
+   "q": "Little ___ at the time that the minor discrepancy would invalidate the entire study.",
+   "options": [
+    "had the researchers realised",
+    "did the researchers realise",
+    "the researchers realised",
+    "the researchers had realised"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 14,
+   "q": "📖 Matnni o‘qing:\n\nLast Saturday, residents of Green Street met in the park for a community clean-up. They collected rubbish, planted five young trees, and painted the old benches. By lunchtime, the park looked much cleaner than before.\n\nDiyor downloaded a language-learning app because he wanted to improve his English vocabulary. The app gives him ten new words every day and tests him at the end of each week. After a month, he could remember many more words than before.\n\nFarida took an early train to visit her uncle in Bukhara. She had planned to read during the journey, but she spent most of the time talking to an elderly woman sitting beside her. The woman told Farida interesting stories about the city.\n\nBefore the school trip, Aziz discovered that his camera would not turn on. He took it to a repair shop, where a technician replaced the battery. Aziz was relieved because he wanted to take photographs of the science museum.\n\n❓ The passage primarily suggests that the clean-up was",
+   "options": [
+    "a coordinated community effort that produced rapid, visible improvement",
+    "limited to planting trees",
+    "a government-only initiative",
+    "unsuccessful"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 15,
+   "q": "📖 Matnni o‘qing:\n\nLast Saturday, residents of Green Street met in the park for a community clean-up. They collected rubbish, planted five young trees, and painted the old benches. By lunchtime, the park looked much cleaner than before.\n\nDiyor downloaded a language-learning app because he wanted to improve his English vocabulary. The app gives him ten new words every day and tests him at the end of each week. After a month, he could remember many more words than before.\n\nFarida took an early train to visit her uncle in Bukhara. She had planned to read during the journey, but she spent most of the time talking to an elderly woman sitting beside her. The woman told Farida interesting stories about the city.\n\nBefore the school trip, Aziz discovered that his camera would not turn on. He took it to a repair shop, where a technician replaced the battery. Aziz was relieved because he wanted to take photographs of the science museum.\n\n❓ What can be inferred about Diyor’s use of the app?",
+   "options": [
+    "He used it only once",
+    "He preferred traditional books",
+    "Consistent daily practice led to measurable vocabulary gains",
+    "The app failed to help him"
    ],
    "correct": "C"
   },
   {
-   "n": 13,
-   "q": "I ___ finish this report tonight because it is due tomorrow.",
-   "options": [
-    "must",
-    "would",
-    "could",
-    "may"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 14,
-   "q": "It ___ rain later, so take an umbrella.",
-   "options": [
-    "can't",
-    "must",
-    "shouldn't",
-    "might"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 15,
-   "q": "My car is ___ than yours.",
-   "options": [
-    "fastest",
-    "more fast",
-    "the faster",
-    "faster"
-   ],
-   "correct": "D"
-  },
-  {
    "n": 16,
-   "q": "This is the ___ restaurant in the area.",
+   "q": "📖 Matnni o‘qing:\n\nLast Saturday, residents of Green Street met in the park for a community clean-up. They collected rubbish, planted five young trees, and painted the old benches. By lunchtime, the park looked much cleaner than before.\n\nDiyor downloaded a language-learning app because he wanted to improve his English vocabulary. The app gives him ten new words every day and tests him at the end of each week. After a month, he could remember many more words than before.\n\nFarida took an early train to visit her uncle in Bukhara. She had planned to read during the journey, but she spent most of the time talking to an elderly woman sitting beside her. The woman told Farida interesting stories about the city.\n\nBefore the school trip, Aziz discovered that his camera would not turn on. He took it to a repair shop, where a technician replaced the battery. Aziz was relieved because he wanted to take photographs of the science museum.\n\n❓ Farida’s experience on the train implies that",
    "options": [
-    "best",
-    "most good",
-    "good",
-    "better"
+    "she arrived late",
+    "the journey was boring",
+    "she regretted talking to the woman",
+    "unexpected social interaction can displace planned solitary activities"
    ],
-   "correct": "A"
+   "correct": "D"
   },
   {
    "n": 17,
-   "q": "My new phone is not as ___ as my old one.",
+   "q": "📖 Matnni o‘qing:\n\nLast Saturday, residents of Green Street met in the park for a community clean-up. They collected rubbish, planted five young trees, and painted the old benches. By lunchtime, the park looked much cleaner than before.\n\nDiyor downloaded a language-learning app because he wanted to improve his English vocabulary. The app gives him ten new words every day and tests him at the end of each week. After a month, he could remember many more words than before.\n\nFarida took an early train to visit her uncle in Bukhara. She had planned to read during the journey, but she spent most of the time talking to an elderly woman sitting beside her. The woman told Farida interesting stories about the city.\n\nBefore the school trip, Aziz discovered that his camera would not turn on. He took it to a repair shop, where a technician replaced the battery. Aziz was relieved because he wanted to take photographs of the science museum.\n\n❓ The technician’s action most directly enabled Aziz to",
    "options": [
-    "most expensive",
-    "more expensive",
-    "expensiver",
-    "expensive"
+    "avoid the trip",
+    "sell the camera",
+    "buy a new camera",
+    "document the science museum visit as he had intended"
    ],
    "correct": "D"
   },
   {
    "n": 18,
-   "q": "There is ___ sugar in this tea than in that one.",
+   "q": "📖 Matnni o‘qing:\n\nLast Saturday, residents of Green Street met in the park for a community clean-up. They collected rubbish, planted five young trees, and painted the old benches. By lunchtime, the park looked much cleaner than before.\n\nDiyor downloaded a language-learning app because he wanted to improve his English vocabulary. The app gives him ten new words every day and tests him at the end of each week. After a month, he could remember many more words than before.\n\nFarida took an early train to visit her uncle in Bukhara. She had planned to read during the journey, but she spent most of the time talking to an elderly woman sitting beside her. The woman told Farida interesting stories about the city.\n\nBefore the school trip, Aziz discovered that his camera would not turn on. He took it to a repair shop, where a technician replaced the battery. Aziz was relieved because he wanted to take photographs of the science museum.\n\n❓ Which detail best supports the claim that the park improved quickly?",
    "options": [
-    "many",
-    "few",
-    "less",
-    "fewer"
+    "The benches were old",
+    "Residents met on Saturday",
+    "By lunchtime the park looked much cleaner",
+    "They planted five trees"
    ],
    "correct": "C"
   },
   {
    "n": 19,
-   "q": "Only ___ students came to the meeting.",
+   "q": "📖 Matnni o‘qing:\n\nLast Saturday, residents of Green Street met in the park for a community clean-up. They collected rubbish, planted five young trees, and painted the old benches. By lunchtime, the park looked much cleaner than before.\n\nDiyor downloaded a language-learning app because he wanted to improve his English vocabulary. The app gives him ten new words every day and tests him at the end of each week. After a month, he could remember many more words than before.\n\nFarida took an early train to visit her uncle in Bukhara. She had planned to read during the journey, but she spent most of the time talking to an elderly woman sitting beside her. The woman told Farida interesting stories about the city.\n\nBefore the school trip, Aziz discovered that his camera would not turn on. He took it to a repair shop, where a technician replaced the battery. Aziz was relieved because he wanted to take photographs of the science museum.\n\n❓ The phrase “interesting stories about the city” most nearly indicates that",
    "options": [
-    "any",
-    "a few",
-    "much",
-    "a little"
+    "the journey was delayed",
+    "Farida already knew the stories",
+    "the woman shared local historical or cultural knowledge",
+    "the stories were fictional"
    ],
-   "correct": "B"
+   "correct": "C"
   },
   {
    "n": 20,
-   "q": "We have ___ time before the bus leaves.",
+   "q": "📖 Matnni o‘qing:\n\nLast Saturday, residents of Green Street met in the park for a community clean-up. They collected rubbish, planted five young trees, and painted the old benches. By lunchtime, the park looked much cleaner than before.\n\nDiyor downloaded a language-learning app because he wanted to improve his English vocabulary. The app gives him ten new words every day and tests him at the end of each week. After a month, he could remember many more words than before.\n\nFarida took an early train to visit her uncle in Bukhara. She had planned to read during the journey, but she spent most of the time talking to an elderly woman sitting beside her. The woman told Farida interesting stories about the city.\n\nBefore the school trip, Aziz discovered that his camera would not turn on. He took it to a repair shop, where a technician replaced the battery. Aziz was relieved because he wanted to take photographs of the science museum.\n\n❓ Overall, the passages illustrate",
    "options": [
-    "a few",
-    "many",
-    "a little",
-    "few"
+    "practical problem-solving and community or personal initiative",
+    "technological failure",
+    "failure and disappointment only",
+    "government intervention"
    ],
-   "correct": "C"
+   "correct": "A"
   }
  ],
- "Pre-Intermediate": [
+ "Intermediate": [
   {
    "n": 1,
-   "q": "By the time we arrived, the film ___.",
+   "q": "Not until the independent audit was completed ___ the true scale of the accounting irregularity.",
    "options": [
-    "has started",
-    "had started",
-    "was starting",
-    "started"
+    "the board had grasped",
+    "had the board grasped",
+    "did the board grasp",
+    "the board grasped"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 2,
+   "q": "Were the regulatory approval to be granted this week, construction ___ without further delay.",
+   "options": [
+    "could proceed",
+    "would proceed",
+    "proceeds",
+    "can proceed"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 3,
+   "q": "So ambiguous ___ the contractual language that even experienced lawyers disagreed on its interpretation.",
+   "options": [
+    "the language was",
+    "was the language",
+    "did the language",
+    "the language"
    ],
    "correct": "B"
   },
   {
-   "n": 2,
-   "q": "I ___ for this company since I graduated.",
+   "n": 4,
+   "q": "Had the safety protocol not been revised, the incident ___ far more severe.",
    "options": [
-    "am working",
-    "worked",
-    "work",
-    "have been working"
+    "had been",
+    "will have been",
+    "would be",
+    "would have been"
    ],
    "correct": "D"
   },
   {
-   "n": 3,
-   "q": "This time next week, we ___ on the beach.",
-   "options": [
-    "will be relaxing",
-    "will relax",
-    "have relaxed",
-    "relax"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 4,
-   "q": "By next June, she ___ her degree.",
-   "options": [
-    "will have completed",
-    "has completed",
-    "completes",
-    "will complete"
-   ],
-   "correct": "A"
-  },
-  {
    "n": 5,
-   "q": "I wish I ___ how to solve this problem.",
+   "q": "The ethics committee demanded that every participant ___ full informed consent.",
    "options": [
-    "know",
-    "knew",
-    "will know",
-    "have known"
+    "is given",
+    "was given",
+    "be given",
+    "would be given"
    ],
-   "correct": "B"
+   "correct": "C"
   },
   {
    "n": 6,
-   "q": "If I ___ about the traffic, I would have left earlier.",
+   "q": "I would sooner the preliminary findings ___ confidential until peer review is complete.",
    "options": [
-    "know",
-    "had known",
-    "have known",
-    "would know"
+    "would remain",
+    "remain",
+    "remained",
+    "had remained"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 7,
+   "q": "The results are presumed ___ by two separate statistical teams.",
+   "options": [
+    "to be cross-checking",
+    "to have been cross-checked",
+    "cross-checking",
+    "to cross-check"
    ],
    "correct": "B"
   },
   {
-   "n": 7,
-   "q": "If he had studied harder, he ___ the exam.",
-   "options": [
-    "would have passed",
-    "had passed",
-    "would pass",
-    "will pass"
-   ],
-   "correct": "A"
-  },
-  {
    "n": 8,
-   "q": "If I were you, I ___ to the manager.",
+   "q": "___ no dissenting votes, the resolution passed unanimously.",
    "options": [
-    "speak",
-    "would have spoken",
-    "would speak",
-    "will speak"
+    "There to be",
+    "Being there",
+    "There being",
+    "There had"
    ],
    "correct": "C"
   },
   {
    "n": 9,
-   "q": "Had I known about the sale, I ___ a new laptop.",
+   "q": "The sole applicant ___ for interview had already accepted another position.",
    "options": [
-    "will buy",
-    "would buy",
-    "would have bought",
-    "bought"
+    "shortlisting",
+    "to shortlist",
+    "to be shortlisted",
+    "shortlisted"
    ],
    "correct": "C"
   },
   {
    "n": 10,
-   "q": "I would rather you ___ me before you come over.",
+   "q": "It is not so much the projected cost ___ the absence of a clear implementation timeline that worries investors.",
    "options": [
-    "had called",
-    "will call",
-    "call",
-    "called"
+    "than",
+    "as",
+    "that",
+    "which"
    ],
-   "correct": "D"
+   "correct": "B"
   },
   {
    "n": 11,
-   "q": "The report ___ by Friday afternoon.",
+   "q": "Hardly ___ the presentation when technical difficulties forced a pause.",
    "options": [
-    "must have finished",
-    "must be finished",
-    "must be finishing",
-    "must finish"
+    "had the speaker begun",
+    "the speaker had begun",
+    "the speaker began",
+    "did the speaker begin"
    ],
-   "correct": "B"
+   "correct": "A"
   },
   {
    "n": 12,
-   "q": "The suspect ___ by the police last night.",
+   "q": "Under no circumstances ___ personal data be stored without explicit consent.",
    "options": [
-    "has arrested",
-    "is arresting",
-    "arrested",
-    "was arrested"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 13,
-   "q": "The new stadium ___ at the moment.",
-   "options": [
-    "builds",
-    "has built",
-    "was built",
-    "is being built"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 14,
-   "q": "The invitations ___ before the event began.",
-   "options": [
-    "had sent",
-    "had been sent",
-    "have sent",
-    "were sending"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 15,
-   "q": "She said she ___ the following day.",
-   "options": [
-    "has come",
-    "will come",
-    "would come",
-    "comes"
+    "you will",
+    "you should",
+    "should",
+    "will you"
    ],
    "correct": "C"
   },
   {
-   "n": 16,
-   "q": "He asked me where I ___ the previous weekend.",
+   "n": 13,
+   "q": "The more stringently the inclusion criteria were applied, the smaller the observed effect ___.",
    "options": [
-    "go",
-    "had gone",
-    "have gone",
-    "was going"
+    "becomes",
+    "became",
+    "become",
+    "becoming"
    ],
    "correct": "B"
   },
   {
-   "n": 17,
-   "q": "The teacher told us ___ late again.",
+   "n": 14,
+   "q": "📖 Matnni o‘qing:\n\nAfter a six-month trial, a local design company decided to keep its flexible-working policy. Employees may work from home two days a week, but they must attend team meetings in the office on Wednesdays. The manager says the policy has improved staff satisfaction without reducing productivity.\n\nWhile renovating an old house, builders found a sealed wooden box under the floorboards. Inside were several letters written during the 1940s, as well as a black-and-white photograph. The owner has given the items to the local museum, which hopes to identify the people in the photograph.\n\nPassengers on Flight 418 were told that their departure would be delayed because of a technical inspection. Although many of them were disappointed, the airline provided meal vouchers and regular updates. The plane eventually left three hours later than scheduled.\n\nMurod’s bicycle had been unused for several years because its brakes were damaged. Rather than buying a new one, he took it to a repair workshop run by volunteers. They replaced the brakes and taught him how to check the tyres and chain himself.\n\n❓ The manager’s statement most strongly implies that",
    "options": [
-    "not be",
-    "not being",
-    "don't be",
-    "not to be"
+    "home working is always superior",
+    "office attendance is unnecessary",
+    "productivity declined",
+    "flexible working can enhance satisfaction without harming output"
    ],
    "correct": "D"
   },
   {
-   "n": 18,
-   "q": "My friend suggested ___ a taxi instead of walking.",
+   "n": 15,
+   "q": "📖 Matnni o‘qing:\n\nAfter a six-month trial, a local design company decided to keep its flexible-working policy. Employees may work from home two days a week, but they must attend team meetings in the office on Wednesdays. The manager says the policy has improved staff satisfaction without reducing productivity.\n\nWhile renovating an old house, builders found a sealed wooden box under the floorboards. Inside were several letters written during the 1940s, as well as a black-and-white photograph. The owner has given the items to the local museum, which hopes to identify the people in the photograph.\n\nPassengers on Flight 418 were told that their departure would be delayed because of a technical inspection. Although many of them were disappointed, the airline provided meal vouchers and regular updates. The plane eventually left three hours later than scheduled.\n\nMurod’s bicycle had been unused for several years because its brakes were damaged. Rather than buying a new one, he took it to a repair workshop run by volunteers. They replaced the brakes and taught him how to check the tyres and chain himself.\n\n❓ The discovery under the floorboards suggests that",
    "options": [
-    "take",
-    "to take",
-    "taking",
-    "took"
+    "the builders fabricated the letters",
+    "the museum already knew the contents",
+    "the items were recently planted",
+    "the house preserved previously inaccessible historical material"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 16,
+   "q": "📖 Matnni o‘qing:\n\nAfter a six-month trial, a local design company decided to keep its flexible-working policy. Employees may work from home two days a week, but they must attend team meetings in the office on Wednesdays. The manager says the policy has improved staff satisfaction without reducing productivity.\n\nWhile renovating an old house, builders found a sealed wooden box under the floorboards. Inside were several letters written during the 1940s, as well as a black-and-white photograph. The owner has given the items to the local museum, which hopes to identify the people in the photograph.\n\nPassengers on Flight 418 were told that their departure would be delayed because of a technical inspection. Although many of them were disappointed, the airline provided meal vouchers and regular updates. The plane eventually left three hours later than scheduled.\n\nMurod’s bicycle had been unused for several years because its brakes were damaged. Rather than buying a new one, he took it to a repair workshop run by volunteers. They replaced the brakes and taught him how to check the tyres and chain himself.\n\n❓ The airline’s provision of vouchers and updates indicates",
+   "options": [
+    "admission of negligence",
+    "indifference to passengers",
+    "cancellation of the flight",
+    "an attempt to manage passenger dissatisfaction during the delay"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 17,
+   "q": "📖 Matnni o‘qing:\n\nAfter a six-month trial, a local design company decided to keep its flexible-working policy. Employees may work from home two days a week, but they must attend team meetings in the office on Wednesdays. The manager says the policy has improved staff satisfaction without reducing productivity.\n\nWhile renovating an old house, builders found a sealed wooden box under the floorboards. Inside were several letters written during the 1940s, as well as a black-and-white photograph. The owner has given the items to the local museum, which hopes to identify the people in the photograph.\n\nPassengers on Flight 418 were told that their departure would be delayed because of a technical inspection. Although many of them were disappointed, the airline provided meal vouchers and regular updates. The plane eventually left three hours later than scheduled.\n\nMurod’s bicycle had been unused for several years because its brakes were damaged. Rather than buying a new one, he took it to a repair workshop run by volunteers. They replaced the brakes and taught him how to check the tyres and chain himself.\n\n❓ Murod’s choice to repair rather than replace the bicycle implies",
+   "options": [
+    "a preference for restoration over new purchase",
+    "the workshop was compulsory",
+    "the bicycle was beyond repair",
+    "he could not afford any bicycle"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 18,
+   "q": "📖 Matnni o‘qing:\n\nAfter a six-month trial, a local design company decided to keep its flexible-working policy. Employees may work from home two days a week, but they must attend team meetings in the office on Wednesdays. The manager says the policy has improved staff satisfaction without reducing productivity.\n\nWhile renovating an old house, builders found a sealed wooden box under the floorboards. Inside were several letters written during the 1940s, as well as a black-and-white photograph. The owner has given the items to the local museum, which hopes to identify the people in the photograph.\n\nPassengers on Flight 418 were told that their departure would be delayed because of a technical inspection. Although many of them were disappointed, the airline provided meal vouchers and regular updates. The plane eventually left three hours later than scheduled.\n\nMurod’s bicycle had been unused for several years because its brakes were damaged. Rather than buying a new one, he took it to a repair workshop run by volunteers. They replaced the brakes and taught him how to check the tyres and chain himself.\n\n❓ Which inference is best supported by the flexible-working paragraph?",
+   "options": [
+    "All employees preferred full-time office work",
+    "Satisfaction fell",
+    "The six-month trial produced evidence sufficient to retain the policy",
+    "Wednesdays were optional"
    ],
    "correct": "C"
   },
   {
    "n": 19,
-   "q": "I regret ___ you that your application was unsuccessful.",
+   "q": "📖 Matnni o‘qing:\n\nAfter a six-month trial, a local design company decided to keep its flexible-working policy. Employees may work from home two days a week, but they must attend team meetings in the office on Wednesdays. The manager says the policy has improved staff satisfaction without reducing productivity.\n\nWhile renovating an old house, builders found a sealed wooden box under the floorboards. Inside were several letters written during the 1940s, as well as a black-and-white photograph. The owner has given the items to the local museum, which hopes to identify the people in the photograph.\n\nPassengers on Flight 418 were told that their departure would be delayed because of a technical inspection. Although many of them were disappointed, the airline provided meal vouchers and regular updates. The plane eventually left three hours later than scheduled.\n\nMurod’s bicycle had been unused for several years because its brakes were damaged. Rather than buying a new one, he took it to a repair workshop run by volunteers. They replaced the brakes and taught him how to check the tyres and chain himself.\n\n❓ The museum’s hope to identify the people in the photograph underscores",
    "options": [
-    "tell",
-    "telling",
-    "to tell",
-    "told"
+    "doubt about the letters’ authenticity",
+    "the owner’s reluctance",
+    "a desire to sell the items",
+    "the historical value of the recovered materials"
    ],
-   "correct": "C"
+   "correct": "D"
   },
   {
    "n": 20,
-   "q": "I remember ___ this museum when I was a child.",
+   "q": "📖 Matnni o‘qing:\n\nAfter a six-month trial, a local design company decided to keep its flexible-working policy. Employees may work from home two days a week, but they must attend team meetings in the office on Wednesdays. The manager says the policy has improved staff satisfaction without reducing productivity.\n\nWhile renovating an old house, builders found a sealed wooden box under the floorboards. Inside were several letters written during the 1940s, as well as a black-and-white photograph. The owner has given the items to the local museum, which hopes to identify the people in the photograph.\n\nPassengers on Flight 418 were told that their departure would be delayed because of a technical inspection. Although many of them were disappointed, the airline provided meal vouchers and regular updates. The plane eventually left three hours later than scheduled.\n\nMurod’s bicycle had been unused for several years because its brakes were damaged. Rather than buying a new one, he took it to a repair workshop run by volunteers. They replaced the brakes and taught him how to check the tyres and chain himself.\n\n❓ Collectively, the passages highlight",
    "options": [
-    "visiting",
-    "visit",
-    "to visit",
-    "visited"
+    "practical responses to constraints and the recovery or preservation of value",
+    "technological superiority",
+    "inevitable failure",
+    "government inefficiency"
    ],
    "correct": "A"
   }
@@ -890,223 +950,223 @@
  "Advanced": [
   {
    "n": 1,
-   "q": "Rarely ___ such a convincing performance.",
+   "q": "Rarely ___ so comprehensive a refutation of a once-dominant theoretical framework.",
    "options": [
-    "have I seen",
-    "I saw",
-    "did I see",
-    "I have seen"
+    "did the discipline experience",
+    "has the discipline experienced",
+    "the discipline has experienced",
+    "the discipline experienced"
    ],
-   "correct": "A"
+   "correct": "B"
   },
   {
    "n": 2,
-   "q": "Not until the report was published ___ the scale of the problem.",
+   "q": "Not only ___ the initial claim, but every subsequent preregistered replication has likewise failed to recover the effect.",
    "options": [
-    "had we understood",
-    "did we understand",
-    "we understood",
-    "we had understood"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 3,
-   "q": "Were the proposal ___, the project could begin immediately.",
-   "options": [
-    "approved",
-    "approve",
-    "approving",
-    "to approve"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 4,
-   "q": "Had it not been for her intervention, the negotiations ___ .",
-   "options": [
-    "would have failed",
-    "had failed",
-    "will fail",
-    "would fail"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 5,
-   "q": "So complex ___ that even experts disagreed about its cause.",
-   "options": [
-    "the issue was",
-    "was the issue",
-    "the issue",
-    "did the issue"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 6,
-   "q": "It is essential that every applicant ___ the form personally.",
-   "options": [
-    "signs",
-    "sign",
-    "will sign",
-    "signed"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 7,
-   "q": "The committee recommended that the policy ___ immediately.",
-   "options": [
-    "be revised",
-    "will be revised",
-    "is revised",
-    "was revised"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 8,
-   "q": "I would sooner you ___ me the truth from the beginning.",
-   "options": [
-    "tell",
-    "would tell",
-    "told",
-    "had told"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 9,
-   "q": "She behaves as though she ___ the decision herself.",
-   "options": [
-    "has made",
-    "would make",
-    "had made",
-    "will make"
+    "the meta-analysis has undermined",
+    "has the meta-analysis undermined",
+    "did the meta-analysis undermine",
+    "the meta-analysis undermined"
    ],
    "correct": "C"
   },
   {
-   "n": 10,
-   "q": "If only I ___ the warning more seriously at the time.",
+   "n": 3,
+   "q": "Were the analytic flexibility to have been constrained a priori, the contradictory pattern of results ___ anticipated.",
    "options": [
-    "have taken",
-    "would take",
-    "take",
-    "had taken"
+    "may have been",
+    "might have been",
+    "might be",
+    "would be"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 4,
+   "q": "So endemic ___ the questionable research practices that the majority of the published literature is now regarded as provisional.",
+   "options": [
+    "the practices were",
+    "did the practices",
+    "the practices",
+    "were"
    ],
    "correct": "D"
+  },
+  {
+   "n": 5,
+   "q": "Had the sampling frame not been restricted to WEIRD populations, the external validity of the inference ___ markedly higher.",
+   "options": [
+    "will have been",
+    "would be",
+    "had been",
+    "would have been"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 6,
+   "q": "It is essential that all preregistrations ___ prior to data collection and that deviations be transparently reported.",
+   "options": [
+    "were deposited",
+    "will be deposited",
+    "are deposited",
+    "be deposited"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 7,
+   "q": "The editorial board recommended that the analysis ___ with a family-wise error correction and that the raw data be made available.",
+   "options": [
+    "will be re-executed",
+    "was re-executed",
+    "is re-executed",
+    "be re-executed"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 8,
+   "q": "I would rather the underlying code and preprocessing decisions ___ fully documented.",
+   "options": [
+    "are",
+    "would be",
+    "were",
+    "had been"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 9,
+   "q": "The reported effect is held ___ by multiple independent laboratories that have been unable to replicate it under stricter protocols.",
+   "options": [
+    "under abeyance",
+    "in abeyance",
+    "with abeyance",
+    "to abeyance"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 10,
+   "q": "___ the battery of robustness checks, alternative explanations involving residual confounding remain viable.",
+   "options": [
+    "Despite of",
+    "However",
+    "Notwithstanding",
+    "Although"
+   ],
+   "correct": "C"
   },
   {
    "n": 11,
-   "q": "The manager ___ the documents before the meeting, but apparently she did not.",
+   "q": "The manuscript, the supplementary code of ___ has not been released, advances strong causal assertions.",
    "options": [
-    "needn't have read",
-    "must read",
-    "couldn't read",
-    "should have read"
+    "which",
+    "whose",
+    "that",
+    "whom"
    ],
-   "correct": "D"
+   "correct": "A"
   },
   {
    "n": 12,
-   "q": "You ___ the tickets; entry to the exhibition was free.",
+   "q": "What the literature currently lacks ___ not further correlational reports but a programme of adversarial collaborations and preregistered experiments.",
    "options": [
-    "shouldn't buy",
-    "could not buy",
-    "needn't have bought",
-    "mustn't buy"
+    "were",
+    "have",
+    "is",
+    "are"
    ],
    "correct": "C"
   },
   {
    "n": 13,
-   "q": "He ___ have misunderstood the instructions; his answer is completely unrelated.",
+   "q": "No sooner had the corrected analysis been posted ___ three additional groups confirmed the same direction-reversing coding error.",
    "options": [
-    "must",
-    "should",
-    "need",
-    "can't"
-   ],
-   "correct": "A"
-  },
-  {
-   "n": 14,
-   "q": "They ___ have reached the summit yet; the climb normally takes six hours.",
-   "options": [
-    "must",
-    "can't",
-    "needn't",
-    "should"
+    "then",
+    "than",
+    "that",
+    "when"
    ],
    "correct": "B"
   },
   {
-   "n": 15,
-   "q": "The figures are believed ___ by an independent auditor.",
+   "n": 14,
+   "q": "📖 Matnni o‘qing:\n\nA comprehensive meta-analysis has delivered a severe blow to a long-standing claim in experimental psychology. Rarely has the discipline experienced so comprehensive a refutation of a once-dominant theoretical framework. Not only did the meta-analysis undermine the initial claim, but every subsequent preregistered replication has likewise failed to recover the effect. Were the analytic flexibility to have been constrained a priori, the contradictory pattern of results might have been anticipated. So endemic were the questionable research practices—chiefly the unrestricted use of convenience samples drawn from WEIRD populations and undisclosed analytic decisions—that the majority of the published literature is now regarded as provisional.\n\nHad the sampling frame not been restricted to WEIRD populations, the external validity of the inference would have been markedly higher. It is essential that all preregistrations be deposited prior to data collection and that deviations be transparently reported. The editorial board recommended that the analysis be re-executed with a family-wise error correction and that the raw data be made available. The reported effect is held in abeyance by multiple independent laboratories that have been unable to replicate it under stricter protocols. Notwithstanding the battery of robustness checks, alternative explanations involving residual confounding remain viable. What the literature currently lacks is not further correlational reports but a programme of adversarial collaborations and preregistered experiments. No sooner had the corrected analysis been posted than three additional groups confirmed the same direction-reversing coding error.\n\n❓ The author’s central claim is that",
    "options": [
-    "to be verifying",
-    "to verify",
-    "to have been verified",
-    "verifying"
+    "observational studies are superior",
+    "replication is unnecessary",
+    "the original effect is robust",
+    "widespread methodological weaknesses have rendered much of the prior literature unreliable"
    ],
-   "correct": "C"
+   "correct": "D"
+  },
+  {
+   "n": 15,
+   "q": "📖 Matnni o‘qing:\n\nA comprehensive meta-analysis has delivered a severe blow to a long-standing claim in experimental psychology. Rarely has the discipline experienced so comprehensive a refutation of a once-dominant theoretical framework. Not only did the meta-analysis undermine the initial claim, but every subsequent preregistered replication has likewise failed to recover the effect. Were the analytic flexibility to have been constrained a priori, the contradictory pattern of results might have been anticipated. So endemic were the questionable research practices—chiefly the unrestricted use of convenience samples drawn from WEIRD populations and undisclosed analytic decisions—that the majority of the published literature is now regarded as provisional.\n\nHad the sampling frame not been restricted to WEIRD populations, the external validity of the inference would have been markedly higher. It is essential that all preregistrations be deposited prior to data collection and that deviations be transparently reported. The editorial board recommended that the analysis be re-executed with a family-wise error correction and that the raw data be made available. The reported effect is held in abeyance by multiple independent laboratories that have been unable to replicate it under stricter protocols. Notwithstanding the battery of robustness checks, alternative explanations involving residual confounding remain viable. What the literature currently lacks is not further correlational reports but a programme of adversarial collaborations and preregistered experiments. No sooner had the corrected analysis been posted than three additional groups confirmed the same direction-reversing coding error.\n\n❓ The author’s attitude toward the original findings is best characterised as",
+   "options": [
+    "profoundly skeptical in light of failed replications and identified errors",
+    "cautiously optimistic",
+    "neutral",
+    "enthusiastically supportive"
+   ],
+   "correct": "A"
   },
   {
    "n": 16,
-   "q": "The minister is reported ___ a statement later today.",
+   "q": "📖 Matnni o‘qing:\n\nA comprehensive meta-analysis has delivered a severe blow to a long-standing claim in experimental psychology. Rarely has the discipline experienced so comprehensive a refutation of a once-dominant theoretical framework. Not only did the meta-analysis undermine the initial claim, but every subsequent preregistered replication has likewise failed to recover the effect. Were the analytic flexibility to have been constrained a priori, the contradictory pattern of results might have been anticipated. So endemic were the questionable research practices—chiefly the unrestricted use of convenience samples drawn from WEIRD populations and undisclosed analytic decisions—that the majority of the published literature is now regarded as provisional.\n\nHad the sampling frame not been restricted to WEIRD populations, the external validity of the inference would have been markedly higher. It is essential that all preregistrations be deposited prior to data collection and that deviations be transparently reported. The editorial board recommended that the analysis be re-executed with a family-wise error correction and that the raw data be made available. The reported effect is held in abeyance by multiple independent laboratories that have been unable to replicate it under stricter protocols. Notwithstanding the battery of robustness checks, alternative explanations involving residual confounding remain viable. What the literature currently lacks is not further correlational reports but a programme of adversarial collaborations and preregistered experiments. No sooner had the corrected analysis been posted than three additional groups confirmed the same direction-reversing coding error.\n\n❓ The clause “residual confounding cannot be entirely excluded” functions primarily to",
    "options": [
-    "to make",
-    "to have made",
-    "making",
-    "to be made"
+    "acknowledge that even extensive controls leave open alternative causal accounts",
+    "dismiss criticism",
+    "assert that confounding has been eliminated",
+    "praise the original design"
    ],
    "correct": "A"
   },
   {
    "n": 17,
-   "q": "The new regulations are expected ___ next month.",
+   "q": "📖 Matnni o‘qing:\n\nA comprehensive meta-analysis has delivered a severe blow to a long-standing claim in experimental psychology. Rarely has the discipline experienced so comprehensive a refutation of a once-dominant theoretical framework. Not only did the meta-analysis undermine the initial claim, but every subsequent preregistered replication has likewise failed to recover the effect. Were the analytic flexibility to have been constrained a priori, the contradictory pattern of results might have been anticipated. So endemic were the questionable research practices—chiefly the unrestricted use of convenience samples drawn from WEIRD populations and undisclosed analytic decisions—that the majority of the published literature is now regarded as provisional.\n\nHad the sampling frame not been restricted to WEIRD populations, the external validity of the inference would have been markedly higher. It is essential that all preregistrations be deposited prior to data collection and that deviations be transparently reported. The editorial board recommended that the analysis be re-executed with a family-wise error correction and that the raw data be made available. The reported effect is held in abeyance by multiple independent laboratories that have been unable to replicate it under stricter protocols. Notwithstanding the battery of robustness checks, alternative explanations involving residual confounding remain viable. What the literature currently lacks is not further correlational reports but a programme of adversarial collaborations and preregistered experiments. No sooner had the corrected analysis been posted than three additional groups confirmed the same direction-reversing coding error.\n\n❓ Which statement would the author most likely endorse?",
    "options": [
-    "to introduce",
-    "introducing",
-    "to have introduced",
-    "to be introduced"
-   ],
-   "correct": "D"
-  },
-  {
-   "n": 18,
-   "q": "Having ___ all the evidence, the jury reached a verdict.",
-   "options": [
-    "consider",
-    "considered",
-    "been considering",
-    "to consider"
-   ],
-   "correct": "B"
-  },
-  {
-   "n": 19,
-   "q": "___ by the sudden noise, the horse ran across the field.",
-   "options": [
-    "Startling",
-    "Having startled",
-    "Startled",
-    "To startle"
+    "Causal claims can rest solely on correlation",
+    "Coding errors are rare and inconsequential",
+    "Progress requires preregistered experimental tests rather than additional observational work",
+    "Convenience samples are adequate for generalisation"
    ],
    "correct": "C"
   },
   {
-   "n": 20,
-   "q": "___ no further questions, the chair brought the meeting to a close.",
+   "n": 18,
+   "q": "📖 Matnni o‘qing:\n\nA comprehensive meta-analysis has delivered a severe blow to a long-standing claim in experimental psychology. Rarely has the discipline experienced so comprehensive a refutation of a once-dominant theoretical framework. Not only did the meta-analysis undermine the initial claim, but every subsequent preregistered replication has likewise failed to recover the effect. Were the analytic flexibility to have been constrained a priori, the contradictory pattern of results might have been anticipated. So endemic were the questionable research practices—chiefly the unrestricted use of convenience samples drawn from WEIRD populations and undisclosed analytic decisions—that the majority of the published literature is now regarded as provisional.\n\nHad the sampling frame not been restricted to WEIRD populations, the external validity of the inference would have been markedly higher. It is essential that all preregistrations be deposited prior to data collection and that deviations be transparently reported. The editorial board recommended that the analysis be re-executed with a family-wise error correction and that the raw data be made available. The reported effect is held in abeyance by multiple independent laboratories that have been unable to replicate it under stricter protocols. Notwithstanding the battery of robustness checks, alternative explanations involving residual confounding remain viable. What the literature currently lacks is not further correlational reports but a programme of adversarial collaborations and preregistered experiments. No sooner had the corrected analysis been posted than three additional groups confirmed the same direction-reversing coding error.\n\n❓ The reference to laboratories that “have attempted and failed to replicate” serves to",
    "options": [
-    "There to be",
-    "There being",
-    "Being there",
-    "There had"
+    "demonstrate consensus support",
+    "suggest publication bias against the effect",
+    "criticise the replicators",
+    "supply empirical grounds for doubting the original effect"
    ],
-   "correct": "B"
+   "correct": "D"
+  },
+  {
+   "n": 19,
+   "q": "📖 Matnni o‘qing:\n\nA comprehensive meta-analysis has delivered a severe blow to a long-standing claim in experimental psychology. Rarely has the discipline experienced so comprehensive a refutation of a once-dominant theoretical framework. Not only did the meta-analysis undermine the initial claim, but every subsequent preregistered replication has likewise failed to recover the effect. Were the analytic flexibility to have been constrained a priori, the contradictory pattern of results might have been anticipated. So endemic were the questionable research practices—chiefly the unrestricted use of convenience samples drawn from WEIRD populations and undisclosed analytic decisions—that the majority of the published literature is now regarded as provisional.\n\nHad the sampling frame not been restricted to WEIRD populations, the external validity of the inference would have been markedly higher. It is essential that all preregistrations be deposited prior to data collection and that deviations be transparently reported. The editorial board recommended that the analysis be re-executed with a family-wise error correction and that the raw data be made available. The reported effect is held in abeyance by multiple independent laboratories that have been unable to replicate it under stricter protocols. Notwithstanding the battery of robustness checks, alternative explanations involving residual confounding remain viable. What the literature currently lacks is not further correlational reports but a programme of adversarial collaborations and preregistered experiments. No sooner had the corrected analysis been posted than three additional groups confirmed the same direction-reversing coding error.\n\n❓ The strongest textual evidence that the flaw is systemic is",
+   "options": [
+    "“So endemic were the questionable research practices that the majority of the published literature is now regarded as provisional.”",
+    "the sealed box",
+    "the mention of meal vouchers",
+    "the flexible-working policy"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 20,
+   "q": "📖 Matnni o‘qing:\n\nA comprehensive meta-analysis has delivered a severe blow to a long-standing claim in experimental psychology. Rarely has the discipline experienced so comprehensive a refutation of a once-dominant theoretical framework. Not only did the meta-analysis undermine the initial claim, but every subsequent preregistered replication has likewise failed to recover the effect. Were the analytic flexibility to have been constrained a priori, the contradictory pattern of results might have been anticipated. So endemic were the questionable research practices—chiefly the unrestricted use of convenience samples drawn from WEIRD populations and undisclosed analytic decisions—that the majority of the published literature is now regarded as provisional.\n\nHad the sampling frame not been restricted to WEIRD populations, the external validity of the inference would have been markedly higher. It is essential that all preregistrations be deposited prior to data collection and that deviations be transparently reported. The editorial board recommended that the analysis be re-executed with a family-wise error correction and that the raw data be made available. The reported effect is held in abeyance by multiple independent laboratories that have been unable to replicate it under stricter protocols. Notwithstanding the battery of robustness checks, alternative explanations involving residual confounding remain viable. What the literature currently lacks is not further correlational reports but a programme of adversarial collaborations and preregistered experiments. No sooner had the corrected analysis been posted than three additional groups confirmed the same direction-reversing coding error.\n\n❓ The overall tone of the passage is",
+   "options": [
+    "promotional",
+    "indignant",
+    "equivocal",
+    "rigorously critical and methodologically exacting"
+   ],
+   "correct": "D"
   }
  ]
 }

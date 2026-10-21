@@ -1,0 +1,1112 @@
+{
+ "Starter": [
+  {
+   "n": 1,
+   "q": "I ___ seven years old.",
+   "options": [
+    "are",
+    "am",
+    "be",
+    "is"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 2,
+   "q": "My brother ___ a red bike.",
+   "options": [
+    "having",
+    "have",
+    "has",
+    "is have"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 3,
+   "q": "Look! The baby ___ asleep.",
+   "options": [
+    "are",
+    "is",
+    "be",
+    "am"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 4,
+   "q": "___ you like apples?",
+   "options": [
+    "Do",
+    "Does",
+    "Are",
+    "Is"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 5,
+   "q": "She ___ not like milk.",
+   "options": [
+    "is",
+    "does",
+    "are",
+    "do"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 6,
+   "q": "We ___ football after school.",
+   "options": [
+    "plays",
+    "is play",
+    "play",
+    "playing"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 7,
+   "q": "Tom ___ his teeth every morning.",
+   "options": [
+    "brushes",
+    "is brush",
+    "brush",
+    "brushing"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 8,
+   "q": "They ___ from Uzbekistan.",
+   "options": [
+    "be",
+    "am",
+    "is",
+    "are"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 9,
+   "q": "This is ___ cat.",
+   "options": [
+    "I",
+    "my",
+    "mine",
+    "me"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 10,
+   "q": "Anna and I are friends. ___ are in Class 2.",
+   "options": [
+    "She",
+    "They",
+    "We",
+    "He"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 11,
+   "q": "That is Ben. ___ is my cousin.",
+   "options": [
+    "She",
+    "He",
+    "It",
+    "They"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 12,
+   "q": "Where ___ your pencil?",
+   "options": [
+    "are",
+    "be",
+    "am",
+    "is"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 13,
+   "q": "The books ___ on the desk.",
+   "options": [
+    "be",
+    "is",
+    "am",
+    "are"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 14,
+   "q": "I have two ___.",
+   "options": [
+    "feets",
+    "foots",
+    "feet",
+    "foot"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 15,
+   "q": "One ___ is sleeping in the tree.",
+   "options": [
+    "birds",
+    "birdes",
+    "a birds",
+    "bird"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 16,
+   "q": "There ___ a ball under the chair.",
+   "options": [
+    "are",
+    "be",
+    "is",
+    "am"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 17,
+   "q": "There ___ three windows in our classroom.",
+   "options": [
+    "are",
+    "be",
+    "is",
+    "am"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 18,
+   "q": "I can ___ very fast.",
+   "options": [
+    "running",
+    "to run",
+    "runs",
+    "run"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 19,
+   "q": "Can your sister ___?",
+   "options": [
+    "to swimming",
+    "swimming",
+    "swim",
+    "swims"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 20,
+   "q": "Birds can ___.",
+   "options": [
+    "fly",
+    "flies",
+    "flying",
+    "to flies"
+   ],
+   "correct": "A"
+  }
+ ],
+ "Beginner": [
+  {
+   "n": 1,
+   "q": "My parents ___ to work by bus every day.",
+   "options": [
+    "went",
+    "goes",
+    "go",
+    "are going"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 2,
+   "q": "Look! The children ___ in the pool.",
+   "options": [
+    "swims",
+    "are swimming",
+    "swam",
+    "swim"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 3,
+   "q": "She usually ___ coffee in the morning.",
+   "options": [
+    "drinks",
+    "drink",
+    "drank",
+    "is drinking"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 4,
+   "q": "We ___ dinner at a restaurant last night.",
+   "options": [
+    "has",
+    "are having",
+    "have",
+    "had"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 5,
+   "q": "I ___ my keys on the table yesterday.",
+   "options": [
+    "am leaving",
+    "leave",
+    "left",
+    "leaves"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 6,
+   "q": "They ___ at home last Sunday.",
+   "options": [
+    "are",
+    "be",
+    "were",
+    "was"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 7,
+   "q": "There ___ any milk in the fridge.",
+   "options": [
+    "aren't",
+    "doesn't",
+    "don't",
+    "isn't"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 8,
+   "q": "How ___ chairs are in the room?",
+   "options": [
+    "some",
+    "much",
+    "any",
+    "many"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 9,
+   "q": "I need ___ water after the game.",
+   "options": [
+    "an",
+    "some",
+    "a",
+    "many"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 10,
+   "q": "Would you like ___ apple?",
+   "options": [
+    "an",
+    "any",
+    "some",
+    "a"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 11,
+   "q": "We do not have ___ eggs.",
+   "options": [
+    "a",
+    "some",
+    "any",
+    "much"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 12,
+   "q": "My sister is ___ than I am.",
+   "options": [
+    "more tall",
+    "taller",
+    "tallest",
+    "tall"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 13,
+   "q": "This is the ___ film I have seen this year.",
+   "options": [
+    "more funny",
+    "funniest",
+    "funny",
+    "funnier"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 14,
+   "q": "The blue bag is ___ than the black one.",
+   "options": [
+    "more expensive",
+    "expensiver",
+    "expensive",
+    "most expensive"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 15,
+   "q": "I can ___ you with your homework.",
+   "options": [
+    "to help",
+    "helps",
+    "helping",
+    "help"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 16,
+   "q": "You ___ wear a seat belt in a car.",
+   "options": [
+    "should",
+    "should to",
+    "are",
+    "do"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 17,
+   "q": "___ I use your phone, please?",
+   "options": [
+    "Can",
+    "Have",
+    "Do",
+    "Am"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 18,
+   "q": "He ___ play the guitar when he was five.",
+   "options": [
+    "could to",
+    "can",
+    "could",
+    "can to"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 19,
+   "q": "I ___ visit my aunt tomorrow.",
+   "options": [
+    "going",
+    "am going to",
+    "went",
+    "go"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 20,
+   "q": "The lesson ___ at nine tomorrow.",
+   "options": [
+    "started",
+    "start",
+    "is start",
+    "starts"
+   ],
+   "correct": "D"
+  }
+ ],
+ "Elementary": [
+  {
+   "n": 1,
+   "q": "I ___ this book twice already.",
+   "options": [
+    "have read",
+    "had read",
+    "am reading",
+    "read"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 2,
+   "q": "She ___ to Paris three years ago.",
+   "options": [
+    "goes",
+    "went",
+    "was going",
+    "has gone"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 3,
+   "q": "We ___ dinner when the lights went out.",
+   "options": [
+    "were having",
+    "would have",
+    "are having",
+    "have had"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 4,
+   "q": "While I ___ home, I saw an old friend.",
+   "options": [
+    "am walking",
+    "was walking",
+    "walk",
+    "have walked"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 5,
+   "q": "They ___ in this house since 2020.",
+   "options": [
+    "live",
+    "have lived",
+    "lived",
+    "are living"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 6,
+   "q": "I have not seen Jamshid ___.",
+   "options": [
+    "ever",
+    "just",
+    "yet",
+    "already"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 7,
+   "q": "Have you ___ been to Samarkand?",
+   "options": [
+    "ever",
+    "for",
+    "yet",
+    "never"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 8,
+   "q": "The train ___ before we arrived at the station.",
+   "options": [
+    "has left",
+    "had left",
+    "was leaving",
+    "leaves"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 9,
+   "q": "We ___ to the beach if the weather is good tomorrow.",
+   "options": [
+    "went",
+    "go",
+    "will go",
+    "would go"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 10,
+   "q": "If you heat ice, it ___.",
+   "options": [
+    "would melt",
+    "melted",
+    "will melt",
+    "melts"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 11,
+   "q": "You ___ see a dentist if your tooth hurts.",
+   "options": [
+    "couldn't",
+    "might",
+    "mustn't",
+    "should"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 12,
+   "q": "You ___ park here; it is against the rules.",
+   "options": [
+    "don't have to",
+    "should",
+    "mustn't",
+    "can"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 13,
+   "q": "I ___ finish this report tonight because it is due tomorrow.",
+   "options": [
+    "must",
+    "would",
+    "could",
+    "may"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 14,
+   "q": "It ___ rain later, so take an umbrella.",
+   "options": [
+    "can't",
+    "must",
+    "shouldn't",
+    "might"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 15,
+   "q": "My car is ___ than yours.",
+   "options": [
+    "fastest",
+    "more fast",
+    "the faster",
+    "faster"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 16,
+   "q": "This is the ___ restaurant in the area.",
+   "options": [
+    "best",
+    "most good",
+    "good",
+    "better"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 17,
+   "q": "My new phone is not as ___ as my old one.",
+   "options": [
+    "most expensive",
+    "more expensive",
+    "expensiver",
+    "expensive"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 18,
+   "q": "There is ___ sugar in this tea than in that one.",
+   "options": [
+    "many",
+    "few",
+    "less",
+    "fewer"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 19,
+   "q": "Only ___ students came to the meeting.",
+   "options": [
+    "any",
+    "a few",
+    "much",
+    "a little"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 20,
+   "q": "We have ___ time before the bus leaves.",
+   "options": [
+    "a few",
+    "many",
+    "a little",
+    "few"
+   ],
+   "correct": "C"
+  }
+ ],
+ "Pre-Intermediate": [
+  {
+   "n": 1,
+   "q": "By the time we arrived, the film ___.",
+   "options": [
+    "has started",
+    "had started",
+    "was starting",
+    "started"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 2,
+   "q": "I ___ for this company since I graduated.",
+   "options": [
+    "am working",
+    "worked",
+    "work",
+    "have been working"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 3,
+   "q": "This time next week, we ___ on the beach.",
+   "options": [
+    "will be relaxing",
+    "will relax",
+    "have relaxed",
+    "relax"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 4,
+   "q": "By next June, she ___ her degree.",
+   "options": [
+    "will have completed",
+    "has completed",
+    "completes",
+    "will complete"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 5,
+   "q": "I wish I ___ how to solve this problem.",
+   "options": [
+    "know",
+    "knew",
+    "will know",
+    "have known"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 6,
+   "q": "If I ___ about the traffic, I would have left earlier.",
+   "options": [
+    "know",
+    "had known",
+    "have known",
+    "would know"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 7,
+   "q": "If he had studied harder, he ___ the exam.",
+   "options": [
+    "would have passed",
+    "had passed",
+    "would pass",
+    "will pass"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 8,
+   "q": "If I were you, I ___ to the manager.",
+   "options": [
+    "speak",
+    "would have spoken",
+    "would speak",
+    "will speak"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 9,
+   "q": "Had I known about the sale, I ___ a new laptop.",
+   "options": [
+    "will buy",
+    "would buy",
+    "would have bought",
+    "bought"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 10,
+   "q": "I would rather you ___ me before you come over.",
+   "options": [
+    "had called",
+    "will call",
+    "call",
+    "called"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 11,
+   "q": "The report ___ by Friday afternoon.",
+   "options": [
+    "must have finished",
+    "must be finished",
+    "must be finishing",
+    "must finish"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 12,
+   "q": "The suspect ___ by the police last night.",
+   "options": [
+    "has arrested",
+    "is arresting",
+    "arrested",
+    "was arrested"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 13,
+   "q": "The new stadium ___ at the moment.",
+   "options": [
+    "builds",
+    "has built",
+    "was built",
+    "is being built"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 14,
+   "q": "The invitations ___ before the event began.",
+   "options": [
+    "had sent",
+    "had been sent",
+    "have sent",
+    "were sending"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 15,
+   "q": "She said she ___ the following day.",
+   "options": [
+    "has come",
+    "will come",
+    "would come",
+    "comes"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 16,
+   "q": "He asked me where I ___ the previous weekend.",
+   "options": [
+    "go",
+    "had gone",
+    "have gone",
+    "was going"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 17,
+   "q": "The teacher told us ___ late again.",
+   "options": [
+    "not be",
+    "not being",
+    "don't be",
+    "not to be"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 18,
+   "q": "My friend suggested ___ a taxi instead of walking.",
+   "options": [
+    "take",
+    "to take",
+    "taking",
+    "took"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 19,
+   "q": "I regret ___ you that your application was unsuccessful.",
+   "options": [
+    "tell",
+    "telling",
+    "to tell",
+    "told"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 20,
+   "q": "I remember ___ this museum when I was a child.",
+   "options": [
+    "visiting",
+    "visit",
+    "to visit",
+    "visited"
+   ],
+   "correct": "A"
+  }
+ ],
+ "Advanced": [
+  {
+   "n": 1,
+   "q": "Rarely ___ such a convincing performance.",
+   "options": [
+    "have I seen",
+    "I saw",
+    "did I see",
+    "I have seen"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 2,
+   "q": "Not until the report was published ___ the scale of the problem.",
+   "options": [
+    "had we understood",
+    "did we understand",
+    "we understood",
+    "we had understood"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 3,
+   "q": "Were the proposal ___, the project could begin immediately.",
+   "options": [
+    "approved",
+    "approve",
+    "approving",
+    "to approve"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 4,
+   "q": "Had it not been for her intervention, the negotiations ___ .",
+   "options": [
+    "would have failed",
+    "had failed",
+    "will fail",
+    "would fail"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 5,
+   "q": "So complex ___ that even experts disagreed about its cause.",
+   "options": [
+    "the issue was",
+    "was the issue",
+    "the issue",
+    "did the issue"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 6,
+   "q": "It is essential that every applicant ___ the form personally.",
+   "options": [
+    "signs",
+    "sign",
+    "will sign",
+    "signed"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 7,
+   "q": "The committee recommended that the policy ___ immediately.",
+   "options": [
+    "be revised",
+    "will be revised",
+    "is revised",
+    "was revised"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 8,
+   "q": "I would sooner you ___ me the truth from the beginning.",
+   "options": [
+    "tell",
+    "would tell",
+    "told",
+    "had told"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 9,
+   "q": "She behaves as though she ___ the decision herself.",
+   "options": [
+    "has made",
+    "would make",
+    "had made",
+    "will make"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 10,
+   "q": "If only I ___ the warning more seriously at the time.",
+   "options": [
+    "have taken",
+    "would take",
+    "take",
+    "had taken"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 11,
+   "q": "The manager ___ the documents before the meeting, but apparently she did not.",
+   "options": [
+    "needn't have read",
+    "must read",
+    "couldn't read",
+    "should have read"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 12,
+   "q": "You ___ the tickets; entry to the exhibition was free.",
+   "options": [
+    "shouldn't buy",
+    "could not buy",
+    "needn't have bought",
+    "mustn't buy"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 13,
+   "q": "He ___ have misunderstood the instructions; his answer is completely unrelated.",
+   "options": [
+    "must",
+    "should",
+    "need",
+    "can't"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 14,
+   "q": "They ___ have reached the summit yet; the climb normally takes six hours.",
+   "options": [
+    "must",
+    "can't",
+    "needn't",
+    "should"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 15,
+   "q": "The figures are believed ___ by an independent auditor.",
+   "options": [
+    "to be verifying",
+    "to verify",
+    "to have been verified",
+    "verifying"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 16,
+   "q": "The minister is reported ___ a statement later today.",
+   "options": [
+    "to make",
+    "to have made",
+    "making",
+    "to be made"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 17,
+   "q": "The new regulations are expected ___ next month.",
+   "options": [
+    "to introduce",
+    "introducing",
+    "to have introduced",
+    "to be introduced"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 18,
+   "q": "Having ___ all the evidence, the jury reached a verdict.",
+   "options": [
+    "consider",
+    "considered",
+    "been considering",
+    "to consider"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 19,
+   "q": "___ by the sudden noise, the horse ran across the field.",
+   "options": [
+    "Startling",
+    "Having startled",
+    "Startled",
+    "To startle"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 20,
+   "q": "___ no further questions, the chair brought the meeting to a close.",
+   "options": [
+    "There to be",
+    "There being",
+    "Being there",
+    "There had"
+   ],
+   "correct": "B"
+  }
+ ]
+}

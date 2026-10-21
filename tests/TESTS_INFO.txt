@@ -1,7 +1,9 @@
-Ingliz tili (tests/questions.json): Starter, Beginner, Elementary, Pre-Intermediate (har biri 20 ta savol) va Advanced (20 ta, hozircha ro'yxatdan o'tishda ko'rsatilmaydi).
-Asl fayl: English_asl.docx. Asl faylda javoblar kaliti yo'q edi, to'g'ri javoblar alohida yechib belgilangan.
+Ingliz tili (tests/questions.json): Starter (30 ta), Beginner, Elementary, Intermediate, Advanced (har biri 20 ta savol).
+Izoh: INGLIZ_TILI_IZOH.txt
 Eski savollar tests/arxiv/ papkasida saqlangan.
 
 Matematika savollari: tests/matematika.json fayliga 1-sinf ... 11-sinf bo'limlari bo'yicha qo'shiladi.
 Format (questions.json bilan bir xil): {"n": 1, "q": "2 + 3 = ?", "options": ["4","5","6","7"], "correct": "B"}
-Matematika: 1–11-sinf savollari qo'shilgan (tuzatishlar: MATEMATIKA_TUZATISHLAR.txt). Bo'sh bo'lim bo'lsa o'quvchiga "savollar hali qo'shilmagan" xabari chiqadi.
+Matematika: 1–11-sinf, har sinfda 20 ta savol (asl fayllar: matematika_asl/, tuzatishlar: MATEMATIKA_TUZATISHLAR.txt). Bo'sh bo'lim bo'lsa o'quvchiga "savollar hali qo'shilmagan" xabari chiqadi.
+Mental arifmetika (tests/mental.json): 120 ta misol (1 xonali oddiy ±, 7 ta sonni qo'shish/ayirish), asl fayl: mental_asl/megabrain_misollar 2.pdf, javoblar PDF kalitiga mos. Format: {"n": 1, "q": "9 − 6 − 1 = ?", "answer": 2}. Vaqt: 10 daqiqa, natija ballda.
+IT (tests/it.json): Frontend (HTML, CSS) va Backend Python, 20 tadan test.

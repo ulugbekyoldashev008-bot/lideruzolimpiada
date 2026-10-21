@@ -22,25 +22,32 @@ try:
 except Exception:
     TZ = timezone(timedelta(hours=5))
 
-SUBJECTS = ["Ingliz tili", "Matematika", "Koreys tili"]
-# Ingliz tili darajalari (tests/questions.json dagi bo‘limlar). "Advanced" savollari faylda bor, lekin ro‘yxatdan o‘tishda ko‘rsatilmaydi.
-ENGLISH_LEVELS = {"Starter": "Starter", "Beginner": "Beginner", "Elementary": "Elementary", "Pre-Intermediate": "Pre-Intermediate"}
+SUBJECTS = ["Ingliz tili", "Matematika", "Mental arifmetika", "IT"]
+# Ingliz tili darajalari (tests/questions.json dagi bo‘limlar)
+ENGLISH_LEVELS = {"Starter": "Starter", "Beginner": "Beginner", "Elementary": "Elementary", "Intermediate": "Intermediate", "Advanced": "Advanced"}
 MATH_LEVELS = [f"{n}-sinf" for n in range(1, 12)]
 GRADES = [f"{n}-sinf" for n in range(1, 12)]
 QUESTIONS_PER_TEST = 30
 DEFAULT_DURATION_MIN = 60
+IT_LEVELS = ["Frontend", "Backend Python"]
+# Mental arifmetika: misollar ketma-ket chiqadi, javob raqam bilan yoziladi,
+# test boshlangandan keyin 10 daqiqa beriladi (qaysi misolda bo‘lsa ham shunda yakunlanadi)
+MENTAL = "Mental arifmetika"
+MENTAL_MINUTES = 10
 
 def load_questions(name):
     path = Path(__file__).parent / "tests" / name
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 _eng = load_questions("questions.json")
-_kor = load_questions("koreys.json")
 _math = load_questions("matematika.json")  # {"1-sinf": [...], ..., "11-sinf": [...]}
+_mental = load_questions("mental.json")  # {"daraja": [{"n", "q", "answer"}, ...]}
+_it = load_questions("it.json")  # {"Frontend": [...], "Backend Python": [...]}
 QBANK = {
     "Ingliz tili": {lvl: _eng.get(key, []) for lvl, key in ENGLISH_LEVELS.items()},
     "Matematika": {lvl: _math.get(lvl, []) for lvl in MATH_LEVELS},
-    "Koreys tili": {"TOPIK II": _kor.get("TOPIK II", [])},
+    MENTAL: dict(_mental),
+    "IT": {lvl: _it.get(lvl, []) for lvl in IT_LEVELS},
 }
 LEVELS = {subj: list(levels) for subj, levels in QBANK.items()}
 QINDEX = {s: {lvl: {q["n"]: q for q in qs} for lvl, qs in lv.items()} for s, lv in QBANK.items()}
@@ -106,6 +113,11 @@ def init_db():
         for stmt in SCHEMA:
             c.execute(stmt)
         c.execute("ALTER TABLE users ADD COLUMN IF NOT EXISTS school TEXT")
+        # "Pre-Intermediate" darajasi "Intermediate" ga almashtirildi
+        c.execute("UPDATE users SET level='Intermediate' WHERE subject='Ingliz tili' AND level='Pre-Intermediate'")
+        # mental arifmetika misollari almashtirildi: eski daraja nomi yangisiga o‘tkaziladi
+        if _mental:
+            c.execute("UPDATE users SET level=%s WHERE subject=%s AND level<>ALL(%s)", (list(_mental)[0], MENTAL, list(_mental)))
         for k, v in {"registration_enabled": "1", "start_at": "", "duration_min": str(DEFAULT_DURATION_MIN), "notified_for": ""}.items():
             c.execute("INSERT INTO settings(key,value) VALUES(%s,%s) ON CONFLICT(key) DO NOTHING", (k, v))
 
@@ -151,6 +163,10 @@ def test_end():
 def fmt_dur(sec):
     m, s = divmod(int(sec or 0), 60)
     return f"{m} daq {s:02d} s"
+
+def exam_deadline(subject, started_ts, end_ts):
+    """Mental arifmetikada boshlangandan MENTAL_MINUTES daqiqa (olimpiada tugashidan oshmaydi), boshqalarda olimpiada tugashi."""
+    return min(end_ts, started_ts + MENTAL_MINUTES * 60) if subject == MENTAL else end_ts
 
 def minutes_left(deadline_ts):
     return max(0, math.ceil((deadline_ts - time.time()) / 60))
@@ -333,15 +349,19 @@ async def start_exam(uid, context):
     pool = list(QINDEX[subject][level])
     if not pool:
         await send(f"“{subject} — {level}” uchun savollar hali qo‘shilmagan. Iltimos, admin bilan bog‘laning."); return
-    ids = random.sample(pool, min(QUESTIONS_PER_TEST, len(pool)))
+    ids = pool if subject == MENTAL else random.sample(pool, min(QUESTIONS_PER_TEST, len(pool)))
+    deadline = exam_deadline(subject, now, end.timestamp())
     created = q_one("""INSERT INTO exams(telegram_id,subject,level,question_ids,idx,correct,started_ts,deadline_ts)
         VALUES(%s,%s,%s,%s,0,0,%s,%s) ON CONFLICT(telegram_id) DO NOTHING RETURNING telegram_id""",
-        (uid, subject, level, json.dumps(ids), now, end.timestamp()))
+        (uid, subject, level, json.dumps(ids), now, deadline))
     if not created:
         await send_question(uid, bot); return
+    if subject == MENTAL:
+        asyncio.create_task(expire_at(bot, uid, deadline))
+    how = "Javobni raqam bilan yozib yuboring." if subject == MENTAL else "Javobni A/B/C/D tugmalaridan tanlang."
     await send(f"📚 {subject} — {level}\nSavollar soni: {len(ids)}\n"
-               f"⏱ Test {end.strftime('%H:%M')} gacha davom etadi (qolgan vaqt: {minutes_left(end.timestamp())} daqiqa).\n"
-               "Javobni A/B/C/D tugmalaridan tanlang.\n\nOmad! Boshladik!", reply_markup=ReplyKeyboardRemove())
+               f"⏱ Test {datetime.fromtimestamp(deadline, TZ).strftime('%H:%M')} gacha davom etadi (qolgan vaqt: {minutes_left(deadline)} daqiqa).\n"
+               f"{how}\n\nOmad! Boshladik!", reply_markup=ReplyKeyboardRemove())
     await send_question(uid, bot)
 
 async def test_start(update, context):
@@ -361,8 +381,17 @@ async def send_question(uid, bot):
     q = QINDEX.get(exam["subject"], {}).get(exam["level"], {}).get(ids[i]) if i < len(ids) else None
     if q is None:
         await finish_exam(bot, uid); return
-    opts = [[InlineKeyboardButton(f"{'ABCD'[k]}. {option[:55]}", callback_data=f"answer:{i}:{k}")] for k, option in enumerate(q["options"])]
-    await bot.send_message(uid, f"❓ {i+1}/{len(ids)}  ⏱ qolgan vaqt: ~{minutes_left(exam['deadline_ts'])} daq\n\n{q['q']}",
+    text = q["q"]
+    if "answer" in q:  # mental arifmetika: javob yoziladi, tugma yo‘q
+        await bot.send_message(uid, f"❓ {i+1}/{len(ids)}  ⏱ qolgan vaqt: ~{minutes_left(exam['deadline_ts'])} daq\n\n{text}\n\n✍️ Javobni raqam bilan yozing.")
+        return
+    if any(len(option) > 40 for option in q["options"]):
+        # uzun variantlar tugmaga sig‘maydi: matnda ko‘rsatiladi, tugmada faqat harf
+        text += "\n\n" + "\n".join(f"{'ABCD'[k]}) {option}" for k, option in enumerate(q["options"]))
+        opts = [[InlineKeyboardButton('ABCD'[k], callback_data=f"answer:{i}:{k}") for k in range(len(q["options"]))]]
+    else:
+        opts = [[InlineKeyboardButton(f"{'ABCD'[k]}. {option}", callback_data=f"answer:{i}:{k}")] for k, option in enumerate(q["options"])]
+    await bot.send_message(uid, f"❓ {i+1}/{len(ids)}  ⏱ qolgan vaqt: ~{minutes_left(exam['deadline_ts'])} daq\n\n{text}",
                            reply_markup=InlineKeyboardMarkup(opts))
 
 async def answer_question(update, context):
@@ -388,6 +417,23 @@ async def answer_question(update, context):
     await query.edit_message_text("✅ Javob qabul qilindi." if ok else "Javob qabul qilindi.")
     await send_question(uid, context.bot)
 
+async def answer_typed(update, context, exam):
+    """Mental arifmetika: o‘quvchi javobni raqam bilan yozadi."""
+    uid = update.effective_user.id
+    text = (update.message.text or "").strip().replace(" ", "")
+    if time.time() >= exam["deadline_ts"]:
+        await update.message.reply_text("⏰ Vaqt tugadi.")
+        await finish_exam(context.bot, uid, expired=True); return
+    if not re.fullmatch(r"-?\d+", text):
+        await update.message.reply_text("Javobni faqat raqam bilan yozing (masalan: 364)."); return
+    ids = json.loads(exam["question_ids"])
+    qi = exam["idx"]
+    q = QINDEX[exam["subject"]][exam["level"]][ids[qi]]
+    ok = 1 if int(text) == q["answer"] else 0
+    if not q_exec("UPDATE exams SET idx=idx+1, correct=correct+%s WHERE telegram_id=%s AND idx=%s", (ok, uid, qi)):
+        return
+    await send_question(uid, context.bot)
+
 async def finish_exam(bot, uid, expired=False):
     # DELETE ... RETURNING testni atomik “egallaydi”: ikki marta yakunlanib ketmaydi
     exam = q_one("DELETE FROM exams WHERE telegram_id=%s RETURNING *", (uid,))
@@ -399,7 +445,9 @@ async def finish_exam(bot, uid, expired=False):
     correct, answered = exam["correct"], exam["idx"]
     finished_ts = exam["deadline_ts"] if expired else min(time.time(), exam["deadline_ts"])
     duration = max(0, int(finished_ts - exam["started_ts"]))
-    percent = round(correct * 100 / total, 2) if total else 0
+    mental = exam["subject"] == MENTAL
+    # mental arifmetikada foiz yo‘q: har bir to‘g‘ri javob 1 ball
+    percent = None if mental else (round(correct * 100 / total, 2) if total else 0)
     reason = "Vaqt tugadi" if expired else "Tugatdi"
     q_exec("""INSERT INTO results(telegram_id,full_name,subject,level,correct,answered,total,percent,started_at,finished_at,duration_sec,reason)
         VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s) ON CONFLICT(telegram_id) DO NOTHING""",
@@ -408,9 +456,14 @@ async def finish_exam(bot, uid, expired=False):
     head = "⏰ Vaqt tugadi, test yakunlandi!" if expired else "🏁 Test yakunlandi!"
     unanswered = total - answered
     extra = f"\nJavob berilmagan: {unanswered} ta (noto‘g‘ri hisoblandi)" if unanswered else ""
+    if mental:
+        body = (f"Ishlangan misollar: {answered} ta\nTo‘g‘ri javoblar: {correct} ta\nNoto‘g‘ri javoblar: {answered-correct} ta\n"
+                f"🏅 Ball: {correct}")
+    else:
+        body = (f"To‘g‘ri javoblar: {correct}/{total}\nNoto‘g‘ri javoblar: {total-correct}/{total}{extra}\n"
+                f"Natija: {percent}%")
     msg = await bot.send_message(uid, f"{head}\n\nO‘quvchi: {name}\nFan: {exam['subject']}\nDaraja: {exam['level']}\n"
-                                      f"To‘g‘ri javoblar: {correct}/{total}\nNoto‘g‘ri javoblar: {total-correct}/{total}{extra}\n"
-                                      f"Natija: {percent}%\nSarflangan vaqt: {fmt_dur(duration)}", reply_markup=home_keyboard(uid))
+                                      f"{body}\nSarflangan vaqt: {fmt_dur(duration)}", reply_markup=home_keyboard(uid))
     async def delete_later():
         await asyncio.sleep(15)
         try:
@@ -427,6 +480,16 @@ async def expire_exams(bot):
         except Exception as e:
             print("Testni yakunlashda xatolik:", r["telegram_id"], repr(e))
 
+async def expire_at(bot, uid, deadline_ts):
+    """Mental arifmetika testini aynan vaqti tugaganda yakunlaydi (watcher esa zaxira sifatida qoladi)."""
+    await asyncio.sleep(max(0, deadline_ts - time.time()))
+    exam = get_exam(uid)
+    if exam and exam["deadline_ts"] <= time.time():
+        try:
+            await finish_exam(bot, uid, expired=True)
+        except Exception as e:
+            print("Testni yakunlashda xatolik:", uid, repr(e))
+
 async def notify_start(bot):
     start, end = test_time(), test_end()
     val = get_setting("start_at", "")
@@ -442,7 +505,9 @@ async def notify_start(bot):
         try:
             await bot.send_message(r["telegram_id"],
                 f"🔔 Olimpiada boshlandi!\nFan: {r['subject'] or '—'}\nDaraja: {r['level'] or '—'}\n"
-                f"Test {end.strftime('%H:%M')} gacha davom etadi ({duration_min()} daqiqa). Tayyor bo‘lsangiz, tugmani bosing.",
+                + (f"Testni {end.strftime('%H:%M')} gacha boshlashingiz mumkin. Boshlaganingizdan keyin {MENTAL_MINUTES} daqiqa vaqt beriladi."
+                 if r["subject"] == MENTAL else f"Test {end.strftime('%H:%M')} gacha davom etadi ({duration_min()} daqiqa).")
+                + " Tayyor bo‘lsangiz, tugmani bosing.",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🧪 Testni boshlash", callback_data="begin:go")]]))
         except Exception as e:
             print("Xabar yuborishda xatolik:", r["telegram_id"], repr(e))
@@ -509,7 +574,8 @@ async def admin_stats(update, context):
     total = q_one("SELECT COUNT(*) AS n FROM users")["n"]
     done = q_one("SELECT COUNT(*) AS n FROM results")["n"]
     active = q_one("SELECT COUNT(*) AS n FROM exams")["n"]
-    avg = q_one("SELECT AVG(percent) AS a FROM results")["a"]
+    avg = q_one("SELECT AVG(percent) AS a FROM results WHERE percent IS NOT NULL")["a"]
+    avg_ball = q_one("SELECT AVG(correct) AS a FROM results WHERE subject=%s", (MENTAL,))["a"]
     waiting = max(0, total - done - active)
     reg_by = {(r["subject"], r["level"]): r["n"] for r in q_all("SELECT subject, level, COUNT(*) AS n FROM users GROUP BY subject, level")}
     done_by = {(r["subject"], r["level"]): r["n"] for r in q_all("SELECT subject, level, COUNT(*) AS n FROM results GROUP BY subject, level")}
@@ -523,8 +589,14 @@ async def admin_stats(update, context):
         f"📊 Statistika\n\nHolat: {olympiad_state()}\nOlimpiada: {schedule_line()}\n\n"
         f"👥 Ro‘yxatdan o‘tganlar: {total}\n✅ Test topshirganlar: {done}\n🔄 Hozir ishlayotganlar: {active}\n⏳ Hali topshirmaganlar: {waiting}\n"
         + (f"📈 O‘rtacha natija: {float(avg):.1f}%\n" if avg is not None else "")
+        + (f"🧮 {MENTAL}, o‘rtacha ball: {float(avg_ball):.1f}\n" if avg_ball is not None else "")
         + ("\nFan va daraja bo‘yicha:\n" + "\n".join(lines) if lines else ""),
         reply_markup=admin_keyboard())
+
+def score_text(r):
+    if r["subject"] == MENTAL:
+        return f"{r['correct']} ball ({r['answered']} ta misol ishlagan)"
+    return f"{r['percent']}% ({r['correct']}/{r['total']})"
 
 async def send_lines(update, header, lines):
     await update.message.reply_text(header, reply_markup=admin_keyboard())
@@ -540,8 +612,8 @@ async def send_lines(update, header, lines):
 
 async def admin_finished(update, context):
     if not is_admin(update.effective_user.id): return
-    rows = q_all("SELECT * FROM results ORDER BY subject, level, percent DESC, duration_sec ASC")
-    lines = [f"{i}. {r['full_name']} — {r['subject']}/{r['level']}: {r['percent']}% ({r['correct']}/{r['total']}), {fmt_dur(r['duration_sec'])}"
+    rows = q_all("SELECT * FROM results ORDER BY subject, level, percent DESC NULLS LAST, correct DESC, duration_sec ASC")
+    lines = [f"{i}. {r['full_name']} — {r['subject']}/{r['level']}: {score_text(r)}, {fmt_dur(r['duration_sec'])}"
              for i, r in enumerate(rows, 1)]
     await send_lines(update, f"✅ Test topshirganlar: {len(rows)} ta", lines)
 
@@ -585,7 +657,8 @@ def apply_new_deadline():
     """Ishlayotgan testlar muddatini yangi tugash vaqtiga moslaydi."""
     end = test_end()
     if end:
-        q_exec("UPDATE exams SET deadline_ts=%s", (end.timestamp(),))
+        q_exec("UPDATE exams SET deadline_ts=%s WHERE subject<>%s", (end.timestamp(), MENTAL))
+        q_exec("UPDATE exams SET deadline_ts=LEAST(started_ts+%s, %s) WHERE subject=%s", (MENTAL_MINUTES * 60, end.timestamp(), MENTAL))
 
 async def schedule_save(update, context):
     state = context.user_data.get("awaiting_schedule")
@@ -650,7 +723,7 @@ async def export_excel(update, context):
     # 1) Natijalar: har bir fan/daraja bo‘yicha alohida o‘rin (foiz kamayishi, keyin kam vaqt)
     ws = wb.active; ws.title = "Natijalar"
     ordered = sorted(results, key=lambda r: (SUBJECTS.index(r["subject"]) if r["subject"] in SUBJECTS else 99,
-                                              level_order(r["subject"], r["level"]), -(r["percent"] or 0), r["duration_sec"] or 0))
+                                              level_order(r["subject"], r["level"]), -(r["percent"] or 0), -(r["correct"] or 0), r["duration_sec"] or 0))
     rows, place, prev = [], 0, None
     for r in ordered:
         grp = (r["subject"], r["level"])
@@ -658,11 +731,12 @@ async def export_excel(update, context):
         prev = grp
         u = udict.get(r["telegram_id"]) or {}
         rows.append([place, r["full_name"], u.get("birth_date"), u.get("grade"), u.get("school"),
-                     r["subject"], r["level"], r["correct"], r["total"] - r["correct"], r["answered"], r["total"], r["percent"],
+                     r["subject"], r["level"], r["correct"], (r["answered"] if r["subject"] == MENTAL else r["total"]) - r["correct"],
+                     r["answered"], r["total"], r["percent"], r["correct"] if r["subject"] == MENTAL else None,
                      fmt_dur(r["duration_sec"]), r["duration_sec"], r["started_at"], r["finished_at"], r["reason"],
                      u.get("username"), r["telegram_id"]])
     write_sheet(ws, ["O‘rin (fan/daraja ichida)", "Ism-familya", "Tug‘ilgan sana", "Sinf", "Maktab", "Fan", "Daraja",
-                     "To‘g‘ri", "Noto‘g‘ri", "Javob berilgan", "Jami savol", "Foiz (%)", "Sarflangan vaqt", "Sarflangan vaqt (soniya)",
+                     "To‘g‘ri", "Noto‘g‘ri", "Javob berilgan", "Jami savol", "Foiz (%)", "Ball (Mental arifmetika)", "Sarflangan vaqt", "Sarflangan vaqt (soniya)",
                      "Boshlangan", "Tugagan", "Tugash sababi", "Username", "Telegram ID"], rows)
 
     # 2) Barcha ro‘yxatdan o‘tganlar va holati
@@ -673,9 +747,10 @@ async def export_excel(update, context):
         r, e = rdict.get(uid), edict.get(uid)
         status = "Topshirgan" if r else ("Ishlayapti" if e else "Topshirmagan")
         rows.append([u["full_name"], u["birth_date"], u["age"], u["grade"], u["school"], u["subject"], u["level"], status,
-                     r["percent"] if r else None, fmt_dur(r["duration_sec"]) if r else None, u["registered_at"], u["username"], uid])
+                     r["percent"] if r else None, r["correct"] if r and r["subject"] == MENTAL else None,
+                     fmt_dur(r["duration_sec"]) if r else None, u["registered_at"], u["username"], uid])
     write_sheet(ws2, ["Ism-familya", "Tug‘ilgan sana", "Yosh", "Sinf", "Maktab", "Fan", "Daraja", "Holati",
-                      "Foiz (%)", "Sarflangan vaqt", "Ro‘yxatdan o‘tgan vaqt", "Username", "Telegram ID"], rows)
+                      "Foiz (%)", "Ball (Mental arifmetika)", "Sarflangan vaqt", "Ro‘yxatdan o‘tgan vaqt", "Username", "Telegram ID"], rows)
 
     # 3) Hozir ishlayotganlar
     ws3 = wb.create_sheet("Ishlayotganlar")
@@ -701,6 +776,9 @@ async def text_router(update, context):
     text = (update.message.text or "").strip()
     if context.user_data.get("awaiting_schedule"):
         await schedule_save(update, context); return
+    exam = get_exam(update.effective_user.id)
+    if exam and exam["subject"] == MENTAL:
+        await answer_typed(update, context, exam); return
     routes = {
         "📝 Ro‘yxatdan o‘tish": registration_start, "🔐 Admin panelga kirish": admin_begin,
         "🧪 Testni boshlash": test_start, "👤 Profil": profile,

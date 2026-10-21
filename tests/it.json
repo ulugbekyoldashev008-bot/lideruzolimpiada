@@ -1,0 +1,446 @@
+{
+ "Frontend": [
+  {
+   "n": 1,
+   "q": "HTML qisqartmasi nimani anglatadi?",
+   "options": [
+    "HyperText Markup Language",
+    "Hyperlinks Text Markup Language",
+    "High Text Machine Language",
+    "Home Tool Markup Language"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 2,
+   "q": "Eng katta sarlavha qaysi teg bilan yoziladi?",
+   "options": [
+    "<head>",
+    "<h1>",
+    "<header>",
+    "<h6>"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 3,
+   "q": "Havola (link) qaysi teg bilan yaratiladi?",
+   "options": [
+    "<href>",
+    "<link>",
+    "<url>",
+    "<a>"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 4,
+   "q": "Sahifaga rasm qaysi teg bilan qo‘yiladi?",
+   "options": [
+    "<img>",
+    "<image>",
+    "<src>",
+    "<pic>"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 5,
+   "q": "<img> tegida rasm manzili qaysi atributda yoziladi?",
+   "options": [
+    "href",
+    "alt",
+    "link",
+    "src"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 6,
+   "q": "Raqamlangan ro‘yxat qaysi teg bilan yaratiladi?",
+   "options": [
+    "<ol>",
+    "<list>",
+    "<li>",
+    "<ul>"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 7,
+   "q": "Ro‘yxatning har bir elementi qaysi teg bilan yoziladi?",
+   "options": [
+    "<ol>",
+    "<item>",
+    "<li>",
+    "<dl>"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 8,
+   "q": "Yangi qatorga o‘tish (qator tashlash) tegi qaysi?",
+   "options": [
+    "<lb>",
+    "<hr>",
+    "<br>",
+    "<break>"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 9,
+   "q": "Brauzer tabida ko‘rinadigan sahifa nomi qaysi teg bilan yoziladi?",
+   "options": [
+    "<head>",
+    "<h1>",
+    "<title>",
+    "<meta>"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 10,
+   "q": "Jadvalning qatori qaysi teg bilan yoziladi?",
+   "options": [
+    "<th>",
+    "<row>",
+    "<tr>",
+    "<td>"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 11,
+   "q": "CSS qisqartmasi nimani anglatadi?",
+   "options": [
+    "Cascading Style Sheets",
+    "Computer Style Sheets",
+    "Creative Style Sheets",
+    "Colorful Style Sheets"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 12,
+   "q": "Matn rangini qaysi CSS xossasi o‘zgartiradi?",
+   "options": [
+    "font-color",
+    "text-color",
+    "background-color",
+    "color"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 13,
+   "q": "Element fon rangini qaysi CSS xossasi o‘zgartiradi?",
+   "options": [
+    "background-color",
+    "fill",
+    "color",
+    "bg-color"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 14,
+   "q": "Shrift o‘lchamini qaysi CSS xossasi belgilaydi?",
+   "options": [
+    "text-size",
+    "font-weight",
+    "size",
+    "font-size"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 15,
+   "q": "class=\"menu\" bo‘lgan elementni CSS da qanday tanlaymiz?",
+   "options": [
+    "#menu",
+    ".menu",
+    "*menu",
+    "menu"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 16,
+   "q": "id=\"header\" bo‘lgan elementni CSS da qanday tanlaymiz?",
+   "options": [
+    "header",
+    "@header",
+    ".header",
+    "#header"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 17,
+   "q": "Tashqi CSS faylni HTML ga qaysi teg bilan ulaymiz?",
+   "options": [
+    "<css>",
+    "<link>",
+    "<style>",
+    "<script>"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 18,
+   "q": "Matnni markazga tekislash uchun qaysi CSS yoziladi?",
+   "options": [
+    "font-align: center;",
+    "align: center;",
+    "text-align: center;",
+    "text-center: true;"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 19,
+   "q": "Element ichidagi matn bilan chegarasi orasidagi bo‘shliq qaysi xossa?",
+   "options": [
+    "border",
+    "padding",
+    "spacing",
+    "margin"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 20,
+   "q": "Matnni qalin qilish uchun qaysi CSS yoziladi?",
+   "options": [
+    "text-weight: bold;",
+    "font-weight: bold;",
+    "font: thick;",
+    "font-style: bold;"
+   ],
+   "correct": "B"
+  }
+ ],
+ "Backend Python": [
+  {
+   "n": 1,
+   "q": "Python’da ekranga ma’lumot chiqarish funksiyasi qaysi?",
+   "options": [
+    "printf()",
+    "echo()",
+    "print()",
+    "write()"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 2,
+   "q": "print(2 + 3 * 4) natijasi nima?",
+   "options": [
+    "14",
+    "24",
+    "20",
+    "9"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 3,
+   "q": "type(3.5) qaysi turni qaytaradi?",
+   "options": [
+    "float",
+    "int",
+    "str",
+    "double"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 4,
+   "q": "Python’da bir qatorli izoh qaysi belgi bilan boshlanadi?",
+   "options": [
+    "//",
+    "#",
+    "--",
+    "/*"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 5,
+   "q": "len(\"Python\") natijasi nima?",
+   "options": [
+    "7",
+    "Xato beradi",
+    "6",
+    "5"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 6,
+   "q": "print(7 // 2) natijasi nima?",
+   "options": [
+    "4",
+    "1",
+    "3",
+    "3.5"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 7,
+   "q": "print(7 % 3) natijasi nima?",
+   "options": [
+    "2",
+    "1",
+    "0",
+    "2.33"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 8,
+   "q": "Ro‘yxat (list) qanday yoziladi?",
+   "options": [
+    "(1, 2, 3)",
+    "{1, 2, 3}",
+    "<1, 2, 3>",
+    "[1, 2, 3]"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 9,
+   "q": "Foydalanuvchidan ma’lumot olish funksiyasi qaysi?",
+   "options": [
+    "read()",
+    "scan()",
+    "get()",
+    "input()"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 10,
+   "q": "Funksiya qaysi kalit so‘z bilan e’lon qilinadi?",
+   "options": [
+    "function",
+    "def",
+    "define",
+    "func"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 11,
+   "q": "x = [10, 20, 30] bo‘lsa, print(x[1]) natijasi nima?",
+   "options": [
+    "30",
+    "10",
+    "Xato beradi",
+    "20"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 12,
+   "q": "print(\"ab\" * 3) natijasi nima?",
+   "options": [
+    "ab3",
+    "Xato beradi",
+    "ababab",
+    "aaabbb"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 13,
+   "q": "Shart tekshirish uchun qaysi kalit so‘z ishlatiladi?",
+   "options": [
+    "if",
+    "case",
+    "when",
+    "check"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 14,
+   "q": "for i in range(3): print(i) qaysi sonlarni chiqaradi?",
+   "options": [
+    "1 2",
+    "0 1 2",
+    "1 2 3",
+    "0 1 2 3"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 15,
+   "q": "Ro‘yxat oxiriga element qo‘shish metodi qaysi?",
+   "options": [
+    "insert_end()",
+    "add()",
+    "push()",
+    "append()"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 16,
+   "q": "print(10 == 10) natijasi nima?",
+   "options": [
+    "False",
+    "True",
+    "Xato beradi",
+    "10"
+   ],
+   "correct": "B"
+  },
+  {
+   "n": 17,
+   "q": "print(int(\"5\") + 2) natijasi nima?",
+   "options": [
+    "52",
+    "\"52\"",
+    "7",
+    "Xato beradi"
+   ],
+   "correct": "C"
+  },
+  {
+   "n": 18,
+   "q": "Lug‘at (dict) qanday yoziladi?",
+   "options": [
+    "{\"ism\": \"Ali\"}",
+    "[\"ism\", \"Ali\"]",
+    "(\"ism\", \"Ali\")",
+    "<ism: Ali>"
+   ],
+   "correct": "A"
+  },
+  {
+   "n": 19,
+   "q": "Quyidagilardan qaysi biri Python’da backend yozish uchun freymvork?",
+   "options": [
+    "Bootstrap",
+    "React",
+    "Vue",
+    "Django"
+   ],
+   "correct": "D"
+  },
+  {
+   "n": 20,
+   "q": "print(2 ** 3) natijasi nima?",
+   "options": [
+    "8",
+    "6",
+    "5",
+    "9"
+   ],
+   "correct": "A"
+  }
+ ]
+}
